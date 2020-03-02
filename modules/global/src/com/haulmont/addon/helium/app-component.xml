@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2008-2020 Haulmont.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<app-component xmlns="http://schemas.haulmont.com/cuba/app-component.xsd"
+               dependsOn="com.haulmont.cuba">
+
+    <module name="global" blocks="*">
+        <artifact name="helium-global" appJar="true"/>
+
+        <property name="cuba.persistenceConfig" value="+com/haulmont/addon/helium/persistence.xml"/>
+        <property name="cuba.metadataConfig" value="+com/haulmont/addon/helium/metadata.xml"/>
+        <property name="cuba.viewsConfig" value="+com/haulmont/addon/helium/views.xml"/>
+    </module>
+    <module name="core" dependsOn="global" blocks="core">
+        <artifact name="helium-core" appJar="true"/>
+        <artifact name="helium-core" classifier="db" ext="zip" configuration="dbscripts"/>
+
+        <property name="cuba.springContextConfig" value="+com/haulmont/addon/helium/spring.xml"/>
+        <property name="cuba.mainMessagePack" value="+com.haulmont.addon.helium.core"/>
+    </module>
+    <module name="web" dependsOn="global" blocks="web">
+        <artifact name="helium-web" appJar="true"/>
+        <artifact name="helium-web" classifier="web" ext="zip" configuration="webcontent"/>
+        <artifact name="helium-web" classifier="themes" ext="jar" configuration="themes"/>
+
+        <property name="cuba.springContextConfig" value="+com/haulmont/addon/helium/web-spring.xml"/>
+        <property name="cuba.dispatcherSpringContextConfig"
+                  value="+com/haulmont/addon/helium/web-dispatcher-spring.xml"/>
+        <property name="cuba.windowConfig" value="+com/haulmont/addon/helium/web-screens.xml"/>
+        <property name="cuba.menuConfig" value="+com/haulmont/addon/helium/web-menu.xml"/>
+        <property name="cuba.permissionConfig" value="+com/haulmont/addon/helium/web-permissions.xml"/>
+        <property name="cuba.mainMessagePack" value="+com.haulmont.addon.helium.web"/>
+        <property name="cuba.themeConfig" value="+/com/haulmont/addon/helium/web/helium-theme.properties"/>
+    </module>
+</app-component>

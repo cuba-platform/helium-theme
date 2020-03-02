@@ -1,0 +1,73 @@
+/*!
+ * Copyright (c) 2008-2020 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@mixin he-common {
+  &.v-app,
+  &.v-app-loading {
+    color: var(--text-medium-color);
+    background: var(--app-background-color);
+  }
+
+  .v-app-loading {
+    background: var(--app-background-color);
+  }
+
+  .v-loading-indicator {
+    background: var(--primary-color);
+  }
+
+  &.small {
+    &.v-app,
+    &.v-app-loading {
+      font-size: $v-font-size--small;
+    }
+
+    @include he-caption-size-style($unit-size: $v-unit-size--small, $font-size: $v-caption-font-size--small);
+  }
+
+  &.large {
+    &.v-app,
+    &.v-app-loading {
+      font-size: $v-font-size--large;
+    }
+
+    @include he-caption-size-style($unit-size: $v-unit-size--large, $font-size: $v-caption-font-size--large);
+  }
+
+  .small {
+    @include he-caption-size-style($unit-size: $v-unit-size--small, $font-size: $v-caption-font-size--small);
+  }
+
+  .middle {
+    @include he-caption-size-style($unit-size: $v-unit-size, $font-size: $v-caption-font-size);
+  }
+
+  .large {
+    @include he-caption-size-style($unit-size: $v-unit-size--large, $font-size: $v-caption-font-size--large);
+  }
+}
+
+@mixin he-caption-size-style($unit-size: $v-unit-size,
+                             $font-size: $v-caption-font-size) {
+  .v-caption {
+    font-size: $font-size;
+  }
+
+  .v-icon + .v-captiontext,
+  .v-icon + span {
+    margin-left: round($unit-size / 5);
+  }
+}
