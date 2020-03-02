@@ -104,7 +104,7 @@
     padding-top: $unit-size + ceil($v-layout-spacing-vertical);
 
     .c-tree-top {
-      height: $unit-size;
+      min-height: $unit-size;
       margin-top: -1 * ($unit-size + ceil($v-layout-spacing-vertical));
     }
   }

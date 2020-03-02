@@ -22,7 +22,6 @@
 @import "app/login-window";
 @import "app/main-window";
 @import "app/app-menu";
-@import "app/role-editor";
 @import "components/button/button";
 @import "components/checkbox/checkbox";
 @import "components/checkboxgroup/checkboxgroup";
@@ -111,7 +110,6 @@
   @include he-menubar;
   @include he-folders-pane;
   @include he-generic-filter;
-  @include he-role-editor;
 
   --background-color: #FFFFFF;
   --background-color_rgb: 256, 256, 256;
@@ -322,6 +320,9 @@
   --sidemenu-background-color: #F5F4F6;
   --sidemenu-text-color: var(--text-color);
 
+  --sidemenu-title-color: var(--sidemenu-text-color);
+  --sidemenu-title-background-color: #D8D8D8;
+
   --sidemenu-item-focused-color: var(--primary-color);
   --sidemenu-item-selected-color: var(--sidemenu-item-focused-color);
 
@@ -342,6 +343,19 @@
   --sidemenu-responsive-item-separator-color: var(--primary-disabled-color);
   --sidemenu-responsive-item-header-background-color: #E6E3E8;
   --sidemenu-responsive-item-selected-background-color: var(--primary-disabled-color);
+
+  --sidemenu-collapsible-submenu-background-color: var(--sidemenu-background-color);
+
+  --sidemenu-collapsible-controls-panel-backgroun-color: #D8D8D8;
+
+  --sidemenu-collapsible-action-button-color: var(--button-default-text-color);
+  --sidemenu-collapsible-action-button-hover-background-color: var(--button-default-hover-color);
+  --sidemenu-collapsible-action-button-active-background-color: var(--button-default-active-color);
+
+  --sidemenu-collapsible-collapse-button-color: #4F5C78;
+  --sidemenu-collapsible-collapse-button-background-color: #A7A7A7;
+  --sidemenu-collapsible-collapse-button-hover-background-color: var(--sidemenu-collapsible-controls-panel-backgroun-color);
+  --sidemenu-collapsible-collapse-button-active-background-color: #A7A7A7;
 
   /* AppMenu */
 

@@ -560,7 +560,7 @@ $he-table-header-row-height-scale: 1.5 !default;
     padding-top: $unit-size + ceil($v-layout-spacing-vertical);
 
     .c-table-top {
-      height: $unit-size;
+      min-height: $unit-size;
       margin-top: -1 * ($unit-size + ceil($v-layout-spacing-vertical));
     }
   }

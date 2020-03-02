@@ -55,7 +55,8 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
   }
 
   .#{$primary-stylename}-title {
-    color: var(--sidemenu-text-color);
+    color: var(--sidemenu-title-color);
+    background: var(--sidemenu-title-background-color);
     text-shadow: none;
   }
 
