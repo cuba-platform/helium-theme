@@ -16,5 +16,5 @@
   -->
 
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
-    <item screen="helium_ThemeSettingsScreen" insertBefore="administration" icon="GEAR"/>
+    <item screen="helium_ThemeSettingsScreen" insertAfter="settings"/>
 </menu-config>
