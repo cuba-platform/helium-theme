@@ -34,6 +34,7 @@
 @import "components/datepicker/datepicker";
 @import "components/draganddrop/draganddrop";
 @import "components/fieldgrouplayout/fieldgrouplayout";
+@import "components/fileupload/fileupload";
 @import "components/groupbox/groupbox";
 @import "components/label/label";
 @import "components/notification/notification";
@@ -102,6 +103,7 @@
   @include he-cuba-contextmenu;
   @include he-contextmenu-button;
   @include he-fieldgrouplayout;
+  @include he-fileupload;
   @include he-resizabletextarea;
   @include he-sidemenu;
   @include he-sourcecodeeditor;
@@ -548,6 +550,12 @@
   /* FoldersPane */
 
   --folders-pane-background-color: var(--panel-background-color);
+
+  /* File Upload */
+
+  --fileupload-dropzone-border-color: var(--primary-color);
+  --fileupload-dropzone-prompt-border-color: var(--border-color);
+  --fileupload-dropzone-prompt-background-color: var(--panel-background-color);
 
   /************
    * Variants *
