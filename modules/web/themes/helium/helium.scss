@@ -46,6 +46,7 @@
 @import "components/radiobuttongroup/radiobuttongroup";
 @import "components/sidemenu/sidemenu";
 @import "components/sourcecodeeditor/sourcecodeeditor";
+@import "components/suggestionfield/suggestionfield";
 @import "components/splitpanel/splitpanel";
 @import "components/table/table";
 @import "components/tabsheet/tabsheet";
@@ -109,6 +110,7 @@
   @include he-resizabletextarea;
   @include he-sidemenu;
   @include he-sourcecodeeditor;
+  @include he-suggestionfield;
 
   @include he-login-window;
   @include he-main-window;
@@ -553,11 +555,15 @@
 
   --folders-pane-background-color: var(--panel-background-color);
 
-  /* File Upload */
+  /* FileUpload */
 
   --fileupload-dropzone-border-color: var(--primary-color);
   --fileupload-dropzone-prompt-border-color: var(--border-color);
   --fileupload-dropzone-prompt-background-color: var(--panel-background-color);
+
+  /* SuggestionField */
+
+  --suggestionfield-modified-background-color: var(--primary-disabled-color);
 
   /************
    * Variants *
