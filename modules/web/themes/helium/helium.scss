@@ -36,6 +36,7 @@
 @import "components/fileupload/fileupload";
 @import "components/groupbox/groupbox";
 @import "components/label/label";
+@import "components/maskedfield/maskedfield";
 @import "components/notification/notification";
 @import "components/orderedlayout/orderedlayout";
 @import "components/panel/panel";
@@ -103,6 +104,7 @@
   @include he-contextmenu-button;
   @include he-fieldgrouplayout;
   @include he-fileupload;
+  @include he-maskedfield;
   @include he-resizabletextarea;
   @include he-sidemenu;
   @include he-sourcecodeeditor;

@@ -19,7 +19,7 @@ $c-timefield-minute-width: 64px;
 $c-timefield-second-width: 84px;
 
 @mixin he-timefield($primary-stylename: c-timefield) {
-  @include he-textfield(c-timefield);
+  @include he-textfield($primary-stylename);
   @include he-timefield-width-style($primary-stylename: $primary-stylename);
 
   .#{$primary-stylename}.v-readonly {
