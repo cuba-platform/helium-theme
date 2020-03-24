@@ -23,6 +23,7 @@
 @import "app/main-window";
 @import "app/app-menu";
 @import "components/button/button";
+@import "components/capslockindicator/capslockindicator";
 @import "components/checkbox/checkbox";
 @import "components/checkboxgroup/checkboxgroup";
 @import "components/combobox/combobox";
@@ -100,6 +101,7 @@
   @include he-vaadin-contextmenu-addon;
 
   // CUBA own components
+  @include he-capslockindicator;
   @include he-tokenlist;
   @include he-cuba-contextmenu;
   @include he-contextmenu-button;
@@ -578,6 +580,11 @@
   /* SuggestionField */
 
   --suggestionfield-modified-background-color: var(--primary-disabled-color);
+
+  /* CapsLockIndicator */
+
+  --capslockindicator-icon-color-on: var(--warning-color);
+  --capslockindicator-icon-color-off: var(--text-disabled-color);
 
   /************
    * Variants *
