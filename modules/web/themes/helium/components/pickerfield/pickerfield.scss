@@ -99,11 +99,17 @@
     width: $pickerfield-size;
     min-width: $pickerfield-size;
     height: $pickerfield-size;
+    border-radius: 0;
 
     &:after,
     &:hover:after {
       height: $pickerfield-size;
     }
+  }
+
+  .#{$primary-stylename}-layout > .v-button:last-child {
+    border-top-right-radius: $v-border-radius;
+    border-bottom-right-radius: $v-border-radius;
   }
 
   .#{$primary-stylename}-layout > .v-filterselect > input,
@@ -133,7 +139,6 @@
     color: var(--text-medium-color);
     // the same color as an input
     background: var(--textfield-background-color);
-    border-radius: 0;
 
     &:hover {
       border-color: var(--border-color);
@@ -149,11 +154,6 @@
     &:focus {
       border-color: var(--border-color);
     }
-  }
-
-  .#{$primary-stylename}-layout > .v-button:last-child {
-    border-top-right-radius: $v-border-radius;
-    border-bottom-right-radius: $v-border-radius;
   }
 
   .#{$primary-stylename}.v-readonly {
