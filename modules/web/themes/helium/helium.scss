@@ -38,6 +38,7 @@
 @import "components/fileupload/fileupload";
 @import "components/groupbox/groupbox";
 @import "components/label/label";
+@import "components/link/link";
 @import "components/maskedfield/maskedfield";
 @import "components/notification/notification";
 @import "components/orderedlayout/orderedlayout";
@@ -81,6 +82,7 @@
   @include he-draganddrop;
   @include he-groupbox;
   @include he-label;
+  @include he-link;
   @include he-notification;
   @include he-orderedlayout;
   @include he-pickerfield;
@@ -571,6 +573,12 @@
 
   --capslockindicator-icon-color-on: var(--warning-color);
   --capslockindicator-icon-color-off: var(--text-disabled-color);
+
+  /* Link */
+
+  --link-color: var(--primary-color);
+  --link-hover-color: var(--primary-hover-color);
+  --link-visited-color: var(--link-color);
 
   /************
    * Variants *
