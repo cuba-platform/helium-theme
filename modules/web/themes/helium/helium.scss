@@ -45,6 +45,7 @@
 @import "components/panel/panel";
 @import "components/pickerfield/pickerfield";
 @import "components/popupbutton/popupbutton";
+@import "components/progressbar/progressbar";
 @import "components/radiobuttongroup/radiobuttongroup";
 @import "components/sidemenu/sidemenu";
 @import "components/sourcecodeeditor/sourcecodeeditor";
@@ -87,6 +88,7 @@
   @include he-orderedlayout;
   @include he-pickerfield;
   @include he-popupbutton;
+  @include he-progressbar;
   @include he-radiobuttongroup;
   @include he-splitpanel;
   @include he-table;
@@ -579,6 +581,12 @@
   --link-color: var(--primary-color);
   --link-hover-color: var(--primary-hover-color);
   --link-visited-color: var(--link-color);
+
+  /* ProgressBar */
+
+  --progressbar-border-radius: $v-border-radius;
+  --progressbar-background-color: var(--read-only-color);
+  --progressbar-indeterminate-indicator-width: 120px;
 
   /************
    * Variants *

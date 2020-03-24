@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 
-/**
- * The background color of suggestion field input that is applied while a user entering value.
- * @group suggestionfield
- */
-
 @mixin he-suggestionfield($primary-stylename: c-suggestionfield) {
   @include he-textfield($primary-stylename);
 
