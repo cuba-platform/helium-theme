@@ -48,6 +48,7 @@
 @import "components/popupview/popupview";
 @import "components/progressbar/progressbar";
 @import "components/radiobuttongroup/radiobuttongroup";
+@import "components/richtextarea/richtextarea";
 @import "components/sidemenu/sidemenu";
 @import "components/slider/slider";
 @import "components/sourcecodeeditor/sourcecodeeditor";
@@ -93,6 +94,7 @@
   @include he-popupview;
   @include he-progressbar;
   @include he-radiobuttongroup;
+  @include he-richtextarea;
   @include he-slider;
   @include he-splitpanel;
   @include he-table;
@@ -599,6 +601,15 @@
   /* PopupView */
 
   --popupview-popup-shadow: var(--box-shadow);
+
+  /* RichTextArea */
+
+  --richtextarea-toolbar-background-color: #F2F2F2;
+  --richtextarea-toolbar-text-color: var(--text-medium-color);
+  --richtextarea-toolbar-text-hover-color: var(--text-color);
+  --richtextarea-toolbar-togglebutton-down-background-color: #CECECE;
+
+  --richtextarea-textarea-background-color: var(--textfield-background-color);
 
   /************
    * Variants *
