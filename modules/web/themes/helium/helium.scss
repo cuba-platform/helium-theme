@@ -40,6 +40,7 @@
 @import "components/label/label";
 @import "components/link/link";
 @import "components/maskedfield/maskedfield";
+@import "components/nativeselect/nativeselect";
 @import "components/notification/notification";
 @import "components/orderedlayout/orderedlayout";
 @import "components/panel/panel";
@@ -87,6 +88,7 @@
   @include he-groupbox;
   @include he-label;
   @include he-link;
+  @include he-nativeselect;
   @include he-notification;
   @include he-orderedlayout;
   @include he-pickerfield;
@@ -610,6 +612,10 @@
   --richtextarea-toolbar-togglebutton-down-background-color: #CECECE;
 
   --richtextarea-textarea-background-color: var(--textfield-background-color);
+
+  /* NativeSelect */
+
+  --select-background-color: var(--background-color);
 
   /************
    * Variants *

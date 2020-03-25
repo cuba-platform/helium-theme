@@ -29,6 +29,10 @@
     background: var(--primary-color);
   }
 
+  select {
+    @include he-nativeselect-select-style();
+  }
+
   &.small {
     &.v-app,
     &.v-app-loading {
