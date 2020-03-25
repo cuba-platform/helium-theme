@@ -18,27 +18,6 @@
   .#{$primary-stylename} {
     @include he-link-style();
   }
-  //$link-padding: 2px;
-
-  //.#{$primary-stylename} > a {
-  //padding-left: $link-padding;
-  //padding-right: $link-padding;
-  //border: 1px dashed transparent;
-  //border-radius: $v-border-radius;
-  //box-sizing: border-box;
-  //display: inline-block;
-
-  //@include user-select(text);
-  //}
-
-  //.#{$primary-stylename} > a:focus {
-  //outline: none;
-  //border: 1px dashed $v-link-font-color;
-  //}
-
-  //.v-disabled.#{$primary-stylename} > a:focus {
-  //border: 1px dashed transparent;
-  //}
 
   /* Global size */
 

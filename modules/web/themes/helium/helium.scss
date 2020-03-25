@@ -44,6 +44,7 @@
 @import "components/panel/panel";
 @import "components/pickerfield/pickerfield";
 @import "components/popupbutton/popupbutton";
+@import "components/popupview/popupview";
 @import "components/progressbar/progressbar";
 @import "components/radiobuttongroup/radiobuttongroup";
 @import "components/sidemenu/sidemenu";
@@ -88,6 +89,7 @@
   @include he-orderedlayout;
   @include he-pickerfield;
   @include he-popupbutton;
+  @include he-popupview;
   @include he-progressbar;
   @include he-radiobuttongroup;
   @include he-slider;
@@ -607,6 +609,10 @@
   /* Slider */
 
   --slider-handle-border-color: var(--button-default-focused-border-color);
+
+  /* PopupView */
+
+  --popupview-popup-shadow: var(--box-shadow);
 
   /************
    * Variants *
