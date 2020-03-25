@@ -53,8 +53,7 @@
 
 @mixin he-progressbar-style($primary-stylename: v-progressbar) {
   .#{$primary-stylename}-wrapper {
-    background: var(--progressbar-background-color);
-    border-radius: var(--progressbar-border-radius);
+    @include he-progressbar-track-style();
   }
 
   .#{$primary-stylename}-indicator {
@@ -77,6 +76,11 @@
   }
 
   @include he-progressbar-size-style($primary-stylename: $primary-stylename);
+}
+
+@mixin he-progressbar-track-style() {
+  background: var(--progressbar-background-color);
+  border-radius: var(--progressbar-border-radius);
 }
 
 @mixin he-progressbar-indicator-style() {
