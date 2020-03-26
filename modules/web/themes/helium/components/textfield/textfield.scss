@@ -125,6 +125,7 @@
 @mixin he-input-error-style() {
   border-color: var(--error-color) !important;
   background: var(--textfield-background-color);
+  color: var(--text-medium-color);
 
   &:focus {
     @include he-focus-style(--error-color);

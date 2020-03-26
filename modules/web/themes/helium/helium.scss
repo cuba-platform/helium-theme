@@ -27,6 +27,7 @@
 @import "components/capslockindicator/capslockindicator";
 @import "components/checkbox/checkbox";
 @import "components/checkboxgroup/checkboxgroup";
+@import "components/colorpicker/colorpicker";
 @import "components/combobox/combobox";
 @import "components/contextmenu/contextmenu";
 @import "components/contextmenu/contextmenu-button";
@@ -79,6 +80,7 @@
   @include he-button;
   @include he-checkbox;
   @include he-checkboxgroup;
+  @include he-colorpicker;
   @include he-combobox;
   @include he-contextmenu;
   @include he-datagrid;
@@ -616,6 +618,11 @@
   /* NativeSelect */
 
   --select-background-color: var(--background-color);
+
+  /* ColorPicker */
+
+  --colorpicker-buttons-panel-background-color: var(--background-color);
+  --colorpicker-buttons-panel-border-color: var(--read-only-border-color);
 
   /************
    * Variants *
