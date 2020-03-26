@@ -24,6 +24,20 @@
       @include he-input-error-style();
     }
   }
+
+  /* Own size */
+
+  .#{$primary-stylename}.small {
+    @include he-select-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+  }
+
+  .#{$primary-stylename}.middle {
+    @include he-select-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
+  }
+
+  .#{$primary-stylename}.large {
+    @include he-select-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+  }
 }
 
 @mixin he-nativeselect-select-style() {
