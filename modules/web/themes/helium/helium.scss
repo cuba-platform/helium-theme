@@ -24,6 +24,7 @@
 @import "app/app-menu";
 @import "app/role-editor";
 @import "components/button/button";
+@import "components/calendar/calendar";
 @import "components/capslockindicator/capslockindicator";
 @import "components/checkbox/checkbox";
 @import "components/checkboxgroup/checkboxgroup";
@@ -79,6 +80,7 @@
 
   @include he-panel;
   @include he-button;
+  @include he-calendar;
   @include he-checkbox;
   @include he-checkboxgroup;
   @include he-colorpicker;
@@ -625,6 +627,38 @@
 
   --colorpicker-buttons-panel-background-color: var(--background-color);
   --colorpicker-buttons-panel-border-color: var(--read-only-border-color);
+
+  /* Calendar */
+
+  --calendar-header-day-color: var(--text-color);
+
+  --calendar-month-day-number-color: var(--text-color);
+  --calendar-month-day-number-border-color: var(--read-only-border-color);
+  --calendar-month-day-number-hover-color: var(--primary-color);
+
+  --calendar-month-day-bottom-spacer-hover-color: var(--primary-color);
+
+  --calendar-month-day-today-background-color: var(--primary-disabled-color);
+  --calendar-month-day-today-day-number-color: var(--primary-color);
+  --calendar-month-day-today-day-number-border-color: var(--primary-color);
+
+  --calendar-month-day-selected-background-color: var(--primary-disabled-color);
+  --calendar-month-day-dragemphasis-background-color: var(--secondary-color);
+
+
+  --calendar-week-datecell-border-color: var(--read-only-border-color);
+  --calendar-week-range-selection-color: var(--primary-disabled-color);
+  --calendar-week-current-time-color: var(--primary-color);
+  --calendar-week-longevents-border-color: var(--primary-disabled-color);
+
+
+  --calendar-event-color: var(--primary-text-color);
+  --calendar-event-background-color: var(--primary-color);
+
+  --calendar-month-event-marker-color: var(--calendar-event-background-color);
+  --calendar-month-event-time-color: var(--text-disabled-color);
+
+  --calendar-week-event-content-border-color: var(--border-color);
 
   /************
    * Variants *
