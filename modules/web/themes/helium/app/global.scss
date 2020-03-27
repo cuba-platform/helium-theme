@@ -42,7 +42,9 @@
 
     @include he-caption-size-style($unit-size: $v-unit-size--small, $font-size: $v-caption-font-size--small);
 
-    @include he-select-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+    select {
+      @include he-select-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+    }
   }
 
   &.large {
@@ -53,25 +55,33 @@
 
     @include he-caption-size-style($unit-size: $v-unit-size--large, $font-size: $v-caption-font-size--large);
 
-    @include he-select-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+    select {
+      @include he-select-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+    }
   }
 
   .small {
     @include he-caption-size-style($unit-size: $v-unit-size--small, $font-size: $v-caption-font-size--small);
 
-    @include he-select-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+    select {
+      @include he-select-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+    }
   }
 
   .middle {
     @include he-caption-size-style($unit-size: $v-unit-size, $font-size: $v-caption-font-size);
 
-    @include he-select-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
+    select {
+      @include he-select-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
+    }
   }
 
   .large {
     @include he-caption-size-style($unit-size: $v-unit-size--large, $font-size: $v-caption-font-size--large);
 
-    @include he-select-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+    select {
+      @include he-select-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+    }
   }
 }
 
@@ -89,8 +99,6 @@
 
 @mixin he-select-size-style($unit-size  : $v-unit-size,
                             $font-size  : null) {
-  select {
-    font-size: $font-size;
-    padding: round($unit-size / 6);
-  }
+  font-size: $font-size;
+  padding: round($unit-size / 6);
 }
