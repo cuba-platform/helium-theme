@@ -64,6 +64,7 @@
 @import "components/tokenlist/tokenlist";
 @import "components/treedatagrid/treedatagrid";
 @import "components/tree/tree";
+@import "components/twincolumn/twincolumn";
 @import "components/window/window";
 @import "shared/loading-indicator";
 @import "shared/reconnect-dialog";
@@ -107,6 +108,7 @@
   @include he-timefield;
   @include he-treedatagrid;
   @include he-tree;
+  @include he-twincolumn;
   @include he-window;
 
   @include he-tooltip;
