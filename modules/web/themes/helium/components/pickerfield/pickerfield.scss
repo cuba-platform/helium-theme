@@ -15,19 +15,19 @@
  */
 
 @mixin he-pickerfield($primary-stylename: c-pickerfield) {
-  @include he-pickerfield-style();
+  @include he-pickerfield-style($primary-stylename: $primary-stylename);
 
   /* Global size */
 
   &.small {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--small,
+                                       $unit-size         : $v-unit-size--small,
                                        $font-size         : $v-font-size--small);
   }
 
   &.large {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--large,
+                                       $unit-size         : $v-unit-size--large,
                                        $font-size         : $v-font-size--large);
   }
 
@@ -35,19 +35,19 @@
 
   .small {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--small,
+                                       $unit-size         : $v-unit-size--small,
                                        $font-size         : $v-font-size--small);
   }
 
   .middle {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size,
+                                       $unit-size         : $v-unit-size,
                                        $font-size         : $v-font-size);
   }
 
   .large {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--large,
+                                       $unit-size         : $v-unit-size--large,
                                        $font-size         : $v-font-size--large);
   }
 
@@ -68,7 +68,7 @@
     }
 
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--small,
+                                       $unit-size         : $v-unit-size--small,
                                        $font-size         : $v-font-size--small);
   }
 
@@ -87,7 +87,7 @@
     }
 
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size,
+                                       $unit-size         : $v-unit-size,
                                        $font-size         : $v-font-size);
   }
 
@@ -106,25 +106,25 @@
     }
 
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
-                                       $pickerfield-size  : $v-unit-size--large,
+                                       $unit-size         : $v-unit-size--large,
                                        $font-size         : $v-font-size--large);
   }
 }
 
 @mixin he-pickerfield-size-style($primary-stylename : c-pickerfield,
-                                 $pickerfield-size  : $v-unit-size,
+                                 $unit-size         : $v-unit-size,
                                  $font-size         : $v-font-size) {
   .v-button.#{$primary-stylename}-button {
     padding: 0;
     font-size: $font-size;
-    width: $pickerfield-size;
-    min-width: $pickerfield-size;
-    height: $pickerfield-size;
+    width: $unit-size;
+    min-width: $unit-size;
+    height: $unit-size;
     border-radius: 0;
 
     &:after,
     &:hover:after {
-      height: $pickerfield-size;
+      height: $unit-size;
     }
   }
 
@@ -134,25 +134,24 @@
   }
 
   .#{$primary-stylename}-layout > .v-filterselect:not(.c-searchselect) > input,
-  .#{$primary-stylename}-layout > .safari-input-wrap > .v-filterselect > input {
-    padding-right: $pickerfield-size;
+  .#{$primary-stylename}-layout > .safari-input-wrap > .v-filterselect:not(.c-searchselect) > input {
+    padding-right: $unit-size;
 
     &.v-filterselect-input-readonly {
-      padding-right: $pickerfield-size;
+      padding-right: $unit-size;
     }
   }
 }
 
 @mixin he-pickerfield-style($primary-stylename  : c-pickerfield,
-                            $pickerfield-size   : $v-unit-size,
+                            $unit-size          : $v-unit-size,
                             $font-size          : $v-font-size) {
-  @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-          $pickerfield-size: $pickerfield-size,
-          $font-size: $font-size);
+  @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                     $unit-size         : $unit-size,
+                                     $font-size         : $font-size);
 
   .v-textfield.#{$primary-stylename}-text {
     @include he-input-style();
-    background: var(--textfield-background-color);
   }
 
   .v-button.#{$primary-stylename}-button {
