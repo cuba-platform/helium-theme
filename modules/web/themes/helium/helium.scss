@@ -23,6 +23,7 @@
 @import "app/main-window";
 @import "app/app-menu";
 @import "app/role-editor";
+@import "components/accordion/accordion";
 @import "components/button/button";
 @import "components/calendar/calendar";
 @import "components/capslockindicator/capslockindicator";
@@ -79,6 +80,7 @@
   @include he-common;
 
   @include he-panel;
+  @include he-accordion;
   @include he-button;
   @include he-calendar;
   @include he-checkbox;
@@ -659,6 +661,22 @@
   --calendar-month-event-time-color: var(--text-disabled-color);
 
   --calendar-week-event-content-border-color: var(--border-color);
+
+  /* Accordion */
+
+  --accordion-item-content-background-color: var(--panel-background-color);
+
+  --accordion-item-caption-text-color: var(--text-medium-color);
+  --accordion-item-caption-background-color: var(--button-default-color);
+  --accordion-item-caption-border-color: var(--button-default-focused-border-color);
+
+  --accordion-item-caption-hover-text-color: var(--button-default-text-color);
+  --accordion-item-caption-hover-background-color: var(--button-default-hover-color);
+
+  --accordion-item-caption-active-text-color: var(--button-default-text-color);
+  --accordion-item-caption-active-background-color: var(--button-default-active-color);
+
+  --accordion-item-caption-disabled-text-color: var(--button-default-disabled-text-color);
 
   /************
    * Variants *
