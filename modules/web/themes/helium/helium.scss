@@ -57,6 +57,7 @@
 @import "components/slider/slider";
 @import "components/sourcecodeeditor/sourcecodeeditor";
 @import "components/suggestionfield/suggestionfield";
+@import "components/searchselect/searchselect";
 @import "components/splitpanel/splitpanel";
 @import "components/table/table";
 @import "components/tabsheet/tabsheet";
@@ -133,6 +134,7 @@
   @include he-sidemenu;
   @include he-sourcecodeeditor;
   @include he-suggestionfield;
+  @include he-searchselect;
 
   @include he-login-window;
   @include he-main-window;
@@ -586,6 +588,10 @@
   /* SuggestionField */
 
   --suggestionfield-modified-background-color: var(--primary-disabled-color);
+
+  /* SearchField */
+
+  --searchselect-edit-background-color: var(--primary-disabled-color);
 
   /* CapsLockIndicator */
 

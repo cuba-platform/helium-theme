@@ -84,10 +84,14 @@
   @if type-of($padding) == number or type-of($padding) == list {
     padding: $padding;
   } @else {
-    $padding-height: ceil($unit-size/6);
-    $padding-width: ceil($unit-size/3);
-    padding: $padding-height $padding-width;
+    padding: he-input-padding($unit-size);
   }
+}
+
+@function he-input-padding($unit-size: $v-unit-size) {
+  $padding-height: ceil($unit-size / 6);
+  $padding-width: ceil($unit-size / 3);
+  @return $padding-height $padding-width;
 }
 
 @mixin he-input-style() {

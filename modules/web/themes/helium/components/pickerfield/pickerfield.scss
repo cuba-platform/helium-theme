@@ -20,73 +20,94 @@
   /* Global size */
 
   &.small {
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--small,
-                                       $font-size: $v-font-size--small);
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--small,
+                                       $font-size         : $v-font-size--small);
   }
 
   &.large {
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--large,
-                                       $font-size: $v-font-size--large);
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--large,
+                                       $font-size         : $v-font-size--large);
   }
 
   /* Size within a container */
 
   .small {
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--small,
-                                       $font-size: $v-font-size--small);
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--small,
+                                       $font-size         : $v-font-size--small);
   }
 
   .middle {
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size,
-                                       $font-size: $v-font-size);
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size,
+                                       $font-size         : $v-font-size);
   }
 
   .large {
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--large,
-                                       $font-size: $v-font-size--large);
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--large,
+                                       $font-size         : $v-font-size--large);
   }
 
   /* Own size */
 
   .#{$primary-stylename}.small {
-    .v-textfield.#{$primary-stylename}-text {
+    .v-textfield.#{$primary-stylename}-text,
+    .c-suggestionfield.#{$primary-stylename}-suggestion {
       @include he-input-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
     }
+
     .v-filterselect.#{$primary-stylename}-combobox {
       @include he-combobox-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
     }
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--small,
-                                       $font-size: $v-font-size--small);
+
+    .c-searchselect.#{$primary-stylename}-searchselect {
+      @include he-searchselect-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
+    }
+
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--small,
+                                       $font-size         : $v-font-size--small);
   }
 
   .#{$primary-stylename}.middle {
-    .v-textfield.#{$primary-stylename}-text {
+    .v-textfield.#{$primary-stylename}-text,
+    .c-suggestionfield.#{$primary-stylename}-suggestion {
       @include he-input-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
     }
+
     .v-filterselect.#{$primary-stylename}-combobox {
       @include he-combobox-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
     }
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size,
-                                       $font-size: $v-font-size);
+
+    .c-searchselect.#{$primary-stylename}-searchselect {
+      @include he-searchselect-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
+    }
+
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size,
+                                       $font-size         : $v-font-size);
   }
 
   .#{$primary-stylename}.large {
-    .v-textfield.#{$primary-stylename}-text {
+    .v-textfield.#{$primary-stylename}-text,
+    .c-suggestionfield.#{$primary-stylename}-suggestion {
       @include he-input-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
     }
+
     .v-filterselect.#{$primary-stylename}-combobox {
       @include he-combobox-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
     }
-    @include he-pickerfield-size-style($primary-stylename: $primary-stylename,
-                                       $pickerfield-size: $v-unit-size--large,
-                                       $font-size: $v-font-size--large);
+
+    .c-searchselect.#{$primary-stylename}-searchselect {
+      @include he-searchselect-size-style($unit-size: $v-unit-size--large, $font-size: $v-font-size--large);
+    }
+
+    @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
+                                       $pickerfield-size  : $v-unit-size--large,
+                                       $font-size         : $v-font-size--large);
   }
 }
 
@@ -112,7 +133,7 @@
     border-bottom-right-radius: $v-border-radius;
   }
 
-  .#{$primary-stylename}-layout > .v-filterselect > input,
+  .#{$primary-stylename}-layout > .v-filterselect:not(.c-searchselect) > input,
   .#{$primary-stylename}-layout > .safari-input-wrap > .v-filterselect > input {
     padding-right: $pickerfield-size;
 
@@ -135,30 +156,16 @@
   }
 
   .v-button.#{$primary-stylename}-button {
-    border-color: var(--border-color);
-    color: var(--text-medium-color);
-    // the same color as an input
-    background: var(--textfield-background-color);
-
-    &:hover {
-      border-color: var(--border-color);
-      background: var(--textfield-background-color);
-      color: var(--text-color);
-    }
-
-    &:active {
-      border-color: var(--border-color);
-      background: var(--button-default-color);
-    }
-
-    &:focus {
-      border-color: var(--border-color);
-    }
+    @include he-pickerfield-button-style();
   }
 
   .#{$primary-stylename}.v-readonly {
     .v-textfield.v-textfield-readonly {
       @include he-input-readonly-style();
+    }
+
+    .v-button.#{$primary-stylename}-button {
+      @include he-pickerfield-button-style();
     }
   }
 
@@ -178,24 +185,50 @@
 
   .#{$primary-stylename}.v-disabled {
     .v-button.#{$primary-stylename}-button {
-      border-color: var(--read-only-border-color);
-      color: var(--text-disabled-color);
-      background: var(--read-only-color);
-
-      &:hover {
-        border-color: var(--read-only-border-color);
-        color: var(--text-disabled-color);
-      }
-
-      &:active {
-        border-color: var(--read-only-border-color);
-        color: var(--text-disabled-color);
-        background: var(--read-only-color);
-      }
-
-      &:focus {
-        border-color: var(--read-only-border-color);
-      }
+      @include he-pickerfield-button-disabled-style();
     }
+  }
+}
+
+@mixin he-pickerfield-button-style() {
+  border-color: var(--border-color);
+  color: var(--text-medium-color);
+  // the same color as an input
+  background: var(--textfield-background-color);
+
+  &:hover {
+    border-color: var(--border-color);
+    background: var(--textfield-background-color);
+    color: var(--text-color);
+  }
+
+  &:active {
+    border-color: var(--border-color);
+    background: var(--button-default-color);
+  }
+
+  &:focus {
+    border-color: var(--border-color);
+  }
+}
+
+@mixin he-pickerfield-button-disabled-style() {
+  border-color: var(--read-only-border-color);
+  color: var(--text-disabled-color);
+  background: var(--read-only-color);
+
+  &:hover {
+    border-color: var(--read-only-border-color);
+    color: var(--text-disabled-color);
+  }
+
+  &:active {
+    border-color: var(--read-only-border-color);
+    color: var(--text-disabled-color);
+    background: var(--read-only-color);
+  }
+
+  &:focus {
+    border-color: var(--read-only-border-color);
   }
 }
