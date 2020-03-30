@@ -108,7 +108,9 @@
                                     $font-size  : null) {
   box-sizing: border-box;
   @include he-input-size-style($unit-size: $unit-size, $padding: $padding, $font-size: $font-size);
-  padding-right: round($unit-size * 1) + 1;
+  @if ($padding == null) {
+    padding-right: round($unit-size * 1) + 1;
+  }
   width: 100% !important; // Need to override calculated inline style which is sometimes added
   height: 100%;
   border-radius: inherit;
