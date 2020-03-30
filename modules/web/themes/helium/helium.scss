@@ -42,6 +42,7 @@
 @import "components/groupbox/groupbox";
 @import "components/label/label";
 @import "components/link/link";
+@import "components/listeditor/listeditor";
 @import "components/maskedfield/maskedfield";
 @import "components/nativeselect/nativeselect";
 @import "components/notification/notification";
@@ -129,6 +130,7 @@
   @include he-contextmenu-button;
   @include he-fieldgrouplayout;
   @include he-fileupload;
+  @include he-listeditor;
   @include he-maskedfield;
   @include he-resizabletextarea;
   @include he-sidemenu;
