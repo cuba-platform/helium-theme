@@ -41,7 +41,7 @@ $he-maintabsheet-light: true !default;
 
   .c-welcome-text,
   .v-label.c-welcome-text {
-    color: var(--text-color);
+    color: var(--text-secondary-color);
   }
 
   @include he-maintabsheet-size-style($tabsheet-stylename: $tabsheet-stylename);
@@ -84,7 +84,7 @@ $he-maintabsheet-light: true !default;
     }
 
     &.v-disabled {
-      color: var(--text-disabled-color) !important;
+      color: var(--text-dim-color) !important;
     }
   }
 

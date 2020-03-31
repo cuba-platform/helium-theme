@@ -87,21 +87,21 @@
   }
 
   .#{$primary-stylename}-filename.#{$primary-stylename}-empty {
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
 
     &:hover {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
     }
 
     &.v-disabled,
     &.v-disabled:focus,
     &.v-disabled:active {
-      color: var(--text-disabled-color);
+      color: var(--text-dim-color);
       @include opacity(1);
     }
 
     &:focus {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
     }
   }
 

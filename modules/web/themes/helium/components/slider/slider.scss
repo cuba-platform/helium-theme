@@ -106,7 +106,7 @@
 
     &.v-readonly {
       .#{$primary-stylename}-handle:after {
-        @include he-focus-style(--read-only-focused-border-color);
+        @include he-focus-style(--border-dim-focused-color);
       }
     }
   }

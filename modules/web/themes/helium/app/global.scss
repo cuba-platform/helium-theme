@@ -17,7 +17,7 @@
 @mixin he-common {
   &.v-app,
   &.v-app-loading {
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
     background: var(--app-background-color);
   }
 

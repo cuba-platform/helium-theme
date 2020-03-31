@@ -182,7 +182,7 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
       padding-top: $groupbox-caption-height / 2;
 
       div {
-        border-top: 2px solid var(--text-color);
+        border-top: 2px solid var(--text-secondary-color);
       }
     }
   }

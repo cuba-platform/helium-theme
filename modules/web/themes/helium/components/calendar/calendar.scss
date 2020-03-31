@@ -16,7 +16,7 @@
 
 @mixin he-calendar($primary-stylename: v-calendar) {
   .#{$primary-stylename} {
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
   }
 
   .#{$primary-stylename}-header-day {
