@@ -32,6 +32,7 @@
 @import "components/combobox/combobox";
 @import "components/contextmenu/contextmenu";
 @import "components/contextmenu/contextmenu-button";
+@import "components/currencyfield/currencyfield";
 @import "components/datagrid/datagrid";
 @import "components/datefield/datefield";
 @import "components/datepicker/datepicker";
@@ -124,6 +125,7 @@
 
   // CUBA own components
   @include he-capslockindicator;
+  @include he-currencyfield;
   @include he-tokenlist;
   @include he-cuba-contextmenu;
   @include he-contextmenu-button;
@@ -699,6 +701,17 @@
   --accordion-item-caption-active-background-color: var(--button-default-active-color);
 
   --accordion-item-caption-disabled-text-color: var(--button-default-disabled-text-color);
+
+  /* CurrencyField */
+
+  --currencyfield-currency-background-color: var(--button-default-color);
+  --currencyfield-currency-text-color: var(--button-default-text-color);
+
+  --currencyfield-currency-read-only-background-color: var(--read-only-color);
+  --currencyfield-currency-read-only-text-color: var(--currencyfield-currency-text-color);
+
+  --currencyfield-currency-disabled-background-color: var(--read-only-color);
+  --currencyfield-currency-disabled-text-color: var(--text-disabled-color);
 
   /************
    * Variants *
