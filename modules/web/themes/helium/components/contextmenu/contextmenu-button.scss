@@ -16,7 +16,7 @@
 
 @mixin he-contextmenu-button($primary-stylename: c-cm-button) {
   .#{$primary-stylename} {
-    @include he-button-borderless-style($main-color: --text-medium-color);
+    @include he-button-borderless-style($main-color: --text-main-color);
     @include he-contextmenu-button-size-style();
     border: 0;
 
@@ -33,7 +33,7 @@
   .#{$primary-stylename}:hover,
   .#{$primary-stylename}-selected {
     &.v-disabled {
-      color: var(--text-disabled-color);
+      color: var(--text-dim-color);
       background: transparent;
     }
   }

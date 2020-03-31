@@ -159,7 +159,7 @@
   [class$="button"] {
     @include he-combobox-button-size-style($unit-size: $unit-size, $font-size: $font-size);
 
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
     border-left: 0;
 
     &:before {
@@ -167,7 +167,7 @@
     }
 
     &:hover:before {
-      color: var(--text-color);
+      color: var(--text-secondary-color);
     }
 
     &:after {
@@ -191,7 +191,7 @@
     }
 
     [class$="button"] {
-      color: var(--text-disabled-color);
+      color: var(--text-dim-color);
     }
   }
 }
@@ -202,7 +202,7 @@
   }
 
   [class$="button"] {
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
   }
 }
 

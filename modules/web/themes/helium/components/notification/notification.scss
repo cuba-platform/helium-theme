@@ -111,8 +111,8 @@
 
 @mixin he-notification-color-style($primary-stylename       : v-Notification,
                                    $background-color        : --background-color,
-                                   $caption-text-color      : --text-color,
-                                   $description-text-color  : --text-medium-color) {
+                                   $caption-text-color      : --text-secondary-color,
+                                   $description-text-color  : --text-main-color) {
   background: var($background-color);
 
   .#{$primary-stylename}-caption {

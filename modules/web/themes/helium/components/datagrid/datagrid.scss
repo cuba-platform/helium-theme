@@ -79,7 +79,7 @@
 
 @mixin he-grid-style($primary-stylename: v-grid) {
   background-color: var(--grid-background-color);
-  color: var(--text-medium-color);
+  color: var(--text-main-color);
 
   // Rows
 
@@ -94,7 +94,7 @@
   // Header
 
   .#{$primary-stylename}-header {
-    color: var(--text-color);
+    color: var(--text-secondary-color);
   }
 
   .#{$primary-stylename}-header .#{$primary-stylename}-cell,
@@ -224,7 +224,7 @@
 
     // TODO: gg, style other components
     .v-button.c-pickerfield-button {
-      border-left: he-border($color: --read-only-border-color);
+      border-left: he-border($color: --border-dim-color);
     }
   }
 
@@ -244,7 +244,7 @@
 
   .#{$primary-stylename}-cell .boolean-value {
     &:before {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
       font-size: $v-font-size;
     }
   }

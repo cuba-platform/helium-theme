@@ -50,9 +50,9 @@
 
   .#{$primary-stylename}-borderless-colored {
     @include he-button-borderless-style($main-color: --primary-color,
-                                        $hover-color: --primary-hover-color,
-                                        $active-color: --primary-active-color,
-                                        $disabled-color: --primary-disabled-color);
+                                        $hover-color: --primary-saturated-color-1,
+                                        $active-color: --primary-saturated-color-2,
+                                        $disabled-color: --primary-dim-color);
   }
 
   .#{$primary-stylename}-quiet {
@@ -162,7 +162,7 @@
 
 @mixin he-button-primary-style() {
   @include he-button-color-style($main-color            : --primary-color,
-                                 $text-color            : --primary-text-color,
+                                 $text-color            : --primary-contrast-text-color,
                                  $hover-color           : --button-primary-hover-color,
                                  $active-color          : --button-primary-active-color,
                                  $disabled-color        : --button-primary-disabled-color,
@@ -172,7 +172,7 @@
 
 @mixin he-button-friendly-style() {
   @include he-button-color-style($main-color            : --success-color,
-                                 $text-color            : --success-text-color,
+                                 $text-color            : --success-contrast-text-color,
                                  $hover-color           : --button-success-hover-color,
                                  $active-color          : --button-success-active-color,
                                  $disabled-color        : --button-success-disabled-color,
@@ -182,7 +182,7 @@
 
 @mixin he-button-danger-style() {
   @include he-button-color-style($main-color            : --error-color,
-                                 $text-color            : --error-text-color,
+                                 $text-color            : --error-contrast-text-color,
                                  $hover-color           : --button-error-hover-color,
                                  $active-color          : --button-error-active-color,
                                  $disabled-color        : --button-error-disabled-color,
@@ -234,10 +234,10 @@
   }
 }
 
-@mixin he-button-borderless-style($main-color     : --text-color,
-                                  $hover-color    : --text-color,
-                                  $active-color   : --text-color,
-                                  $disabled-color : --text-disabled-color) {
+@mixin he-button-borderless-style($main-color     : --text-main-color,
+                                  $hover-color    : --text-secondary-color,
+                                  $active-color   : --text-secondary-color,
+                                  $disabled-color : --text-dim-color) {
   color: var($main-color);
   border-color: transparent;
   background: transparent;
@@ -276,7 +276,7 @@
   &:hover:not(.v-disabled) {
     border-color: transparent;
     background: transparent;
-    color: var(--primary-hover-color);
+    color: var(--primary-saturated-color-1);
   }
 
   &:focus:not(.v-disabled) {
@@ -284,15 +284,15 @@
   }
 
   &:active:not(.v-disabled) {
-    border-color: var(--primary-active-color);
+    border-color: var(--primary-saturated-color-2);
     background: transparent;
-    color: var(--primary-active-color);
+    color: var(--primary-saturated-color-2);
   }
 
   &.v-disabled {
     border-color: transparent;
     background: transparent;
-    color: var(--primary-disabled-color);
+    color: var(--primary-dim-color);
   }
 }
 

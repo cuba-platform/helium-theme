@@ -45,7 +45,7 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
 
   .c-welcome-text,
   .v-label.c-welcome-text {
-    color: var(--text-color);
+    color: var(--text-secondary-color);
   }
 
   @include he-maintabsheet-size-style($tabsheet-stylename: $tabsheet-stylename);
@@ -96,7 +96,7 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
     }
 
     &.v-disabled {
-      color: var(--text-disabled-color) !important;
+      color: var(--text-dim-color) !important;
     }
   }
 

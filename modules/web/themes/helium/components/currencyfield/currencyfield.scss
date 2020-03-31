@@ -95,7 +95,7 @@
     .#{$primary-stylename}-currency {
       background: var(--currencyfield-currency-read-only-background-color);
       color: var(--currencyfield-currency-read-only-text-color);
-      border: he-border($color: --read-only-border-color);
+      border: he-border($color: --border-dim-color);
     }
   }
 
@@ -107,7 +107,7 @@
     .#{$primary-stylename}-currency {
       background: var(--currencyfield-currency-disabled-background-color);
       color: var(--currencyfield-currency-disabled-text-color);
-      border: he-border($color: --read-only-border-color);
+      border: he-border($color: --border-dim-color);
     }
   }
 }

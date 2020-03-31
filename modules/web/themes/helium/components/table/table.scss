@@ -33,10 +33,10 @@ $he-table-header-row-height-scale: 1.5 !default;
     // TODO: gg, style
     @include he-box-shadow(--table-prefs-editor-shadow);
 
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
 
     .c-table-prefs-title {
-      border-bottom-color: var(--read-only-border-color);
+      border-bottom-color: var(--border-dim-color);
     }
   }
 
@@ -179,7 +179,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   $table-outer-border: he-table-border(--table-outer-border-color);
   $table-inner-border: he-table-border(--table-inner-border-color);
 
-  color: var(--text-medium-color);
+  color: var(--text-main-color);
   background: var(--table-background-color);
 
   .#{$primary-stylename}-header table,
@@ -209,7 +209,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   .#{$primary-stylename}-header-drag {
     border: $table-outer-border;
     background: var(--table-background-color);
-    color: var(--text-color);
+    color: var(--text-secondary-color);
   }
 
   .#{$primary-stylename}-row {
@@ -320,7 +320,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
   .#{$primary-stylename}-arow-row {
     border-right: none;
-    color: var(--text-color);
+    color: var(--text-secondary-color);
 
     td:last-child {
       border-right: $table-inner-border;
@@ -344,7 +344,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   .#{$primary-stylename}-cell-content.boolean-cell-true .#{$primary-stylename}-cell-wrapper,
   .#{$primary-stylename}-cell-content.boolean-cell-false .#{$primary-stylename}-cell-wrapper {
     &:before {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
     }
   }
 
@@ -465,13 +465,13 @@ $he-table-header-row-height-scale: 1.5 !default;
 @mixin he-group-table-style($primary-stylename : v-table) {
   .c-grouptable-group-cell-expander {
     &:before {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
     }
   }
 
   .v-expanded .c-grouptable-group-cell-expander {
     &:before {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
     }
   }
 
@@ -568,7 +568,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
 @mixin he-table-control-button-style() {
   @include he-button-default-style();
-  @include he-button-borderless-style($active-color: --primary-active-color);
+  @include he-button-borderless-style($active-color: --primary-saturated-color-2);
 
   $row-height: round($v-table-row-height * $he-table-header-row-height-scale);
   @include he-control-button-size-style($row-height);

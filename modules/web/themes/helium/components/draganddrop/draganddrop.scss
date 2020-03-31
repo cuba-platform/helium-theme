@@ -21,7 +21,7 @@
 
     background-color: var(--app-background-color);
     border: he-border();
-    color: var(--text-color);
+    color: var(--text-secondary-color);
   }
 
   &.small .#{$primary-stylename} {

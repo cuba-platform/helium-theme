@@ -99,7 +99,7 @@
     @include he-input-readonly-style();
 
     .ace_content {
-      background: var(--read-only-color);
+      background: var(--dim-color);
     }
 
     .ace_text-input,
@@ -108,7 +108,7 @@
     }
 
     &.#{$primary-stylename}-focus {
-      @include he-focus-style(--read-only-focused-border-color);
+      @include he-focus-style(--border-dim-focused-color);
     }
   }
 
@@ -116,7 +116,7 @@
     @include he-input-disabled-style();
 
     .ace_content {
-      background: var(--read-only-color);
+      background: var(--dim-color);
     }
 
     .ace_text-input,

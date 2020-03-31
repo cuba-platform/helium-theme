@@ -131,14 +131,14 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 
   .#{$primary-stylename}-tabitemcell {
     .v-caption {
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
 
       &:hover {
         color: var(--tabsheet-tabitemcell-caption-hover-color);
       }
 
       &.v-disabled {
-        color: var(--text-disabled-color) !important;
+        color: var(--text-dim-color) !important;
       }
     }
 
@@ -308,7 +308,7 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 
     .#{$primary-stylename}-tabitem-selected .v-caption {
       background: var(--tabsheet-framed-tabitemcell-selected-background-color);
-      color: var(--text-medium-color);
+      color: var(--text-main-color);
       font-weight: bold;
       border-bottom: he-border($color: --tabsheet-framed-tabitemcell-selected-background-color);
       padding-bottom: 0;

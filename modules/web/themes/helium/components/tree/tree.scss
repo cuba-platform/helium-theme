@@ -62,7 +62,7 @@
 
 @mixin he-tree-style($primary-stylename: v-tree8) {
   .#{$primary-stylename} {
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
   }
 
   .#{$primary-stylename}-row-selected {

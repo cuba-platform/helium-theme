@@ -45,7 +45,7 @@
   .#{$primary-stylename} {
     @include he-box-shadow(--window-shadow);
 
-    color: var(--text-medium-color);
+    color: var(--text-main-color);
     background-color: var(--window-background-color);
   }
 
@@ -54,7 +54,7 @@
     background-color: var(--window-header-background-color);
 
     .#{$primary-stylename}-header {
-      color: var(--text-color);
+      color: var(--text-secondary-color);
     }
   }
 
