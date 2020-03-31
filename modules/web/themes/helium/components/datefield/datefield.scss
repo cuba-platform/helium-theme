@@ -200,6 +200,12 @@ $he-datefield-calendar-button-padding: 2px !default;
       width: round($c-default-datefield-width * $scaling-factor);
     }
   }
+
+  &.v-has-width {
+    .#{$primary-stylename} {
+      width: 100%;
+    }
+  }
 }
 
 @mixin he-datefield-calendarpanel-style($primary-stylename: v-datefield-calendarpanel) {
