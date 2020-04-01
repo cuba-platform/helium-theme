@@ -16,7 +16,5 @@
   -->
 
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
-    <item id="openThemeSettings"
-          class="com.haulmont.addon.helium.web.screens.settings.ThemeSettingsOpenAction"
-          insertAfter="settings"/>
+    <item screen="helium_ThemeSettingsScreen" insertAfter="settings"/>
 </menu-config>
