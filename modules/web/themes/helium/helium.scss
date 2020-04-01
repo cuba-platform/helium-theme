@@ -704,77 +704,13 @@
    * Variants *
    ************/
 
-  // TODO: gg, test only
-  &.inverse-buttons {
-    --button-default-color: #637497;
-    --button-default-text-color: var(--text-contrast-color);
-    --button-default-hover-color: #4F5C78;
-    --button-default-active-color: #3B4459;
-    --button-default-disabled-color: var(--text-dim-color);
-    --button-default-disabled-text-color: var(--button-default-text-color);
-    --button-default-focused-border-color: var(--button-default-disabled-color);
-
-    --secondary-color: #F2F2F2;
-    --button-secondary-text-color: var(--text-main-color);
-    --button-secondary-hover-color: #CECECE;
-    --button-secondary-active-color: #A7A7A7;
-    --button-secondary-disabled-color: transparent;
-    --button-secondary-disabled-text-color: var(--text-dim-color);
-    --button-secondary-focused-border-color: #E7E7E7;
-
-    --tabsheet-framed-tabitemcell-caption-background-color: var(--secondary-color);
-    --tabsheet-framed-tabitemcell-caption-hover-background-color: var(--button-secondary-hover-color);
-    --tabsheet-framed-tabitemcell-caption-hover-text-color: var(--button-secondary-text-color);
-    --tabsheet-framed-tabitemcell-caption-disabled-text-color: var(--button-secondary-disabled-text-color);
-
-    --sidemenu-action-button-color: var(--button-secondary-text-color);
-    --sidemenu-action-button-hover-background-color: var(--button-secondary-hover-color);
-    --sidemenu-action-button-active-background-color: var(--button-secondary-active-color);
-
-    --datefield-button-color: var(--secondary-color);
-    --datefield-button-text-color: var(--button-secondary-text-color);
-    --datefield-button-hover-color: var(--button-secondary-hover-color);
-    --datefield-button-active-color: var(--button-secondary-active-color);
-    --datefield-button-disabled-color: var(--button-secondary-disabled-color);
-    --datefield-button-disabled-text-color: var(--button-secondary-disabled-text-color);
-
-    --datefield-calendarpanel-weekdays-color: var(--button-default-color);
-    --datefield-calendarpanel-month-color: var(--button-default-color);
-  }
-
-  // TODO: gg, test only
-  &.inverse-checkbox {
-    --checkbox-focused-background-color: var(--checkbox-background-color);
-    --checkbox-focused-border-color: var(--primary-color);
-
-    --checkbox-checked-background-color: var(--primary-color);
-    --checkbox-checked-border-color: var(--primary-color);
-    --checkbox-checked-color: var(--primary-contrast-text-color);
-
-    --checkbox-checked-focused-background-color: var(--primary-color);
-    --checkbox-checked-focused-border-color: var(--button-primary-focused-border-color);
-    --checkbox-checked-focused-color: var(--primary-contrast-text-color);
-
-    --checkbox-read-only-checked-background-color: var(--border-dim-color);
-    --checkbox-read-only-checked-border-color: var(--border-dim-color);
-    --checkbox-read-only-checked-color: var(--text-contrast-color);
-
-    --checkbox-read-only-checked-focused-background-color: var(--border-dim-color);
-    --checkbox-read-only-checked-focused-border-color: var(--border-color);
-    --checkbox-read-only-checked-focused-color: var(--text-contrast-color);
-
-    --radio-checked-color: var(--primary-contrast-text-color);
-    --radio-read-only-checked-color: var(--text-contrast-color);
-  }
-
-  // TODO: gg, test only
-  &.blue {
+  &.cobalt {
     --primary-color: #0055A6;
     --primary-color_rgb: 0, 85, 166;
     --primary-saturated-color-1: #004C95;
     --primary-saturated-color-2: #004484;
     --primary-dim-color: #C6D1EC;
-    --button-primary-focused-border-color: #C6D1EC;
+    --button-primary-focused-border-color: var(--primary-dim-color);
   }
 
   // TODO: gg, provide real colors
