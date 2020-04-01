@@ -91,10 +91,12 @@
     background-color: var(--grid-row-stripe-color);
   }
 
-  // Header
+  // Header / Footer
 
-  .#{$primary-stylename}-header {
+  .#{$primary-stylename}-header,
+  .#{$primary-stylename}-footer {
     color: var(--text-secondary-color);
+    background: var(--grid-background-color);
   }
 
   .#{$primary-stylename}-header .#{$primary-stylename}-cell,
@@ -232,8 +234,9 @@
 
   .#{$primary-stylename}-header .#{$primary-stylename}-row.c-aggregation-row > th,
   .#{$primary-stylename}-footer .#{$primary-stylename}-row.c-aggregation-row > td {
-    // TODO: gg, border color
     background: var(--grid-aggregation-background-color);
+    color: var(--grid-aggregation-text-color);
+    border-left-color: var(--grid-aggregation-border-color);
   }
 
   // Decorative elements
