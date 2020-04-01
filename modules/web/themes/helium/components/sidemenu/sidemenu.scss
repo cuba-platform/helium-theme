@@ -75,9 +75,8 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
     @include he-sidemenu-item-focused-style();
   }
 
-  // TODO: gg, does it really exist?
   .#{$primary-stylename}-item-selected {
-    // TODO: gg, implement?
+    @include he-sidemenu-item-selected-style();
   }
 
   .#{$primary-stylename}-responsive {
@@ -181,6 +180,10 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 
     .#{$primary-stylename}-item-focused {
       @include he-sidemenu-item-focused-style();
+    }
+
+    .#{$primary-stylename}-item-selected {
+      @include he-sidemenu-item-selected-style();
     }
   }
 }
@@ -372,11 +375,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
   &:focus,
   &:hover,
   &.selected {
-    color: var(--sidemenu-item-selected-color);
-
-    .v-ch & span.v-icon {
-      color: var(--sidemenu-item-selected-color);
-    }
+    @include he-sidemenu-item-focused-style();
   }
 }
 
@@ -405,6 +404,21 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 
 @mixin he-sidemenu-item-header-size-style($unit-size: $v-unit-size) {
   margin: round($unit-size/5) 0;
+}
+
+@mixin he-sidemenu-item-selected-style() {
+  background: var(--sedemenu-item-selected-background-color);
+  color: var(--sedemenu-item-selected-color);
+
+  &:focus,
+  &:hover,
+  &.selected {
+    color: var(--sedemenu-item-selected-color);
+
+    .v-ch & span.v-icon {
+      color: var(--sedemenu-item-selected-color);
+    }
+  }
 }
 
 @mixin he-sidemenu-item-focused-style() {
