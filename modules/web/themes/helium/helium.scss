@@ -359,7 +359,9 @@
   --sidemenu-title-background-color: #D8D8D8;
 
   --sidemenu-item-focused-color: var(--primary-color);
-  --sidemenu-item-selected-color: var(--sidemenu-item-focused-color);
+
+  --sedemenu-item-selected-color: var(--primary-contrast-text-color);
+  --sedemenu-item-selected-background-color: var(--primary-color);
 
   --sidemenu-item-badge-color: var(--primary-color);
   --sidemenu-item-badge-background-color: var(--primary-dim-color);
