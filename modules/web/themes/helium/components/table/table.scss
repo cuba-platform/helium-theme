@@ -320,7 +320,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
   .#{$primary-stylename}-arow-row {
     border-right: none;
-    color: var(--text-secondary-color);
+    color: var(--table-aggregation-text-color);
 
     td:last-child {
       border-right: $table-inner-border;
