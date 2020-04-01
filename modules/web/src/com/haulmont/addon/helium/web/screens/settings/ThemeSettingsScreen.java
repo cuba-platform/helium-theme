@@ -18,18 +18,17 @@ package com.haulmont.addon.helium.web.screens.settings;
 
 import com.haulmont.addon.helium.web.theme.HeliumThemeVariantsManager;
 import com.haulmont.cuba.core.global.Metadata;
+import com.haulmont.cuba.gui.Notifications;
 import com.haulmont.cuba.gui.Route;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.components.data.table.ContainerTableItems;
 import com.haulmont.cuba.gui.model.CollectionContainer;
 import com.haulmont.cuba.gui.model.DataComponents;
-import com.haulmont.cuba.gui.screen.Screen;
-import com.haulmont.cuba.gui.screen.Subscribe;
-import com.haulmont.cuba.gui.screen.UiController;
-import com.haulmont.cuba.gui.screen.UiDescriptor;
+import com.haulmont.cuba.gui.screen.*;
 import com.haulmont.cuba.security.entity.User;
 import com.haulmont.cuba.web.app.UserSettingsTools;
 import com.vaadin.server.Page;
+import org.apache.commons.collections4.CollectionUtils;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -73,17 +72,46 @@ public class ThemeSettingsScreen extends Screen {
     private DataComponents dataComponents;
     @Inject
     protected UserSettingsTools userSettingsTools;
+    @Inject
+    private MessageBundle messageBundle;
+    @Inject
+    private Notifications notifications;
 
     protected String appWindowTheme;
+    protected boolean settingsAvailable;
 
     @Subscribe
     public void onInit(InitEvent event) {
-        appWindowTheme = userSettingsTools.loadAppWindowTheme();
+        checkSettingsAvailable();
 
-        initModeField();
-        initSizeField();
-        initTableSample();
-        initOptions();
+        if (settingsAvailable) {
+            appWindowTheme = userSettingsTools.loadAppWindowTheme();
+
+            initModeField();
+            initSizeField();
+            initTableSample();
+            initOptions();
+        }
+    }
+
+    @Subscribe
+    public void onAfterShow(AfterShowEvent event) {
+        if (!settingsAvailable) {
+            notifications.create()
+                    .withCaption(messageBundle.getMessage("noSettingsAvailable"))
+                    .withType(Notifications.NotificationType.WARNING)
+                    .show();
+
+            close(WINDOW_CLOSE_ACTION);
+        }
+    }
+
+    protected void checkSettingsAvailable() {
+        List<String> appThemeModeList = variantsManager.getAppThemeModeList();
+        List<String> appThemeSizeList = variantsManager.getAppThemeSizeList();
+
+        settingsAvailable = CollectionUtils.isNotEmpty(appThemeModeList)
+                || CollectionUtils.isNotEmpty(appThemeSizeList);
     }
 
     protected void initTableSample() {
