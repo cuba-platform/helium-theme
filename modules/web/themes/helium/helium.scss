@@ -56,7 +56,6 @@
 @import "components/radiobuttongroup/radiobuttongroup";
 @import "components/richtextarea/richtextarea";
 @import "components/sidemenu/sidemenu";
-@import "components/slider/slider";
 @import "components/sourcecodeeditor/sourcecodeeditor";
 @import "components/suggestionfield/suggestionfield";
 @import "components/searchselect/searchselect";
@@ -107,7 +106,6 @@
   @include he-progressbar;
   @include he-radiobuttongroup;
   @include he-richtextarea;
-  @include he-slider;
   @include he-splitpanel;
   @include he-table;
   @include he-tabsheet;
@@ -617,10 +615,6 @@
   --progressbar-border-radius: $v-border-radius;
   --progressbar-background-color: var(--dim-color);
   --progressbar-indeterminate-indicator-width: 120px;
-
-  /* Slider */
-
-  --slider-handle-border-color: var(--button-default-focused-border-color);
 
   /* PopupView */
 
