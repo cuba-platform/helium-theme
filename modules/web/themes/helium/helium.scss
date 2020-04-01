@@ -145,40 +145,52 @@
   @include he-generic-filter;
   @include he-role-editor;
 
-  --background-color: #FFFFFF;
-  --background-color_rgb: 256, 256, 256;
-  --app-background-color: #FFFFFF;
+  /* Basic */
 
   --primary-color: #6F5CC3;                         // Primary
-  --primary-color_rgb: 111, 92, 195;                // Primary
-  --primary-contrast-text-color: var(--text-contrast-color);
-  --primary-color-shade-1: #5440AC;                 // Primary - Hover (d10%)
-  --primary-color-shade-2: #423287;                 // Primary - Active (d20%)
-  --primary-dim-color: #D2CCEC;                     // Primary - Disabled (l30%)
 
   --secondary-color: #637497;                       // Gray - Light
-  --secondary-color_rgb: 99, 116, 151;
-  --secondary-contrast-text-color: var(--text-contrast-color);
 
   --warning-color: #FFDA79;                         // Warning
-  --warning-contrast-text-color: #4F5C78;           // Text - Medium
 
   --error-color: #FF647C;                           // Danger
-  --error-contrast-text-color: var(--text-contrast-color);
 
   --success-color: #36AB80;                         // Success
-  --success-contrast-text-color: var(--text-contrast-color);
 
   --border-color: #637497;                          // Gray - Light
-  --border-dim-color: #A0AAC0;                      // Gray - Disabled
-  --border-dim-focused-color: var(--border-color);
 
   --dim-color: #F2F2F2;                             // Gray - Hover
 
   --text-main-color: #4F5C78;                       // Text - Medium
+
+  --background-color: #FFFFFF;
+  --app-background-color: #FFFFFF;
+
+  /* Common */
+
   --text-secondary-color: #0A2044;                  // Text - Main
   --text-dim-color: #A0AAC0;                        // Gray - Disabled
   --text-contrast-color: #FFFFFF;
+
+  --primary-color_rgb: 111, 92, 195;                // Primary
+  --primary-contrast-text-color: var(--text-contrast-color);
+  --primary-color-shade-1: #5440AC;                 // (--primary-color) (d10%)
+  --primary-color-shade-2: #423287;                 // (--primary-color) (d20%)
+  --primary-dim-color: #D2CCEC;                     // (--primary-color) (l30%)
+
+  --secondary-color_rgb: 99, 116, 151;
+  --secondary-contrast-text-color: var(--text-contrast-color);
+
+  --warning-contrast-text-color: #4F5C78;           // Text - Medium
+
+  --error-contrast-text-color: var(--text-contrast-color);
+
+  --success-contrast-text-color: var(--text-contrast-color);
+
+  --border-dim-color: #A0AAC0;                      // Gray - Disabled
+  --border-dim-focused-color: var(--border-color);
+
+  --background-color_rgb: 256, 256, 256;
 
   --box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 6px rgba(79, 92, 120, 0.15), 0px 16px 24px rgba(79, 92, 120, 0.25);
 
@@ -211,15 +223,15 @@
   --button-secondary-disabled-text-color: var(--button-secondary-text-color);
   --button-secondary-focused-border-color: var(--button-secondary-disabled-color);
 
-  --button-error-hover-color: #FF3151;                     // Danger - Hover (d10%)
-  --button-error-active-color: #FD0027;                    // Danger - Active
-  --button-error-disabled-color: #FFCAD2;                  // Danger - Disabled (l20%)
+  --button-error-hover-color: #FF3151;                     // (--error-color) (d10%)
+  --button-error-active-color: #FD0027;                    // (--error-color) (d20%)
+  --button-error-disabled-color: #FFCAD2;                  // (--error-color) (l20%)
   --button-error-disabled-text-color: var(--error-contrast-text-color);
   --button-error-focused-border-color: var(--button-error-disabled-color);
 
-  --button-success-hover-color: #2A8463;                   // Success - Hover (d10%)
-  --button-success-active-color: #1E5D46;                  // Success - Active
-  --button-success-disabled-color: #9BDFC6;                // Success - Disabled (l30%)
+  --button-success-hover-color: #2A8463;                   // (--success-color) (d10%)
+  --button-success-active-color: #1E5D46;                  // (--success-color) (d20%)
+  --button-success-disabled-color: #9BDFC6;                // (--success-color) (l30%)
   --button-success-disabled-text-color: var(--success-contrast-text-color);
   --button-success-focused-border-color: var(--button-success-disabled-color);
 
