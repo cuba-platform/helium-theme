@@ -568,7 +568,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
 @mixin he-table-control-button-style() {
   @include he-button-default-style();
-  @include he-button-borderless-style($active-color: --primary-saturated-color-2);
+  @include he-button-borderless-style($active-color: --primary-color-shade-2);
 
   $row-height: round($v-table-row-height * $he-table-header-row-height-scale);
   @include he-control-button-size-style($row-height);
