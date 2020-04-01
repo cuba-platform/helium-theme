@@ -152,8 +152,8 @@
   --primary-color: #6F5CC3;                         // Primary
   --primary-color_rgb: 111, 92, 195;                // Primary
   --primary-contrast-text-color: var(--text-contrast-color);
-  --primary-saturated-color-1: #5440AC;             // Primary - Hover (d10%)
-  --primary-saturated-color-2: #423287;             // Primary - Active (d20%)
+  --primary-color-shade-1: #5440AC;                 // Primary - Hover (d10%)
+  --primary-color-shade-2: #423287;                 // Primary - Active (d20%)
   --primary-dim-color: #D2CCEC;                     // Primary - Disabled (l30%)
 
   --secondary-color: #637497;                       // Gray - Light
@@ -198,8 +198,8 @@
   --button-default-disabled-text-color: var(--text-dim-color);
   --button-default-focused-border-color: #E7E7E7;
 
-  --button-primary-hover-color: var(--primary-saturated-color-1);
-  --button-primary-active-color: var(--primary-saturated-color-2);
+  --button-primary-hover-color: var(--primary-color-shade-1);
+  --button-primary-active-color: var(--primary-color-shade-2);
   --button-primary-disabled-color: var(--primary-dim-color);
   --button-primary-disabled-text-color: var(--primary-contrast-text-color);
   --button-primary-focused-border-color: var(--primary-dim-color);
@@ -345,7 +345,7 @@
 
   --tree-selected-row-background-color: var(--primary-color);
   --tree-selected-row-text-color: var(--primary-contrast-text-color);
-  --tree-selected-row-border-color: var(--primary-saturated-color-1);
+  --tree-selected-row-border-color: var(--primary-color-shade-1);
   --tree-selected-row-focus-ring-color: var(--primary-dim-color);
 
   --tree-focused-row-border-color: var(--primary-color);
@@ -456,7 +456,7 @@
 
   --table-selected-row-background-color: var(--primary-color);
   --table-selected-row-text-color: var(--primary-contrast-text-color);
-  --table-selected-row-border-color: var(--primary-saturated-color-1);
+  --table-selected-row-border-color: var(--primary-color-shade-1);
 
   --table-hovered-row-background-color: var(--primary-dim-color);
   --table-hovered-row-text-color: var(--text-main-color);
@@ -477,7 +477,7 @@
 
   --grid-selected-row-background-color: var(--primary-color);
   --grid-selected-row-text-color: var(--primary-contrast-text-color);
-  --grid-selected-row-border-color: var(--primary-saturated-color-1);
+  --grid-selected-row-border-color: var(--primary-color-shade-1);
   --grid-selected-row-focus-ring-color: var(--primary-dim-color);
 
   --grid-hovered-row-background-color: var(--primary-dim-color);
@@ -501,7 +501,7 @@
 
   --grid-row-drag-background-color: var(--primary-color);
   --grid-row-drag-border-color: var(--primary-color);
-  --grid-selected-row-drag-border-color: var(--primary-saturated-color-1);
+  --grid-selected-row-drag-border-color: var(--primary-color-shade-1);
 
   /* TreeGrid */
 
@@ -526,8 +526,8 @@
   --tabsheet-tabitemcell-selected-color: var(--primary-color);
   --tabsheet-tabitemcell-selected-deco-color: var(--primary-color);
 
-  --tabsheet-tabitemcell-caption-close-hover-color: var(--primary-saturated-color-1);
-  --tabsheet-tabitemcell-caption-close-active-color: var(--primary-saturated-color-2);
+  --tabsheet-tabitemcell-caption-close-hover-color: var(--primary-color-shade-1);
+  --tabsheet-tabitemcell-caption-close-active-color: var(--primary-color-shade-2);
 
   --tabsheet-drop-indicator-color: var(--primary-color);
 
@@ -548,7 +548,7 @@
 
   --tabsheet-scroller-button-color: inherit;
   --tabsheet-scroller-button-hover-color: var(--primary-color);
-  --tabsheet-scroller-button-active-color: var(--primary-saturated-color-2);
+  --tabsheet-scroller-button-active-color: var(--primary-color-shade-2);
 
   /* SelectionOverlay (ContextMenu) */
 
@@ -557,7 +557,7 @@
 
   --selection-overlay-selected-item-background-color: var(--primary-color);
   --selection-overlay-selected-item-text-color: var(--primary-contrast-text-color);
-  --selection-overlay-selected-item-active-background-color: var(--primary-saturated-color-2);
+  --selection-overlay-selected-item-active-background-color: var(--primary-color-shade-2);
 
   /* DragAndDrop */
 
@@ -620,7 +620,7 @@
   /* Link */
 
   --link-color: var(--primary-color);
-  --link-hover-color: var(--primary-saturated-color-1);
+  --link-hover-color: var(--primary-color-shade-1);
   --link-visited-color: var(--link-color);
 
   /* ProgressBar */
@@ -721,8 +721,8 @@
   &.cobalt {
     --primary-color: #0055A6;
     --primary-color_rgb: 0, 85, 166;
-    --primary-saturated-color-1: #004C95;
-    --primary-saturated-color-2: #004484;
+    --primary-color-shade-1: #004C95;
+    --primary-color-shade-2: #004484;
     --primary-dim-color: #C6D1EC;
     --button-primary-focused-border-color: var(--primary-dim-color);
   }

@@ -50,8 +50,8 @@
 
   .#{$primary-stylename}-borderless-colored {
     @include he-button-borderless-style($main-color: --primary-color,
-                                        $hover-color: --primary-saturated-color-1,
-                                        $active-color: --primary-saturated-color-2,
+                                        $hover-color: --primary-color-shade-1,
+                                        $active-color: --primary-color-shade-2,
                                         $disabled-color: --primary-dim-color);
   }
 
@@ -276,7 +276,7 @@
   &:hover:not(.v-disabled) {
     border-color: transparent;
     background: transparent;
-    color: var(--primary-saturated-color-1);
+    color: var(--primary-color-shade-1);
   }
 
   &:focus:not(.v-disabled) {
@@ -284,9 +284,9 @@
   }
 
   &:active:not(.v-disabled) {
-    border-color: var(--primary-saturated-color-2);
+    border-color: var(--primary-color-shade-2);
     background: transparent;
-    color: var(--primary-saturated-color-2);
+    color: var(--primary-color-shade-2);
   }
 
   &.v-disabled {
