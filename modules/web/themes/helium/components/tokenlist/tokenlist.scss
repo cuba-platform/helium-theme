@@ -109,6 +109,10 @@
   &.inline {
     .#{$primary-stylename}-label {
       margin-right: round($label-margin);
+
+      .content {
+        width: 100%;
+      }
     }
   }
 }
