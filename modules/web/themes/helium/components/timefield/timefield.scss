@@ -81,4 +81,8 @@ $c-timefield-second-width: 84px;
   &.#{$primary-stylename}-second {
     width: round($c-timefield-second-width * $scaling-factor);
   }
+
+  .c-timefield-ampm {
+    width: round($c-timefield-ampm-width * $scaling-factor);
+  }
 }
