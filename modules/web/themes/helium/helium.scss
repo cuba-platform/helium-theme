@@ -35,6 +35,7 @@
 @import "components/currencyfield/currencyfield";
 @import "components/datagrid/datagrid";
 @import "components/datefield/datefield";
+@import "components/dateintervaleditor/dateintervaleditor";
 @import "components/datepicker/datepicker";
 @import "components/draganddrop/draganddrop";
 @import "components/fieldgrouplayout/fieldgrouplayout";
@@ -129,6 +130,7 @@
   @include he-tokenlist;
   @include he-cuba-contextmenu;
   @include he-contextmenu-button;
+  @include he-dateintervaleditor;
   @include he-fieldgrouplayout;
   @include he-fileupload;
   @include he-listeditor;
