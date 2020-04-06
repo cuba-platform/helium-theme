@@ -51,6 +51,7 @@
 @import "components/orderedlayout/orderedlayout";
 @import "components/panel/panel";
 @import "components/pickerfield/pickerfield";
+@import "components/pivottable/pivottable";
 @import "components/popupbutton/popupbutton";
 @import "components/popupview/popupview";
 @import "components/progressbar/progressbar";
@@ -146,6 +147,9 @@
   @include he-folders-pane;
   @include he-generic-filter;
   @include he-role-editor;
+
+  // Add-ons
+  @include he-pivottable;
 
   /* Basic */
 
@@ -710,6 +714,14 @@
 
   --currencyfield-currency-disabled-background-color: var(--dim-color);
   --currencyfield-currency-disabled-text-color: var(--text-dim-color);
+
+  /* PivotTable */
+
+  --pivot-background-color: var(--background-color);
+  --pivot-header-background-color: var(--dim-color);
+  --pivot-border-color: var(--border-dim-color);
+
+  --pivot-filterbox-shadow: var(--box-shadow);
 
   /************
    * Variants *
