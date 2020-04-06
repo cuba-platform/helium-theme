@@ -23,7 +23,7 @@
     }
   }
 
-  .#{$primary-stylename}-popup {
+  .#{$primary-stylename}-popup:not(.v-popupbutton-popup) {
     @include he-overlay-style($background-color : --overlay-background-color,
                               $shadow           : --popupview-popup-shadow);
     padding: $v-border-radius;

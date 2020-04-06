@@ -273,10 +273,14 @@
   background: transparent;
   color: var(--primary-color);
 
-  &:hover:not(.v-disabled) {
+  &:hover:not(.v-disabled):not(:active) {
     border-color: transparent;
     background: transparent;
     color: var(--primary-color-shade-1);
+
+    &:focus {
+      border-color: var(--primary-color-shade-1);
+    }
   }
 
   &:focus:not(.v-disabled) {
@@ -284,6 +288,8 @@
   }
 
   &:active:not(.v-disabled) {
+    @include opacity(1);
+
     border-color: var(--primary-color-shade-2);
     background: transparent;
     color: var(--primary-color-shade-2);
