@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-//$v-progressbar-define-indeterminate: false;
-//$v-progressbar-indeterminate-indicator-width: 120px !default;
-
 @mixin he-progressbar($primary-stylename: v-progressbar) {
   @include he-progressbar-style($primary-stylename: $primary-stylename);
 

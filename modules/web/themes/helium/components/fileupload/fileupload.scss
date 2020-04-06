@@ -115,10 +115,8 @@
     }
 
     &:after {
-      //font-size: $v-font-size--h1;
       background: var(--fileupload-dropzone-prompt-background-color);
       border: he-border($color: --fileupload-dropzone-prompt-border-color);
-      //padding: ceil($v-unit-size/2);
     }
   }
 

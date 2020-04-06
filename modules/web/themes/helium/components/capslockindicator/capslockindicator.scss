@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-$cuba-capslockindicator-icon-color-on: #ddd533 !default;
-$cuba-capslockindicator-icon-color-off: #c5c5c5 !default;
-
 @mixin he-capslockindicator($primary-stylename: c-capslockindicator) {
 
   .#{$primary-stylename}.capslock-on span::before {
