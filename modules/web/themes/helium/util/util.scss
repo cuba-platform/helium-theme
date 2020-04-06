@@ -30,8 +30,8 @@
   @include box-shadow(var($shadow));
 }
 
-@mixin he-overlay-style($background-color : $v-overlay-background-color,
-                        $shadow           : $v-overlay-shadow,
+@mixin he-overlay-style($background-color : --overlay-background-color,
+                        $shadow           : --box-shadow,
                         $text-color       : --text-main-color,
                         $border-radius    : $v-overlay-border-radius) {
   @include he-box-shadow($shadow);
