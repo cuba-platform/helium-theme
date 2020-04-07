@@ -223,9 +223,9 @@
   --button-primary-focused-border-color: var(--primary-dim-color);
 
   --button-secondary-text-color: var(--text-contrast-color);
-  --button-secondary-hover-color: #4F5C78;                // Text - Medium
-  --button-secondary-active-color: #3B4459;
-  --button-secondary-disabled-color: var(--text-dim-color);
+  --button-secondary-hover-color: #4F5C78;                 // (--secondary-color) (d10%)
+  --button-secondary-active-color: #3B4459;                // (--secondary-color) (d20%)
+  --button-secondary-disabled-color: #A0AAC0;              // (--secondary-color) (l30%)
   --button-secondary-disabled-text-color: var(--button-secondary-text-color);
   --button-secondary-focused-border-color: var(--button-secondary-disabled-color);
 
