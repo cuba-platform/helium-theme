@@ -71,6 +71,7 @@
     }
 
     .ace_gutter {
+      color: var(--sourcecodeeditor-gutter-text-color);
       background: var(--sourcecodeeditor-gutter-background-color);
 
       .ace_gutter-active-line {
