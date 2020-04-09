@@ -210,11 +210,11 @@
 
   --button-default-color: #F2F2F2;                        // Gray - Hover
   --button-default-text-color: var(--text-main-color);
-  --button-default-hover-color: #CECECE;
-  --button-default-active-color: #A7A7A7;
-  --button-default-disabled-color: transparent;
+  --button-default-hover-color: #CECECE;                  // (--button-default-color) (d10%)
+  --button-default-active-color: #A7A7A7;                 // (--button-default-color) (d20%)
+  --button-default-disabled-color: transparent;           // (--button-default-color) (l30%)
   --button-default-disabled-text-color: var(--text-dim-color);
-  --button-default-focused-border-color: #E7E7E7;
+  --button-default-focused-border-color: #E7E7E7;         // (--button-default-disabled-color)
 
   --button-primary-hover-color: var(--primary-color-shade-1);
   --button-primary-active-color: var(--primary-color-shade-2);
@@ -231,7 +231,7 @@
 
   --button-error-hover-color: #FF3151;                     // (--error-color) (d10%)
   --button-error-active-color: #FD0027;                    // (--error-color) (d20%)
-  --button-error-disabled-color: #FFCAD2;                  // (--error-color) (l20%)
+  --button-error-disabled-color: #FFCAD2;                  // (--error-color) (l30%)
   --button-error-disabled-text-color: var(--error-contrast-text-color);
   --button-error-focused-border-color: var(--button-error-disabled-color);
 
@@ -743,21 +743,26 @@
     --border-dim-color: var(--dim-color);
     --border-dim-focused-color: #637497;
 
+    --primary-dim-color: #D2CCEC;                          // (--primary-color) (d30%)
+
     --button-default-color: #637497;
-    --button-default-text-color: #FFFFFF;
-    --button-default-hover-color: #4F5C78;
-    --button-default-active-color: #3B4459;
-    --button-default-disabled-color: #A0AAC0;
-    --button-default-disabled-text-color: #ffffff;
+    --button-default-hover-color: #4F5C78;                 // (--button-default-color) (d10%)
+    --button-default-active-color: #3B4459;                // (--button-default-color) (d20%)
+    --button-default-disabled-color: #A0AAC0;              // (--button-default-color) (d30%)
+    --button-default-disabled-text-color: var(--button-default-text-color);
     --button-default-focused-border-color: var(--button-default-disabled-color);
 
     --secondary-color: #F2F2F2;
     --button-secondary-text-color: #4F5C78;
-    --button-secondary-hover-color: #CECECE;
-    --button-secondary-active-color: #A7A7A7;
-    --button-secondary-disabled-color: transparent;
-    --button-secondary-disabled-text-color: #A0AAC0;
-    --button-secondary-focused-border-color: #E7E7E7;
+    --button-secondary-hover-color: #CECECE;               // (--secondary-color) (d10%)
+    --button-secondary-active-color: #A7A7A7;              // (--secondary-color) (d20%)
+    --button-secondary-disabled-color: transparent;        // (--secondary-color) (d30%)
+    --button-secondary-disabled-text-color: #A0AAC0;       // (--button-secondary-text-color)
+    --button-secondary-focused-border-color: #E7E7E7;      // (--button-secondary-disabled-color)
+
+    --button-error-disabled-color: #FFCAD2;                // (--error-color) (d30%)
+
+    --button-success-disabled-color: #9BDFC6;              // (--success-color) (d30%)
 
     --sidemenu-background-color: #4F4F4F;
   }
