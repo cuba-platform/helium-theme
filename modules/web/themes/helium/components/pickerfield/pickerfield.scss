@@ -39,7 +39,7 @@
                                        $font-size         : $v-font-size--small);
   }
 
-  .middle {
+  .medium {
     @include he-pickerfield-size-style($primary-stylename : $primary-stylename,
                                        $unit-size         : $v-unit-size,
                                        $font-size         : $v-font-size);
@@ -72,7 +72,7 @@
                                        $font-size         : $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     .v-textfield.#{$primary-stylename}-text,
     .c-suggestionfield.#{$primary-stylename}-suggestion {
       @include he-input-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);

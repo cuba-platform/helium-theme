@@ -39,7 +39,7 @@
                                       $dock-button-width  : round($v-unit-size--small / 3));
   }
 
-  .middle {
+  .medium {
     @include he-splitpanel-size-style($unit-size          : $v-unit-size,
                                       $font-size          : $v-font-size,
                                       $dock-button-width  : $cuba-splitpanel-dock-button-width);

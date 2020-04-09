@@ -33,7 +33,7 @@
     }
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     select {
       @include he-select-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
     }

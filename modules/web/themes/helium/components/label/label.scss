@@ -42,7 +42,7 @@
                                  $scaling-factor    : $v-scaling-factor--small);
   }
 
-  .middle {
+  .medium {
     @include he-label-size-style($primary-stylename : $primary-stylename,
                                  $unit-size         : $v-unit-size,
                                  $font-size         : $v-font-size);

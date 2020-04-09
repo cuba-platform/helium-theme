@@ -53,7 +53,7 @@
                                   $handle-height     : $v-slider-handle-height--small);
   }
 
-  .middle {
+  .medium {
     @include he-slider-size-style($primary-stylename : $primary-stylename,
                                   $unit-size         : $v-unit-size,
                                   $track-size        : $v-slider-track-size,

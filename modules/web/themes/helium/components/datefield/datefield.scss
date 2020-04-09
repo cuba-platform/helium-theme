@@ -68,7 +68,7 @@ $he-datefield-calendar-button-padding: 2px !default;
             $scaling-factor     : $v-scaling-factor--small);
   }
 
-  .middle .#{$primary-stylename}-layout {
+  .medium .#{$primary-stylename}-layout {
     @include he-datefield-size-style(
             $primary-stylename  : $primary-stylename,
             $unit-size          : $v-unit-size,
@@ -94,7 +94,7 @@ $he-datefield-calendar-button-padding: 2px !default;
             $scaling-factor     : $v-scaling-factor--small);
   }
 
-  .#{$primary-stylename}-layout.middle {
+  .#{$primary-stylename}-layout.medium {
     @include he-datefield-size-style(
             $primary-stylename  : $primary-stylename,
             $unit-size          : $v-unit-size,

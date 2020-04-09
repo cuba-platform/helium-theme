@@ -68,7 +68,7 @@
     }
   }
 
-  .middle {
+  .medium {
     @include he-caption-size-style($unit-size: $v-unit-size, $font-size: $v-caption-font-size);
 
     select {

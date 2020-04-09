@@ -75,7 +75,7 @@
             $font-size          : $v-font-size--small);
   }
 
-  .middle .c-color-picker {
+  .medium .c-color-picker {
     @include he-colorpicker-size-style(
             $primary-stylename  : $primary-stylename,
             $unit-size          : $v-unit-size,
@@ -98,7 +98,7 @@
             $font-size          : $v-font-size--small);
   }
 
-  .c-color-picker.middle {
+  .c-color-picker.medium {
     @include he-colorpicker-size-style(
             $primary-stylename  : $primary-stylename,
             $unit-size          : $v-unit-size,

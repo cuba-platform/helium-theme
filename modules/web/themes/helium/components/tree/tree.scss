@@ -37,7 +37,7 @@
     @include he-tree-composition-size-style($v-unit-size--small)
   }
 
-  .middle .c-tree-composition {
+  .medium .c-tree-composition {
     @include he-tree-composition-size-style($v-unit-size)
   }
 
@@ -51,7 +51,7 @@
     @include he-tree-composition-size-style($v-unit-size--small)
   }
 
-  .c-tree-composition.middle {
+  .c-tree-composition.medium {
     @include he-tree-composition-size-style($v-unit-size)
   }
 

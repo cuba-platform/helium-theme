@@ -45,7 +45,7 @@
     @include he-searchselect-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-searchselect-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
   }
 
@@ -59,7 +59,7 @@
     @include he-searchselect-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-searchselect-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
   }
 
