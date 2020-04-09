@@ -193,6 +193,9 @@
 
   --success-contrast-text-color: var(--text-contrast-color);
 
+  --dim-color-shade-1: #CECECE;                     // (--dim-color) (d10%)
+  --dim-color-shade-2: #A7A7A7;                     // (--dim-color) (d20%)
+
   --border-dim-color: #A0AAC0;                      // Gray - Disabled
   --border-dim-focused-color: var(--border-color);
 
@@ -640,12 +643,12 @@
 
   /* RichTextArea */
 
-  --richtextarea-toolbar-background-color: #F2F2F2;
+  --richtextarea-toolbar-background-color: var(--dim-color);
   --richtextarea-toolbar-text-color: var(--text-main-color);
   --richtextarea-toolbar-text-hover-color: var(--text-secondary-color);
-  --richtextarea-toolbar-togglebutton-down-background-color: #CECECE;
+  --richtextarea-toolbar-togglebutton-down-background-color: var(--dim-color-shade-1);
 
-  --richtextarea-textarea-background-color: var(--textfield-background-color);
+  --richtextarea-textarea-background-color: #FFFFFF;
 
   /* NativeSelect */
 
@@ -738,6 +741,8 @@
     --text-main-color: #F2F2F2;
 
     --dim-color: #646464;
+    --dim-color-shade-1: #5A5A5A;                         // (--dim-color) (d10%)
+    --dim-color-shade-2: #505050;                         // (--dim-color) (d20%)
 
     --border-color: var(--background-color);
     --border-dim-color: var(--dim-color);
