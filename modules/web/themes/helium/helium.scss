@@ -605,10 +605,11 @@
   --sourcecodeeditor-text-color: var(--text-main-color);
   --sourcecodeeditor-cursor-color: var(--text-main-color);
 
-  --sourcecodeeditor-gutter-background-color: #CECECE;
-  --sourcecodeeditor-gutter-active-line-background-color: #A7A7A7;
+  --sourcecodeeditor-gutter-text-color: var(--text-secondary-color);
+  --sourcecodeeditor-gutter-background-color: var(--dim-color-shade-1);
+  --sourcecodeeditor-gutter-active-line-background-color: var(--dim-color-shade-2);
 
-  --sourcecodeeditor-active-line-background-color: #F2F2F2;
+  --sourcecodeeditor-active-line-background-color: var(--dim-color);
 
   --sourcecodeeditor-selection-background-color: var(--primary-dim-color);
 
