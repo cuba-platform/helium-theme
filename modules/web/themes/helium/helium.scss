@@ -726,16 +726,6 @@
   /************
    * Variants *
    ************/
-
-  &.cobalt {
-    --primary-color: #0055A6;
-    --primary-color_rgb: 0, 85, 166;
-    --primary-color-shade-1: #004C95;
-    --primary-color-shade-2: #004484;
-    --primary-dim-color: #C6D1EC;
-    --button-primary-focused-border-color: var(--primary-dim-color);
-  }
-
   // TODO: gg, provide real colors
   &.dark {
     --background-color: #4F4F4F;
