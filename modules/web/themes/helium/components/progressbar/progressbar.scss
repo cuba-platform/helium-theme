@@ -36,7 +36,7 @@
                                        $unit-size         : $v-unit-size--small);
   }
 
-  .middle {
+  .medium {
     @include he-progressbar-size-style($primary-stylename : $primary-stylename,
                                        $unit-size         : $v-unit-size);
   }

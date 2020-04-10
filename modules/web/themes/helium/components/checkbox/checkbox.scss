@@ -37,7 +37,7 @@ $he-checkbox-size-reduction : 10 !default;
     @include he-checkbox-size-style($checkbox-size: $v-unit-size--small - $he-checkbox-size-reduction, $font-size: $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-checkbox-size-style($checkbox-size: $v-unit-size - $he-checkbox-size-reduction, $font-size: $v-font-size);
   }
 
@@ -51,7 +51,7 @@ $he-checkbox-size-reduction : 10 !default;
     @include he-checkbox-size-style($checkbox-size: $v-unit-size--small - $he-checkbox-size-reduction, $font-size: $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-checkbox-size-style($checkbox-size: $v-unit-size - $he-checkbox-size-reduction, $font-size: $v-font-size);
   }
 

@@ -46,7 +46,7 @@
     @include he-tokenlist-size-style($primary-stylename: $primary-stylename, $unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-tokenlist-size-style($primary-stylename: $primary-stylename, $unit-size: $v-unit-size, $font-size: $v-font-size);
   }
 
@@ -61,7 +61,7 @@
     @include he-tokenlist-size-style($primary-stylename: $primary-stylename, $unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     // TODO: gg, fix mix of sizes
     @include he-tokenlist-size-style($primary-stylename: $primary-stylename, $unit-size: $v-unit-size, $font-size: $v-font-size);
   }

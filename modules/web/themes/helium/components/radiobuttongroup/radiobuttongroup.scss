@@ -48,7 +48,7 @@ $he-radio-check-size--large: null !default;
             $check-size : $he-radio-check-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-radiobuttongroup-size-style(
             $unit-size  : $v-unit-size - $he-checkbox-size-reduction,
             $font-size  : $v-font-size,
@@ -71,7 +71,7 @@ $he-radio-check-size--large: null !default;
             $check-size : $he-radio-check-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-radiobuttongroup-size-style(
             $unit-size  : $v-unit-size - $he-checkbox-size-reduction,
             $font-size  : $v-font-size,

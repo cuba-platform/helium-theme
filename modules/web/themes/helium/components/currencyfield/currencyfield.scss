@@ -41,7 +41,7 @@
                                          $font-size         : $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-currencyfield-size-style($primary-stylename : $primary-stylename,
                                          $unit-size         : $v-unit-size,
                                          $font-size         : $v-font-size);
@@ -61,7 +61,7 @@
                                          $font-size         : $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-currencyfield-size-style($primary-stylename : $primary-stylename,
                                          $unit-size         : $v-unit-size,
                                          $font-size         : $v-font-size);

@@ -35,7 +35,7 @@
     @include he-link-size-style($font-size: $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-link-size-style($font-size: $v-font-size);
   }
 
@@ -49,7 +49,7 @@
     @include he-link-size-style($font-size: $v-font-size--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-link-size-style($font-size: $v-font-size);
   }
 

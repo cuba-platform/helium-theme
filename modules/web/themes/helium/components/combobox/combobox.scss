@@ -62,7 +62,7 @@
     @include he-combobox-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
   }
 
-  .middle .#{$primary-stylename} {
+  .medium .#{$primary-stylename} {
     @include he-combobox-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
   }
 
@@ -82,13 +82,13 @@
     @include he-combobox-popup-size-style($item-height: $v-selection-item-height--small, $font-size: $v-font-size--small)
   }
 
-  // middle
+  // medium
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-combobox-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
   }
 
-  .#{$primary-stylename}-suggestpopup.#{$primary-stylename}-suggestpopup-middle {
+  .#{$primary-stylename}-suggestpopup.#{$primary-stylename}-suggestpopup-medium {
     @include he-combobox-popup-size-style($item-height: $v-selection-item-height, $font-size: $v-font-size)
   }
 

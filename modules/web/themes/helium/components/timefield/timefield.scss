@@ -42,7 +42,7 @@ $c-timefield-second-width: 84px;
     @include he-timefield-width-style($primary-stylename: $primary-stylename, $scaling-factor: $v-scaling-factor--small);
   }
 
-  .middle {
+  .medium {
     @include he-timefield-width-style($primary-stylename: $primary-stylename, $scaling-factor: 1);
   }
 
@@ -56,7 +56,7 @@ $c-timefield-second-width: 84px;
     @include he-timefield-width-style($primary-stylename: $primary-stylename, $scaling-factor: $v-scaling-factor--small);
   }
 
-  .#{$primary-stylename}.middle {
+  .#{$primary-stylename}.medium {
     @include he-timefield-width-style($primary-stylename: $primary-stylename, $scaling-factor: 1);
   }
 

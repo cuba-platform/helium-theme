@@ -53,7 +53,7 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
     );
   }
 
-  .middle {
+  .medium {
     @include he-groupbox-style(
             $primary-stylename: $primary-stylename,
             $groupbox-caption-height: $he-groupbox-caption-height,

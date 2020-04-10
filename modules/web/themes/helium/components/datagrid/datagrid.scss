@@ -54,7 +54,7 @@
     @include he-grid-composition-size-style($v-unit-size--small)
   }
 
-  .middle .c-data-grid-composition {
+  .medium .c-data-grid-composition {
     @include he-grid-composition-size-style($v-unit-size)
   }
 
@@ -68,7 +68,7 @@
     @include he-grid-composition-size-style($v-unit-size--small)
   }
 
-  .c-data-grid-composition.middle {
+  .c-data-grid-composition.medium {
     @include he-grid-composition-size-style($v-unit-size)
   }
 

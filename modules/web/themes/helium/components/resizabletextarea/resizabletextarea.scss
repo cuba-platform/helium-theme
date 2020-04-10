@@ -34,7 +34,7 @@
       @include he-textarea-size-style($unit-size: $v-unit-size--small, $font-size: $v-font-size--small);
     }
 
-    &.middle .v-textarea {
+    &.medium .v-textarea {
       @include he-textarea-size-style($unit-size: $v-unit-size, $font-size: $v-font-size);
     }
 

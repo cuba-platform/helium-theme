@@ -42,7 +42,7 @@
                                       $scaling-factor    : $v-scaling-factor--small);
   }
 
-  .middle {
+  .medium {
     @include he-fileupload-size-style($primary-stylename : $primary-stylename,
                                       $unit-size         : $v-unit-size,
                                       $font-size         : $v-font-size);
@@ -65,8 +65,8 @@
                                       $scaling-factor    : $v-scaling-factor--small);
   }
 
-  .#{$primary-stylename}.middle,
-  .#{$primary-stylename}-wrapper.middle {
+  .#{$primary-stylename}.medium,
+  .#{$primary-stylename}-wrapper.medium {
     @include he-fileupload-size-style($primary-stylename : $primary-stylename,
                                       $unit-size         : $v-unit-size,
                                       $font-size         : $v-font-size);
