@@ -89,7 +89,7 @@
 
   .#{$primary-stylename}-handle {
     &:before {
-      @include he-button-default-style;
+      background: var(--slider-handle-color);
     }
 
     &:after {
