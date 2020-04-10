@@ -255,7 +255,7 @@
   --button-success-color: var(--success-color);
   --button-success-text-color: var(--success-contrast-text-color);
   --button-success-hover-color: var(--success-color-shade-1);
-  --button-success-active-color: var(--success-color-shade-1);
+  --button-success-active-color: var(--success-color-shade-2);
   --button-success-disabled-color: var(--success-dim-color);
   --button-success-disabled-text-color: var(--success-contrast-text-color);
   --button-success-focused-border-color: var(--button-success-disabled-color);
@@ -796,7 +796,7 @@
     --button-default-disabled-text-color: var(--button-default-text-color);
     --button-default-focused-border-color: var(--button-default-disabled-color);
 
-    --secondary-color: #F2F2F2;
+    --button-secondary-color: #F2F2F2;
     --button-secondary-text-color: #4F5C78;
     --button-secondary-hover-color: #CECECE;               // (--secondary-color) (d10%)
     --button-secondary-active-color: #A7A7A7;              // (--secondary-color) (d20%)
