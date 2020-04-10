@@ -276,6 +276,7 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 @mixin he-tabsheet-framed-style($primary-stylename: v-tabsheet, $frame-inactive-tabs: true, $outer-frame: true) {
   > .#{$primary-stylename}-tabcontainer {
     .v-caption {
+      color: var(--tabsheet-framed-tabitemcell-caption-text-color);
       background: var(--tabsheet-framed-tabitemcell-caption-background-color);
       border: none;
       border-bottom: he-border($color: --tabsheet-tabcontainer-border-color);

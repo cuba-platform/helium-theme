@@ -159,23 +159,31 @@
   [class$="button"] {
     @include he-combobox-button-size-style($unit-size: $unit-size, $font-size: $font-size);
 
-    color: var(--text-main-color);
+    color: var(--combobox-button-text-color);
     border-left: 0;
 
     &:before {
       @include he-combobox-button-icon-style();
     }
 
-    &:hover:before {
-      color: var(--text-secondary-color);
+    &:hover {
+      background: var(--combobox-button-hover-background-color);
+
+      &:before {
+        color: var(--combobox-button-hover-text-color);
+      }
+    }
+
+    &:active {
+      background: var(--combobox-button-active-background-color);
+
+      &:before {
+        color: var(--combobox-button-active-text-color);
+      }
     }
 
     &:after {
       display: none;
-    }
-
-    &:active {
-      background: var(--button-default-color);
     }
   }
 
