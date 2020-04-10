@@ -161,8 +161,8 @@
 }
 
 @mixin he-button-primary-style() {
-  @include he-button-color-style($main-color            : --primary-color,
-                                 $text-color            : --primary-contrast-text-color,
+  @include he-button-color-style($main-color            : --button-primary-color,
+                                 $text-color            : --button-primary-text-color,
                                  $hover-color           : --button-primary-hover-color,
                                  $active-color          : --button-primary-active-color,
                                  $disabled-color        : --button-primary-disabled-color,
@@ -171,8 +171,8 @@
 }
 
 @mixin he-button-friendly-style() {
-  @include he-button-color-style($main-color            : --success-color,
-                                 $text-color            : --success-contrast-text-color,
+  @include he-button-color-style($main-color            : --button-success-color,
+                                 $text-color            : --button-success-text-color,
                                  $hover-color           : --button-success-hover-color,
                                  $active-color          : --button-success-active-color,
                                  $disabled-color        : --button-success-disabled-color,
@@ -181,8 +181,8 @@
 }
 
 @mixin he-button-danger-style() {
-  @include he-button-color-style($main-color            : --error-color,
-                                 $text-color            : --error-contrast-text-color,
+  @include he-button-color-style($main-color            : --button-error-color,
+                                 $text-color            : --button-error-text-color,
                                  $hover-color           : --button-error-hover-color,
                                  $active-color          : --button-error-active-color,
                                  $disabled-color        : --button-error-disabled-color,
@@ -191,7 +191,7 @@
 }
 
 @mixin he-button-secondary-style() {
-  @include he-button-color-style($main-color            : --secondary-color,
+  @include he-button-color-style($main-color            : --button-secondary-color,
                                  $text-color            : --button-secondary-text-color,
                                  $hover-color           : --button-secondary-hover-color,
                                  $active-color          : --button-secondary-active-color,
