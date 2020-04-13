@@ -320,11 +320,11 @@
 
   --combobox-no-input-background-color: var(--background-color);
 
-  --combobox-popup-status-background-color: var(--button-default-color);
-  --combobox-popup-status-text-color: var(--button-default-text-color);
+  --combobox-popup-status-background-color: var(--dim-color);
+  --combobox-popup-status-text-color: var(--text-main-color);
 
-  --combobox-popup-page-background-color: var(--button-default-color);
-  --combobox-popup-page-text-color: var(--button-default-text-color);
+  --combobox-popup-page-background-color: var(--dim-color);
+  --combobox-popup-page-text-color: var(--text-main-color);
 
   /* PickerField */
 
@@ -422,20 +422,22 @@
   --sidemenu-item-badge-color: var(--primary-color);
   --sidemenu-item-badge-background-color: var(--primary-dim-color);
 
-  --sidemenu-responsive-title-background-color: var(--text-main-color);
-  --sidemenu-responsive-title-text-color: var(--text-contrast-color);
+  --sidemenu-action-button-color: var(--text-main-color);
+  --sidemenu-action-button-hover-background-color: var(--dim-color-shade-1);
+  --sidemenu-action-button-active-background-color: var(--dim-color-shade-2);
 
-  --sidemenu-action-button-color: var(--button-default-text-color);
-  --sidemenu-action-button-hover-background-color: var(--button-default-hover-color);
-  --sidemenu-action-button-active-background-color: var(--button-default-active-color);
-
-  --sidemenu-mobile-button-color: var(--button-default-color);
-  --sidemenu-mobile-button-hover-background-color: var(--secondary-color);
-  --sidemenu-mobile-button-active-background-color: var(--button-secondary-active-color);
+  --sidemenu-responsive-title-background-color: var(--secondary-color);
+  --sidemenu-responsive-title-text-color: var(--secondary-contrast-text-color);
 
   --sidemenu-responsive-item-separator-color: var(--primary-dim-color);
   --sidemenu-responsive-item-header-background-color: #E6E3E8;
-  --sidemenu-responsive-item-selected-background-color: var(--primary-dim-color);
+
+  --sidemenu-responsive-item-selected-text-color: var(--sedemenu-item-selected-color);
+  --sidemenu-responsive-item-selected-background-color: var(--sedemenu-item-selected-background-color);
+
+  --sidemenu-mobile-button-color: var(--secondary-contrast-text-color);
+  --sidemenu-mobile-button-hover-background-color: var(--secondary-color-shade-1);
+  --sidemenu-mobile-button-active-background-color: var(--secondary-color-shade-2);
 
   /* AppMenu */
 
@@ -446,14 +448,14 @@
   --menubar-menuitem-selected-background-color: var(--primary-color);
   --menubar-menuitem-selected-text-color: var(--primary-contrast-text-color);
 
-  --menubar-menuitem-hover-background-color: var(--button-secondary-hover-color);
+  --menubar-menuitem-hover-background-color: var(--secondary-color-shade-1);
 
   --menubar-separator-color: var(--border-dim-color);
 
   --menubar-action-button-color: var(--menubar-text-color);
   --menubar-action-button-hover-background-color: var(--menubar-menuitem-hover-background-color);
   --menubar-action-button-hover-text-color: var(--menubar-menuitem-selected-text-color);
-  --menubar-action-button-active-background-color: var(--button-secondary-active-color);
+  --menubar-action-button-active-background-color: var(--secondary-color-shade-2);
   --menubar-action-button-active-text-color: var(--menubar-menuitem-selected-text-color);
 
   /* Panel */
