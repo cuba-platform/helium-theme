@@ -93,6 +93,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
         }
 
         .#{$primary-stylename}-item-action.#{$primary-stylename}-item-selected {
+          color: var(--sidemenu-responsive-item-selected-text-color);
           background: var(--sidemenu-responsive-item-selected-background-color);
         }
 
