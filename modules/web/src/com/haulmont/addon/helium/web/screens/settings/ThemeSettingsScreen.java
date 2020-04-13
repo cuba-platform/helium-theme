@@ -151,12 +151,12 @@ public class ThemeSettingsScreen extends Screen {
 
     protected void initModeField() {
         modeField.setOptionsList(variantsManager.getAppThemeModeList());
-        modeField.setValue(variantsManager.loadUserAppThemeModeSetting());
+        modeField.setValue(variantsManager.loadUserAppThemeModeSettingOrDefault());
     }
 
     protected void initSizeField() {
         sizeField.setOptionsList(variantsManager.getAppThemeSizeList());
-        sizeField.setValue(variantsManager.loadUserAppThemeSizeSetting());
+        sizeField.setValue(variantsManager.loadUserAppThemeSizeSettingOrDefault());
     }
 
     @Subscribe("applyBtn")
