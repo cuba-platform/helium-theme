@@ -42,7 +42,6 @@ public class HeliumThemeVariantsManager {
     protected static final String THEME_MODE_COOKIE_PREFIX = "HELIUM_THEME_MODE_";
     protected static final String THEME_SIZE_COOKIE_PREFIX = "HELIUM_THEME_SIZE_";
 
-    // TODO: gg, rename
     protected static final String DEFAULT_THEME_MODE_KEY = "cuba.theme.defaultMode";
     protected static final String DEFAULT_THEME_SIZE_KEY = "cuba.theme.defaultSize";
 
@@ -82,6 +81,11 @@ public class HeliumThemeVariantsManager {
 
     @Nullable
     public String loadUserAppThemeModeSetting() {
+        return loadUserSetting(THEME_MODE_USER_SETTING_NAME);
+    }
+
+    @Nullable
+    public String loadUserAppThemeModeSettingOrDefault() {
         String mode = loadUserSetting(THEME_MODE_USER_SETTING_NAME);
         return Strings.isNullOrEmpty(mode) ? getDefaultAppThemeMode() : mode;
     }
@@ -112,6 +116,11 @@ public class HeliumThemeVariantsManager {
 
     @Nullable
     public String loadUserAppThemeSizeSetting() {
+        return loadUserSetting(THEME_SIZE_USER_SETTING_NAME);
+    }
+
+    @Nullable
+    public String loadUserAppThemeSizeSettingOrDefault() {
         String size = loadUserSetting(THEME_SIZE_USER_SETTING_NAME);
         return Strings.isNullOrEmpty(size) ? getDefaultAppThemeSize() : size;
     }
