@@ -1,15 +1,10 @@
-# Helium theme
+# Helium Theme
 
 ![teaser](img/teaser.png)
 
-> ### 🛠 Status: preview
-> Helium theme is currently in preview status. Styles structure is mostly settled, 
-> however there are things that haven't been finalized yet and you can expect some changes.
-
-
 ## Overview
 
-Designed from scratch, Helium theme provides more clean and modern look and feel.
+Designed from scratch, Helium theme provides modern look and feel and customization capabilities.
 
 Main features:
 
@@ -20,7 +15,7 @@ without theme recompilation and app restart.
 
 ## Installation
 
-[Install](https://doc.cuba-platform.com/studio/) add-on by the following coordinates using CUBA Studio:
+[Install](https://doc.cuba-platform.com/studio/) add-on from marketplace or by the following coordinates, using CUBA Studio:
 
 `com.haulmont.addon.helium:helium-global:<version>`
 
@@ -28,7 +23,71 @@ Pick a version which is compatible with the platform version used in your projec
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
-| 7.2.x            | 0.2.x          |
-| 7.1.5+           | 0.1.x          |
+| 7.2.4+           | 1.2.x          |
+| 7.1.5+           | 1.1.x          |
 
-Theme is not available in the [CUBA marketplace](https://www.cuba-platform.com/marketplace) yet.
+## Theme Editor
+
+[Theme editor](https://demo10.cuba-platform.com/helium-editor/) allows you to easily create custom color presets.
+
+### Applying Custom Color Preset
+
+To add a color preset you will need to extend Helium theme. See the [demo project](https://github.com/cuba-labs/helium-extension-demo)
+and this particular commits:
+ * [Extend Helium](https://github.com/cuba-labs/helium-extension-demo/commit/85ae53f7d07acaa31d1c737803ae2779b54f6ed7)
+ * [Add helium-theme.properties](https://github.com/cuba-labs/helium-extension-demo/commit/2b7f72ebb0c6a25bee790e421302a31cca602347)
+
+Place CSS variables in `modules/web/themes/helium/styles.scss` into `.helium` selector, e.g.:
+
+```scss
+@import "helium-defaults";
+@import "com.company.demo/helium-ext-defaults";
+@import "app-components";
+@import "com.company.demo/helium-ext";
+
+.helium {
+  // include auto-generated app components SCSS
+  @include app_components;
+
+  @include com_company_demo-helium-ext;
+
+  /* Basic */
+  --primary-color: #0097D8;
+  --primary-color_rgb: 0, 151, 216;
+
+  /* Common */
+  --primary-color-shade-1: #0084BD;
+  --primary-color-shade-2: #0076A8;
+  --primary-dim-color: #2EC0FF;
+}
+``` 
+
+If your preset is based on dark variant or has custom name add variables under the corresponding selector:
+
+```scss
+@import "helium-defaults";
+@import "com.company.demo/helium-ext-defaults";
+@import "app-components";
+@import "com.company.demo/helium-ext";
+
+.helium {
+  // include auto-generated app components SCSS
+  @include app_components;
+
+  @include com_company_demo-helium-ext;
+
+  .dark {
+    /* Basic */
+    --primary-color: #0097D8;
+    --primary-color_rgb: 0, 151, 216;
+
+    /* Common */
+    --primary-color-shade-1: #0084BD;
+    --primary-color-shade-2: #0076A8;
+    --primary-dim-color: #2EC0FF;
+  }
+}
+``` 
+
+Studio 13 supports only platform themes extension, once [this issue](https://youtrack.cuba-platform.com/issue/STUDIO-4474) is resolved (presumably in release 14)
+it will be possible to extend Helium without any manual actions.
