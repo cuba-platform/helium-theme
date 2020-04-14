@@ -37,20 +37,10 @@ and this particular commits:
  * [Extend Helium](https://github.com/cuba-labs/helium-extension-demo/commit/85ae53f7d07acaa31d1c737803ae2779b54f6ed7)
  * [Add helium-theme.properties](https://github.com/cuba-labs/helium-extension-demo/commit/2b7f72ebb0c6a25bee790e421302a31cca602347)
 
-Place CSS variables in `modules/web/themes/helium/styles.scss` into `.helium` selector, e.g.:
+Place generated CSS variables in `helium-ext.scss` file, e.g.:
 
 ```scss
-@import "helium-defaults";
-@import "com.company.demo/helium-ext-defaults";
-@import "app-components";
-@import "com.company.demo/helium-ext";
-
-.helium {
-  // include auto-generated app components SCSS
-  @include app_components;
-
-  @include com_company_demo-helium-ext;
-
+@mixin com_company_demo-helium-ext {
   /* Basic */
   --primary-color: #0097D8;
   --primary-color_rgb: 0, 151, 216;
@@ -59,32 +49,10 @@ Place CSS variables in `modules/web/themes/helium/styles.scss` into `.helium` se
   --primary-color-shade-1: #0084BD;
   --primary-color-shade-2: #0076A8;
   --primary-dim-color: #2EC0FF;
-}
-``` 
-
-If your preset is based on dark variant or has custom name add variables under the corresponding selector:
-
-```scss
-@import "helium-defaults";
-@import "com.company.demo/helium-ext-defaults";
-@import "app-components";
-@import "com.company.demo/helium-ext";
-
-.helium {
-  // include auto-generated app components SCSS
-  @include app_components;
-
-  @include com_company_demo-helium-ext;
 
   .dark {
-    /* Basic */
-    --primary-color: #0097D8;
-    --primary-color_rgb: 0, 151, 216;
-
     /* Common */
-    --primary-color-shade-1: #0084BD;
-    --primary-color-shade-2: #0076A8;
-    --primary-dim-color: #2EC0FF;
+    --primary-dim-color: #195b7c;
   }
 }
 ``` 
