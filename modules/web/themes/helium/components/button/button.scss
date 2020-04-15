@@ -137,7 +137,7 @@
 }
 
 @mixin he-button-size-style($unit-size       : $v-unit-size,
-                            $font-size       : null,
+                            $font-size       : $v-font-size,
                             $padding         : null,
                             $border-radius   : $v-border-radius) {
   height: $unit-size;
