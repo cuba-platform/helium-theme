@@ -11,7 +11,9 @@ Main features:
 * CSS variables are used for colors. As a result it's possible to apply different color presets on the fly, 
 without theme recompilation and app restart.
 * Built-in size presets (small/large/medium), also switchable in runtime.
-* Settings screen.
+* Persistent per-user color/size settings.
+  * Settings screen (`Help > Theme Settings`).
+  * Built-in `helium-theme-minimal` role to enable access to the settings screen.
 
 ## Installation
 
@@ -23,8 +25,8 @@ Pick a version which is compatible with the platform version used in your projec
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
-| 7.2.4+           | 1.2.x          |
-| 7.1.5+           | 1.1.x          |
+| 7.2.4+           | 0.2.x          |
+| 7.1.5+           | 0.1.x          |
 
 ## Theme Editor
 
