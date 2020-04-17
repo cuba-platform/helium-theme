@@ -16,6 +16,7 @@
 
 @mixin he-listeditor($primary-stylename: c-listeditor) {
   @include he-pickerfield-style($primary-stylename: $primary-stylename);
+  @include he-listeditor-size-style($primary-stylename: $primary-stylename);
 
   .#{$primary-stylename}.v-customcomponent-error {
     .v-textfield.#{$primary-stylename}-text {
@@ -91,5 +92,10 @@
 
   .v-textfield.#{$primary-stylename}-text {
     @include he-input-size-style($unit-size: $unit-size, $font-size: $font-size);
+  }
+
+  .#{$primary-stylename}-layout .v-slot-#{$primary-stylename}-text > .v-textfield.#{$primary-stylename}-text {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
