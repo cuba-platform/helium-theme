@@ -146,6 +146,25 @@
         border-bottom-right-radius: 0;
       }
     }
+
+    & .safari-input-wrap:only-child input,
+    & .safari-input-wrap:only-child .v-filterselect,
+    & input:only-child,
+    & .v-filterselect:only-child {
+      border-top-right-radius: $v-border-radius;
+      border-bottom-right-radius: $v-border-radius;
+
+      [class$="button"] {
+        border-top-right-radius: $v-border-radius;
+        border-bottom-right-radius: $v-border-radius;
+      }
+    }
+
+    > .v-textfield.#{$primary-stylename}-text:last-child,
+    > .v-filterselect:last-child > input {
+      border-top-right-radius: $v-textfield-border-radius;
+      border-bottom-right-radius: $v-textfield-border-radius;
+    }
   }
 
   .#{$primary-stylename}-layout > .v-filterselect:not(.c-searchselect) > input,
