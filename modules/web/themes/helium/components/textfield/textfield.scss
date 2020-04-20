@@ -86,6 +86,10 @@
   } @else {
     padding: he-input-padding($unit-size);
   }
+
+  &.inline-icon {
+    padding-left: $unit-size;
+  }
 }
 
 @function he-input-padding($unit-size: $v-unit-size) {
