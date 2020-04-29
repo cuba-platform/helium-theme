@@ -52,7 +52,7 @@ Place generated CSS variables in `helium-ext.scss` file, e.g.:
   --primary-color-shade-2: #0076A8;
   --primary-dim-color: #2EC0FF;
 
-  .dark {
+  &.dark {
     /* Common */
     --primary-dim-color: #195b7c;
   }
