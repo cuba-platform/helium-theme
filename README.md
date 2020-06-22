@@ -64,5 +64,5 @@ it will be possible to extend Helium without any manual actions.
 
 
 ## Browser compatibility
-Helium works in latest versions of modern browsers which support [CSS variables](https://caniuse.com/#feat=css-variables).
+Helium works in the latest versions of modern browsers that support [CSS variables](https://caniuse.com/#feat=css-variables).
 IE 11 is not supported out of the box since it does not support CSS variables, though it is possible to use [polyfill](https://github.com/nuxodin/ie11CustomProperties).
