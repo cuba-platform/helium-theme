@@ -4,16 +4,33 @@
 
 ## Overview
 
-Designed from scratch, Helium theme provides modern look and feel and customization capabilities.
+Designed from scratch, Helium theme provides a modern look and feel and customization capabilities. Main features:
 
-Main features:
+### Color Presets
 
-* CSS variables are used for colors. As a result it's possible to apply different color presets on the fly, 
-without theme recompilation and app restart.
-* Built-in size presets (small/large/medium), also switchable in runtime.
-* Persistent per-user color/size settings.
-  * Settings screen (`Help > Theme Settings`).
-  * Built-in `helium-theme-minimal` role to enable access to the settings screen.
+CSS variables are used for colors. As a result, it's possible to apply different color presets on the fly, 
+without theme recompilation and app restart. There are two color presets provided out of the box - light and dark.
+
+To manage presets available for end-users modify the following properties in `theme.properties`
+```
+cuba.theme.modes = light|dark
+cuba.theme.defaultMode = light
+```
+Also, you can create your own color presets using the online theme editor (see below).
+
+### Size Presets
+
+There are three built-in presets for size: small, medium and large:
+
+Similarly to the colors presets, you can modify presets for sizes in `theme.properties` via the following properties:
+```
+cuba.theme.sizes = small|medium|large
+cuba.theme.defaultSize = medium
+```
+
+### Per-user settings
+
+A user can set the desired color and size preset in settings screen (`Help > Theme Settings`). There is the `helium-theme-minimal` role that enables access to the settings screen.
 
 ## Installation
 
