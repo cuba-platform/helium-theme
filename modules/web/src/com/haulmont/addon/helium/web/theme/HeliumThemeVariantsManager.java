@@ -19,18 +19,13 @@ package com.haulmont.addon.helium.web.theme;
 import com.google.common.base.Strings;
 import com.haulmont.cuba.core.global.ClientType;
 import com.haulmont.cuba.core.global.GlobalConfig;
-import com.haulmont.cuba.gui.theme.ThemeConstantsManager;
 import com.haulmont.cuba.security.app.UserSettingService;
 import com.haulmont.cuba.web.sys.AppCookies;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Nullable;
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 @Component(HeliumThemeVariantsManager.NAME)
 public class HeliumThemeVariantsManager {
@@ -42,12 +37,6 @@ public class HeliumThemeVariantsManager {
     protected static final String THEME_MODE_COOKIE_PREFIX = "HELIUM_THEME_MODE_";
     protected static final String THEME_SIZE_COOKIE_PREFIX = "HELIUM_THEME_SIZE_";
 
-    protected static final String DEFAULT_THEME_MODE_KEY = "cuba.theme.defaultMode";
-    protected static final String DEFAULT_THEME_SIZE_KEY = "cuba.theme.defaultSize";
-
-    protected static final String THEME_MODE_LIST_KEY = "cuba.theme.modes";
-    protected static final String THEME_SIZE_LIST_KEY = "cuba.theme.sizes";
-
     @Inject
     protected GlobalConfig globalConfig;
 
@@ -55,7 +44,7 @@ public class HeliumThemeVariantsManager {
     protected UserSettingService userSettingService;
 
     @Inject
-    protected ThemeConstantsManager themeConstantsManager;
+    protected HeliumThemeConfig heliumThemeConfig;
 
     protected AppCookies cookies;
 
@@ -63,20 +52,14 @@ public class HeliumThemeVariantsManager {
         cookies = new AppCookies();
     }
 
-
     @Nullable
     public String getUserAppThemeMode() {
         return getCookieValue(THEME_MODE_COOKIE_PREFIX);
     }
 
     public void setUserAppThemeMode(String themeMode) {
-        if (Objects.equals(themeMode, getDefaultAppThemeMode())) {
-            removeCookie(THEME_MODE_COOKIE_PREFIX);
-            removeUserSetting(THEME_MODE_USER_SETTING_NAME);
-        } else {
-            addCookie(THEME_MODE_COOKIE_PREFIX, themeMode);
-            saveUserSetting(THEME_MODE_USER_SETTING_NAME, themeMode);
-        }
+        addCookie(THEME_MODE_COOKIE_PREFIX, themeMode);
+        saveUserSetting(THEME_MODE_USER_SETTING_NAME, themeMode);
     }
 
     @Nullable
@@ -84,20 +67,23 @@ public class HeliumThemeVariantsManager {
         return loadUserSetting(THEME_MODE_USER_SETTING_NAME);
     }
 
-    @Nullable
     public String loadUserAppThemeModeSettingOrDefault() {
-        String mode = loadUserSetting(THEME_MODE_USER_SETTING_NAME);
-        return Strings.isNullOrEmpty(mode) ? getDefaultAppThemeMode() : mode;
+        String mode = loadUserAppThemeModeSetting();
+        return Strings.isNullOrEmpty(mode) ? getDefaultAppThemeModeToUse() : mode;
     }
 
     public String getDefaultAppThemeMode() {
-        return getThemeConstant(DEFAULT_THEME_MODE_KEY);
+        return heliumThemeConfig.getDefaultMode();
+    }
+
+    public String getDefaultAppThemeModeToUse() {
+        String defaultModeToUse = heliumThemeConfig.getDefaultModeToUse();
+        return Strings.isNullOrEmpty(defaultModeToUse) ? getDefaultAppThemeMode() : defaultModeToUse;
     }
 
     public List<String> getAppThemeModeList() {
-        return getThemeConstantAsList(THEME_MODE_LIST_KEY);
+        return heliumThemeConfig.getModes();
     }
-
 
     @Nullable
     public String getUserAppThemeSize() {
@@ -105,13 +91,8 @@ public class HeliumThemeVariantsManager {
     }
 
     public void setUserAppThemeSize(String themeSize) {
-        if (Objects.equals(themeSize, getDefaultAppThemeSize())) {
-            removeCookie(THEME_SIZE_COOKIE_PREFIX);
-            removeUserSetting(THEME_SIZE_USER_SETTING_NAME);
-        } else {
-            addCookie(THEME_SIZE_COOKIE_PREFIX, themeSize);
-            saveUserSetting(THEME_SIZE_USER_SETTING_NAME, themeSize);
-        }
+        addCookie(THEME_SIZE_COOKIE_PREFIX, themeSize);
+        saveUserSetting(THEME_SIZE_USER_SETTING_NAME, themeSize);
     }
 
     @Nullable
@@ -119,48 +100,29 @@ public class HeliumThemeVariantsManager {
         return loadUserSetting(THEME_SIZE_USER_SETTING_NAME);
     }
 
-    @Nullable
     public String loadUserAppThemeSizeSettingOrDefault() {
-        String size = loadUserSetting(THEME_SIZE_USER_SETTING_NAME);
-        return Strings.isNullOrEmpty(size) ? getDefaultAppThemeSize() : size;
+        String size = loadUserAppThemeSizeSetting();
+        return Strings.isNullOrEmpty(size) ? getDefaultAppThemeSizeToUse() : size;
     }
 
     public String getDefaultAppThemeSize() {
-        return getThemeConstant(DEFAULT_THEME_SIZE_KEY);
+        return heliumThemeConfig.getDefaultSize();
+    }
+
+    public String getDefaultAppThemeSizeToUse() {
+        String defaultSizeToUse = heliumThemeConfig.getDefaultSizeToUse();
+        return Strings.isNullOrEmpty(defaultSizeToUse) ? getDefaultAppThemeSize() : defaultSizeToUse;
     }
 
     public List<String> getAppThemeSizeList() {
-        return getThemeConstantAsList(THEME_SIZE_LIST_KEY);
+        return heliumThemeConfig.getSizes();
     }
-
-
-    protected String getThemeConstant(String key) {
-        return themeConstantsManager.getConstants().get(key);
-    }
-
-    protected List<String> getThemeConstantAsList(String key) {
-        String value = themeConstantsManager.getConstants().get(key);
-
-        List<String> stringList = Collections.emptyList();
-        if (StringUtils.isNotEmpty(value)) {
-            String[] elements = value.split("\\|");
-            for (String element : elements) {
-                if (StringUtils.isNotEmpty(element)) {
-                    if (stringList.isEmpty()) {
-                        stringList = new ArrayList<>();
-                    }
-                    stringList.add(element);
-                }
-            }
-        }
-        return stringList;
-    }
-
 
     protected void addCookie(String name, String value) {
         cookies.addCookie(getFullCookieName(name), value);
     }
 
+    @Nullable
     protected String getCookieValue(String name) {
         return cookies.getCookieValue(getFullCookieName(name));
     }
@@ -173,11 +135,11 @@ public class HeliumThemeVariantsManager {
         return prefix + globalConfig.getWebContextName();
     }
 
-
     protected void saveUserSetting(String name, String value) {
         userSettingService.saveSetting(ClientType.WEB, name, value);
     }
 
+    @Nullable
     protected String loadUserSetting(String name) {
         return userSettingService.loadSetting(ClientType.WEB, name);
     }
