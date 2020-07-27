@@ -45,7 +45,7 @@ apply(plugin: 'cuba')
 cuba {
     artifact {
         group = 'com.haulmont.addon.helium'
-        version = '0.2'
+        version = '0.2.1'
         isSnapshot = true
     }
     tomcat {

@@ -20,9 +20,11 @@ import com.google.common.base.Strings;
 import com.haulmont.cuba.web.theme.ThemeVariantsProvider;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Nullable;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 @Component(ThemeVariantsProvider.NAME)
 public class HeliumThemeVariantsProvider implements ThemeVariantsProvider {
@@ -34,16 +36,40 @@ public class HeliumThemeVariantsProvider implements ThemeVariantsProvider {
     public List<String> getThemeVariants() {
         List<String> variants = new ArrayList<>(2);
 
-        String themeMode = variantsManager.getUserAppThemeMode();
+        String themeMode = getThemeMode();
         if (!Strings.isNullOrEmpty(themeMode)) {
             variants.add(themeMode);
         }
 
-        String themeSize = variantsManager.getUserAppThemeSize();
+        String themeSize = getThemeSize();
         if (!Strings.isNullOrEmpty(themeSize)) {
             variants.add(themeSize);
         }
 
         return variants;
+    }
+
+    @Nullable
+    protected String getThemeMode() {
+        String themeMode = variantsManager.getUserAppThemeMode();
+        if (Strings.isNullOrEmpty(themeMode)) {
+            themeMode = variantsManager.getDefaultAppThemeModeToUse();
+        }
+
+        return Objects.equals(themeMode, variantsManager.getDefaultAppThemeMode())
+                ? null          // Don't add the default value to the result style class names list
+                : themeMode;
+    }
+
+    @Nullable
+    protected String getThemeSize() {
+        String themeSize = variantsManager.getUserAppThemeSize();
+        if (Strings.isNullOrEmpty(themeSize)) {
+            themeSize = variantsManager.getDefaultAppThemeSizeToUse();
+        }
+
+        return Objects.equals(themeSize, variantsManager.getDefaultAppThemeSize())
+                ? null          // Don't add the default value to the result style class names list
+                : themeSize;
     }
 }
