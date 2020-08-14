@@ -51,11 +51,9 @@ Pick a version which is compatible with the platform version used in your projec
 
 ### Applying Custom Color Preset
 
-To add a color preset you will need to extend Helium theme. See the [demo project](https://github.com/cuba-labs/helium-extension-demo)
-and this particular commit:
- * [Extend Helium](https://github.com/cuba-labs/helium-extension-demo/commit/85ae53f7d07acaa31d1c737803ae2779b54f6ed7)
+To add a color preset you will need to extend the Helium theme. You can easily do it in [Studio](https://doc.cuba-platform.com/studio/#generic_ui_themes): in the main menu click CUBA > Advanced > Manage Themes > Create Theme Extension. Select helium in the dropdown.
 
-Place generated CSS variables in `helium-ext.scss` file, e.g.:
+Once theme extension is created, place generated CSS variables in `helium-ext.scss` file, e.g.:
 
 ```scss
 @mixin com_company_demo-helium-ext {
@@ -75,11 +73,7 @@ Place generated CSS variables in `helium-ext.scss` file, e.g.:
 }
 ``` 
 
-Studio 13 supports only platform themes extension, once [this issue](https://youtrack.cuba-platform.com/issue/STUDIO-4474) is resolved (presumably in release 14)
-it will be possible to extend Helium without any manual actions.
-
-
-## Browser compatibility
+## Browser Compatibility
 
 Helium works in the latest versions of modern browsers that support [CSS variables](https://caniuse.com/#feat=css-variables).
-IE 11 is not supported out of the box since it does not support CSS variables, though it is possible to use [polyfill](https://github.com/nuxodin/ie11CustomProperties).
+IE 11 is not supported out of the box since it does not support CSS variables. It is possible to use [polyfill](https://github.com/nuxodin/ie11CustomProperties) for IE 11, however, it is not tested and may cause performance issues 
