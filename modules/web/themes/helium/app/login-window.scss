@@ -163,4 +163,8 @@ $cuba-login-form-width--large: $cuba-login-form-width * $v-scaling-factor--large
     height: $login-btn-height;
     width: $login-btn-width;
   }
+
+  .c-powered-by a {
+    padding-left: 28px;
+  }
 }
