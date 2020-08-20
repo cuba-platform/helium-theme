@@ -167,7 +167,7 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
   }
 
   .#{$primary-stylename}-scroller {
-    @include linear-gradient(to left, $background-color 70%, he-rgba($color: $background-color_rgb, $alpha: 0) 100%, $fallback: transparent);
+    @include linear-gradient(to left, $background-color 70%, rgba($background-color, 0) 100%, $fallback: transparent);
 
     &:after {
       background: $tabsheet-tabcontainer-border-color;

@@ -22,10 +22,6 @@
   border-color: var($color);
 }
 
-@function he-rgba($color, $alpha) {
-  @return unquote("rgba(var(#{$color}), #{$alpha})");
-}
-
 @mixin he-box-shadow($shadow: $box-shadow) {
   @include box-shadow(var($shadow));
 }
