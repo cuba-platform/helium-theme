@@ -103,7 +103,7 @@
 
 @mixin he-cuba-contextmenu($primary-stylename: c-cm-container) {
   .#{$primary-stylename} {
-    @include he-box-shadow(--selection-overlay-shadow);
+    @include he-box-shadow($selection-overlay-shadow);
     background: $overlay-background-color;
   }
 }

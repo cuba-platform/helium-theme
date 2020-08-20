@@ -109,7 +109,7 @@
     }
 
     &.#{$primary-stylename}-focus {
-      @include he-focus-style(--border-dim-focused-color);
+      @include he-focus-style($border-dim-focused-color);
     }
   }
 

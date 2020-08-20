@@ -22,7 +22,7 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
   @include he-sidemenu-layout-collapsible-style();
 
   .c-app-workarea {
-    @include he-box-shadow(--app-workarea-shadow);
+    @include he-box-shadow($app-workarea-shadow);
   }
 
   $tabsheet-stylename: v-tabsheet;

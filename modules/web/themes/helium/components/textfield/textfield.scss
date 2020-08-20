@@ -120,7 +120,7 @@
   background: $dim-color;
 
   &:focus {
-    @include he-focus-style(--border-dim-focused-color);
+    @include he-focus-style($border-dim-focused-color);
   }
 }
 
@@ -136,6 +136,6 @@
   color: $text-main-color;
 
   &:focus {
-    @include he-focus-style(--error-color);
+    @include he-focus-style($error-color);
   }
 }

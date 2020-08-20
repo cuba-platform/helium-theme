@@ -20,7 +20,7 @@
  *
  * @param {size} $size (24px) - the diameter of the spinner, in pixels. Should be divisible by 2, increased by 1px if not
  * @param {size} $thickness (2px) - the thickness or width of the border of the spinner
- * @param {color} $color (--primary-color) - the color of the border of the spinner
+ * @param {color} $color ($primary-color) - the color of the border of the spinner
  * @param {time} $speed (500ms) - the speed of the spinning animation
  */
 @mixin he-spinner ($size: 24px, $thickness: 2px, $speed: 500ms) {

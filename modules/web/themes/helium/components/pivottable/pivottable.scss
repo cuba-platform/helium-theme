@@ -54,7 +54,7 @@
     }
 
     .pvtFilterBox {
-      @include he-box-shadow(--pivot-filterbox-shadow);
+      @include he-box-shadow($pivot-filterbox-shadow);
 
       button {
         @include he-button-default-style();

@@ -128,7 +128,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
       }
 
       .#{$primary-stylename}-wrap {
-        @include he-box-shadow(--app-workarea-shadow);
+        @include he-box-shadow($app-workarea-shadow);
 
         background: $sidemenu-background-color;
         color: $sidemenu-text-color;

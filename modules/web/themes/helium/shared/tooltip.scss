@@ -36,7 +36,7 @@
 
 @mixin he-tooltip-style() {
   @include he-tooltip-size-style();
-  @include he-box-shadow(--tooltip-shadow);
+  @include he-box-shadow($tooltip-shadow);
 
   background: rgba($secondary-color, .9);
   color: $tooltip-font-color;

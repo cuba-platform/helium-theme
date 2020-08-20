@@ -17,7 +17,7 @@
 @mixin he-draganddrop($primary-stylename: v-drag-element) {
   .#{$primary-stylename} {
     @include he-draganddrop-size-style();
-    @include he-box-shadow(--drag-element-shadow);
+    @include he-box-shadow($drag-element-shadow);
 
     background-color: $app-background-color;
     border: he-border();

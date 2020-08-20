@@ -43,7 +43,7 @@
   @include he-window-size-style($primary-stylename: $primary-stylename);
 
   .#{$primary-stylename} {
-    @include he-box-shadow(--window-shadow);
+    @include he-box-shadow($window-shadow);
 
     color: $text-main-color;
     background-color: $window-background-color;

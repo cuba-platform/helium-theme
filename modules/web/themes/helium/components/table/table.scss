@@ -35,7 +35,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
   .c-table-prefs-editor {
     // TODO: gg, style
-    @include he-box-shadow(--table-prefs-editor-shadow);
+    @include he-box-shadow($table-prefs-editor-shadow);
 
     color: $text-main-color;
 
@@ -180,8 +180,8 @@ $he-table-header-row-height-scale: 1.5 !default;
 @mixin he-table-style($primary-stylename: v-table) {
   @include he-table-size-style($primary-stylename: $primary-stylename);
 
-  $table-outer-border: he-table-border(--table-outer-border-color);
-  $table-inner-border: he-table-border(--table-inner-border-color);
+  $table-outer-border: he-table-border($table-outer-border-color);
+  $table-inner-border: he-table-border($table-inner-border-color);
 
   color: $text-main-color;
   background: $table-background-color;
@@ -497,7 +497,7 @@ $he-table-header-row-height-scale: 1.5 !default;
     }
   }
 
-  $table-inner-border: he-table-border(--table-inner-border-color);
+  $table-inner-border: he-table-border($table-inner-border-color);
 
   .c-grouptable-group-divider-header {
     .#{$primary-stylename}-caption-container {

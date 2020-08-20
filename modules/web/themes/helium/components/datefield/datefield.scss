@@ -228,11 +228,11 @@ $he-datefield-calendar-button-padding: 2px !default;
   }
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-focused {
-    @include he-focus-style(--datefield-calendarpanel-day-focused-border-color);
+    @include he-focus-style($datefield-calendarpanel-day-focused-border-color);
   }
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-focused.#{$primary-stylename}-day-selected {
-    @include he-focus-style(--datefield-calendarpanel-day-selected-focus-ring-color);
+    @include he-focus-style($datefield-calendarpanel-day-selected-focus-ring-color);
   }
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-outside-range,

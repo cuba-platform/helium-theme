@@ -63,7 +63,7 @@
 
 @mixin he-notification-style($primary-stylename: v-Notification) {
   @include he-notification-size-style($primary-stylename: $primary-stylename);
-  @include he-box-shadow(--notification-shadow);
+  @include he-box-shadow($notification-shadow);
   text-align: inherit;
 
   .#{$primary-stylename}-caption {
@@ -156,7 +156,7 @@
           $background-color       : $notification-warning-background-color,
           $caption-text-color     : $notification-warning-caption-color,
           $description-text-color : $notification-warning-description-color);
-  @include he-box-shadow(--notification-shadow);
+  @include he-box-shadow($notification-shadow);
 }
 
 @mixin he-notification-error-style($primary-stylename: v-Notification) {
@@ -165,7 +165,7 @@
           $background-color       : $notification-error-background-color,
           $caption-text-color     : $notification-error-caption-color,
           $description-text-color : $notification-error-description-color);
-  @include he-box-shadow(--notification-shadow);
+  @include he-box-shadow($notification-shadow);
 
   &:after {
     border: none;
