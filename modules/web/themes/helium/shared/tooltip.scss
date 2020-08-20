@@ -39,31 +39,31 @@
   @include he-box-shadow(--tooltip-shadow);
 
   background: he-rgba($color: --tooltip-background-color_rgb, $alpha: .9);
-  color: var(--tooltip-font-color);
+  color: $tooltip-font-color;
 
   .v-errormessage {
-    background: var(--tooltip-error-message-background-color);
-    color: var(--tooltip-error-message-font-color);
+    background: $tooltip-error-message-background-color;
+    color: $tooltip-error-message-font-color;
   }
 
   .v-errormessage-info {
-    color: var(--tooltip-error-message-level-info-font-color);
+    color: $tooltip-error-message-level-info-font-color;
   }
 
   .v-errormessage-warning {
-    color: var(--tooltip-error-message-level-warning-font-color);
+    color: $tooltip-error-message-level-warning-font-color;
   }
 
   .v-errormessage-error {
-    color: var(--tooltip-error-message-level-error-font-color);
+    color: $tooltip-error-message-level-error-font-color;
   }
 
   .v-errormessage-critical {
-    color: var(--tooltip-error-message-level-critical-font-color);
+    color: $tooltip-error-message-level-critical-font-color;
   }
 
   .v-errormessage-system {
-    color: var(--tooltip-error-message-level-system-font-color);
+    color: $tooltip-error-message-level-system-font-color;
   }
 }
 

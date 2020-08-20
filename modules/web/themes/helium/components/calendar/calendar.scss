@@ -16,45 +16,45 @@
 
 @mixin he-calendar($primary-stylename: v-calendar) {
   .#{$primary-stylename} {
-    color: var(--text-main-color);
+    color: $text-main-color;
   }
 
   .#{$primary-stylename}-header-day {
-    color: var(--calendar-header-day-color);
+    color: $calendar-header-day-color;
   }
 
   // Month view
 
   .#{$primary-stylename}-day-number {
-    color: var(--calendar-month-day-number-color);
+    color: $calendar-month-day-number-color;
     border-top: he-border($color: --calendar-month-day-number-border-color);
 
     &:hover {
-      color: var(--calendar-month-day-number-hover-color);
+      color: $calendar-month-day-number-hover-color;
     }
   }
 
   .#{$primary-stylename}-bottom-spacer {
     &:hover {
-      color: var(--calendar-month-day-bottom-spacer-hover-color);
+      color: $calendar-month-day-bottom-spacer-hover-color;
     }
   }
 
   .#{$primary-stylename}-month-day-today {
-    background: var(--calendar-month-day-today-background-color);
+    background: $calendar-month-day-today-background-color;
 
     .#{$primary-stylename}-day-number {
-      color: var(--calendar-month-day-today-day-number-color);
+      color: $calendar-month-day-today-day-number-color;
       border-top: he-border($color: --calendar-month-day-today-day-number-border-color, $strength: 2px);
     }
   }
 
   .#{$primary-stylename}-month-day-selected {
-    background-color: var(--calendar-month-day-selected-background-color);
+    background-color: $calendar-month-day-selected-background-color;
   }
 
   .#{$primary-stylename}-month-day-dragemphasis {
-    background-color: var(--calendar-month-day-dragemphasis-background-color);
+    background-color: $calendar-month-day-dragemphasis-background-color;
   }
 
   // Week / Day view
@@ -73,16 +73,16 @@
   }
 
   .#{$primary-stylename}-current-time {
-    background: var(--calendar-week-current-time-color);
+    background: $calendar-week-current-time-color;
 
     &:before {
-      color: var(--calendar-week-current-time-color);
+      color: $calendar-week-current-time-color;
     }
   }
 
   .#{$primary-stylename} .v-daterange {
     &:before {
-      background: var(--calendar-week-range-selection-color);
+      background: $calendar-week-range-selection-color;
     }
   }
 
@@ -91,27 +91,27 @@
   .#{$primary-stylename}-event-month {
     .#{$primary-stylename}-event-time {
       @include opacity(1);
-      color: var(--calendar-month-event-time-color);
+      color: $calendar-month-event-time-color;
     }
 
     &:before {
-      color: var(--calendar-month-event-marker-color);
+      color: $calendar-month-event-marker-color;
     }
   }
 
   .#{$primary-stylename}-week-wrapper {
     .#{$primary-stylename}-event {
-      color: var(--calendar-event-color);
+      color: $calendar-event-color;
 
       .#{$primary-stylename}-event-content {
-        background-color: var(--calendar-event-background-color);
+        background-color: $calendar-event-background-color;
         border: he-border($color: --calendar-week-event-content-border-color);
       }
     }
   }
 
   .#{$primary-stylename}-event-all-day {
-    background-color: var(--calendar-event-background-color);
-    color: var(--calendar-event-color);
+    background-color: $calendar-event-background-color;
+    color: $calendar-event-color;
   }
 }

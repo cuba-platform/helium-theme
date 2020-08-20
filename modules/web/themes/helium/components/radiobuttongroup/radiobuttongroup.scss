@@ -139,7 +139,7 @@ $he-radio-check-size--large: null !default;
 
     :root & > input {
       &:checked ~ label:after {
-        background: var(--radio-checked-color);
+        background: $radio-checked-color;
       }
 
       & ~ label:before,
@@ -153,7 +153,7 @@ $he-radio-check-size--large: null !default;
     &.v-disabled {
       :root & > input {
         &:checked ~ label:after {
-          background: var(--radio-read-only-checked-color);
+          background: $radio-read-only-checked-color;
         }
       }
     }

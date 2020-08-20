@@ -29,7 +29,7 @@
     }
 
     .gwt-RichTextArea {
-      background: var(--richtextarea-textarea-background-color);
+      background: $richtextarea-textarea-background-color;
     }
   }
 
@@ -116,19 +116,19 @@
 }
 
 @mixin he-richtextarea-toolbar-style() {
-  background: var(--richtextarea-toolbar-background-color);
+  background: $richtextarea-toolbar-background-color;
   border-bottom: he-border();
-  color: var(--richtextarea-toolbar-text-color);
+  color: $richtextarea-toolbar-text-color;
 
   .gwt-ToggleButton,
   .gwt-PushButton {
     &:hover {
-      color: var(--richtextarea-toolbar-text-hover-color);
+      color: $richtextarea-toolbar-text-hover-color;
     }
   }
 
   .gwt-ToggleButton-down,
   .gwt-ToggleButton-down-hovering {
-    background: var(--richtextarea-toolbar-togglebutton-down-background-color);
+    background: $richtextarea-toolbar-togglebutton-down-background-color;
   }
 }

@@ -64,7 +64,7 @@
   @include he-label-size-style($primary-stylename: $primary-stylename);
 
   .#{$primary-stylename}-colored {
-    color: var(--primary-color);
+    color: $primary-color;
   }
 
   .#{$primary-stylename}-spinner {
@@ -75,25 +75,25 @@
   .#{$primary-stylename}.#{$primary-stylename}-h2,
   .#{$primary-stylename}.#{$primary-stylename}-h3,
   .#{$primary-stylename}.#{$primary-stylename}-h4 {
-    color: var(--text-secondary-color);
+    color: $text-secondary-color;
   }
 
   .#{$primary-stylename}-success,
   .#{$primary-stylename}-failure {
-    background: var(--background-color);
-    color: var(--text-main-color);
+    background: $background-color;
+    color: $text-main-color;
     border: he-border($color: --success-color, $strength: 2px);
 
     &:before {
-      color: var(--success-color);
+      color: $success-color;
     }
   }
 
   .#{$primary-stylename}-failure {
-    border-color: var(--error-color);
+    border-color: $error-color;
 
     &:before {
-      color: var(--error-color);
+      color: $error-color;
     }
   }
 }

@@ -28,7 +28,7 @@
   }
 
   .#{$primary-stylename}-popup .v-horizontallayout {
-    background: var(--colorpicker-buttons-panel-background-color);
+    background: $colorpicker-buttons-panel-background-color;
     border-top: he-border($color: --colorpicker-buttons-panel-border-color);
   }
 

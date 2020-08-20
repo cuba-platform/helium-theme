@@ -131,24 +131,24 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 
   .#{$primary-stylename}-tabitemcell {
     .v-caption {
-      color: var(--text-main-color);
+      color: $text-main-color;
 
       &:hover {
-        color: var(--tabsheet-tabitemcell-caption-hover-color);
+        color: $tabsheet-tabitemcell-caption-hover-color;
       }
 
       &.v-disabled {
-        color: var(--text-dim-color) !important;
+        color: $text-dim-color !important;
       }
     }
 
     &:focus .v-caption {
-      color: var(--tabsheet-tabitemcell-caption-focus-color);
+      color: $tabsheet-tabitemcell-caption-focus-color;
     }
 
     .#{$primary-stylename}-tabitem-selected .v-caption.v-caption {
-      border-bottom-color: var(--tabsheet-tabitemcell-selected-deco-color);
-      color: var(--tabsheet-tabitemcell-selected-color);
+      border-bottom-color: $tabsheet-tabitemcell-selected-deco-color;
+      color: $tabsheet-tabitemcell-selected-color;
     }
 
     .#{$primary-stylename}-caption-close {
@@ -156,34 +156,34 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 
       &:hover {
         background: transparent;
-        color: var(--tabsheet-tabitemcell-caption-close-hover-color);
+        color: $tabsheet-tabitemcell-caption-close-hover-color;
       }
 
       &:active {
         background: transparent;
-        color: var(--tabsheet-tabitemcell-caption-close-active-color);
+        color: $tabsheet-tabitemcell-caption-close-active-color;
       }
     }
   }
 
   .#{$primary-stylename}-scroller {
-    @include linear-gradient(to left, var(--background-color) 70%, he-rgba($color: --background-color_rgb, $alpha: 0) 100%, $fallback: transparent);
+    @include linear-gradient(to left, $background-color 70%, he-rgba($color: $background-color_rgb, $alpha: 0) 100%, $fallback: transparent);
 
     &:after {
-      background: var(--tabsheet-tabcontainer-border-color);
+      background: $tabsheet-tabcontainer-border-color;
     }
 
     button {
-      color: var(--tabsheet-scroller-button-color);
+      color: $tabsheet-scroller-button-color;
 
       &:hover {
         @include opacity(1);
-        color: var(--tabsheet-scroller-button-hover-color);
+        color: $tabsheet-scroller-button-hover-color;
       }
 
       &:active {
         @include opacity(1);
-        color: var(--tabsheet-scroller-button-active-color);
+        color: $tabsheet-scroller-button-active-color;
       }
     }
   }
@@ -196,7 +196,7 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
   .#{$primary-stylename}-tabs .new-tab-left,
   .#{$primary-stylename}-tabs .new-tab-right,
   .#{$primary-stylename}-tabs .new-tab-center {
-    border-color: var(--tabsheet-drop-indicator-color);
+    border-color: $tabsheet-drop-indicator-color;
   }
 }
 
@@ -276,40 +276,40 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
 @mixin he-tabsheet-framed-style($primary-stylename: v-tabsheet, $frame-inactive-tabs: true, $outer-frame: true) {
   > .#{$primary-stylename}-tabcontainer {
     .v-caption {
-      color: var(--tabsheet-framed-tabitemcell-caption-text-color);
-      background: var(--tabsheet-framed-tabitemcell-caption-background-color);
+      color: $tabsheet-framed-tabitemcell-caption-text-color;
+      background: $tabsheet-framed-tabitemcell-caption-background-color;
       border: none;
       border-bottom: he-border($color: --tabsheet-tabcontainer-border-color);
-      border-radius: var(--tabsheet-framed-tabs-border-radius) var(--tabsheet-framed-tabs-border-radius) 0 0;
+      border-radius: $tabsheet-framed-tabs-border-radius $tabsheet-framed-tabs-border-radius 0 0;
 
       @if ($v-animations-enabled) {
         @include transition(border-bottom-color 160ms);
       }
 
       &:hover {
-        background: var(--tabsheet-framed-tabitemcell-caption-hover-background-color);
-        border-bottom-color: var(--tabsheet-tabcontainer-border-color);
-        color: var(--tabsheet-framed-tabitemcell-caption-hover-text-color);
+        background: $tabsheet-framed-tabitemcell-caption-hover-background-color;
+        border-bottom-color: $tabsheet-tabcontainer-border-color;
+        color: $tabsheet-framed-tabitemcell-caption-hover-text-color;
       }
 
       &.v-disabled {
-        color: var(--tabsheet-framed-tabitemcell-caption-disabled-text-color);
+        color: $tabsheet-framed-tabitemcell-caption-disabled-text-color;
       }
 
       &.v-disabled:hover {
-        background: var(--tabsheet-framed-tabitemcell-caption-background-color);
+        background: $tabsheet-framed-tabitemcell-caption-background-color;
       }
     }
 
     @if $frame-inactive-tabs {
       .#{$primary-stylename}-tabitem .v-caption {
-        border-bottom-color: var(--tabsheet-framed-tabcontainer-border-color);
+        border-bottom-color: $tabsheet-framed-tabcontainer-border-color;
       }
     }
 
     .#{$primary-stylename}-tabitem-selected .v-caption {
-      background: var(--tabsheet-framed-tabitemcell-selected-background-color);
-      color: var(--text-main-color);
+      background: $tabsheet-framed-tabitemcell-selected-background-color;
+      color: $text-main-color;
       font-weight: bold;
       border-bottom: he-border($color: --tabsheet-framed-tabitemcell-selected-background-color);
       padding-bottom: 0;
@@ -320,14 +320,14 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
     overflow: hidden;
 
     > div {
-      background: var(--tabsheet-framed-content-background-color);
+      background: $tabsheet-framed-content-background-color;
     }
 
     @if $outer-frame {
       border: he-border($color: --tabsheet-framed-content-border-color);
       border-top: none;
-      border-bottom-left-radius: var(--tabsheet-framed-content-border-radius);
-      border-bottom-right-radius: var(--tabsheet-framed-content-border-radius);
+      border-bottom-left-radius: $tabsheet-framed-content-border-radius;
+      border-bottom-right-radius: $tabsheet-framed-content-border-radius;
     }
   }
 
@@ -346,7 +346,7 @@ $he-tabsheet-caption-font-size-scale: 0.95 !default;
                                      $font-size         : $v-font-size) {
   > .#{$primary-stylename}-tabcontainer {
     .v-caption {
-      margin-left: var(--tabsheet-framed-tab-margin-left);
+      margin-left: $tabsheet-framed-tab-margin-left;
       padding: 0 $v-layout-spacing-horizontal;
       line-height: $unit-size - first-number(he-border());
     }

@@ -70,7 +70,7 @@
     .#{$primary-stylename}-wrapper {
       &:after {
         @include he-progressbar-indicator-style();
-        width: var(--progressbar-indeterminate-indicator-width);
+        width: $progressbar-indeterminate-indicator-width;
       }
     }
   }
@@ -79,13 +79,13 @@
 }
 
 @mixin he-progressbar-track-style() {
-  background: var(--progressbar-background-color);
-  border-radius: var(--progressbar-border-radius);
+  background: $progressbar-background-color;
+  border-radius: $progressbar-border-radius;
 }
 
 @mixin he-progressbar-indicator-style() {
-  background: var(--primary-color);
-  border-radius: var(--progressbar-border-radius);
+  background: $primary-color;
+  border-radius: $progressbar-border-radius;
   border: he-border($color: --primary-color);
 }
 

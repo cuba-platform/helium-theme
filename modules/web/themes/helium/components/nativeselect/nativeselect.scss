@@ -48,8 +48,8 @@
 
 @mixin he-nativeselect-select-style() {
   border: he-border();
-  background: var(--select-background-color);
-  color: var(--text-main-color);
+  background: $select-background-color;
+  color: $text-main-color;
 
   &:focus {
     @include he-focus-style();

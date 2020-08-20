@@ -55,13 +55,13 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
   }
 
   .#{$primary-stylename}-title {
-    color: var(--sidemenu-title-color);
-    background: var(--sidemenu-title-background-color);
+    color: $sidemenu-title-color;
+    background: $sidemenu-title-background-color;
     text-shadow: none;
   }
 
   .#{$primary-stylename} {
-    color: var(--sidemenu-text-color);
+    color: $sidemenu-text-color;
   }
 
   .#{$primary-stylename}-item {
@@ -86,27 +86,27 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 
     &[width-range~="#{$small_min}-#{$small_max}"] {
       .#{$primary-stylename}-panel {
-        background-color: var(--sidemenu-background-color);
+        background-color: $sidemenu-background-color;
 
         .#{$primary-stylename}-item-action {
           border-top: he-border($color: --sidemenu-responsive-item-separator-color);
         }
 
         .#{$primary-stylename}-item-action.#{$primary-stylename}-item-selected {
-          color: var(--sidemenu-responsive-item-selected-text-color);
-          background: var(--sidemenu-responsive-item-selected-background-color);
+          color: $sidemenu-responsive-item-selected-text-color;
+          background: $sidemenu-responsive-item-selected-background-color;
         }
 
         .#{$primary-stylename}-item-header {
-          background: var(--sidemenu-responsive-item-header-background-color);
+          background: $sidemenu-responsive-item-header-background-color;
         }
       }
     }
 
     &[width-range~="0-#{$cuba-responsive-sidemenu-togglebutton-appeared-max-width-range}"] {
       .#{$primary-stylename}-title {
-        background: var(--sidemenu-responsive-title-background-color);
-        color: var(--sidemenu-responsive-title-text-color);
+        background: $sidemenu-responsive-title-background-color;
+        color: $sidemenu-responsive-title-text-color;
       }
 
       .#{$primary-stylename}-mobile-buttons {
@@ -130,20 +130,20 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
       .#{$primary-stylename}-wrap {
         @include he-box-shadow(--app-workarea-shadow);
 
-        background: var(--sidemenu-background-color);
-        color: var(--sidemenu-text-color);
+        background: $sidemenu-background-color;
+        color: $sidemenu-text-color;
         border: none;
       }
     }
   }
 
   .#{$primary-stylename}-panel {
-    background: var(--sidemenu-background-color);
+    background: $sidemenu-background-color;
 
     border-right: 0;
 
     .c-userindicator {
-      color: var(--sidemenu-text-color);
+      color: $sidemenu-text-color;
     }
 
     .c-ftsfield-button,
@@ -165,11 +165,11 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
     }
 
     .c-user-timezone-label {
-      color: var(--sidemenu-text-color);
+      color: $sidemenu-text-color;
     }
 
     .#{$primary-stylename} {
-      color: var(--sidemenu-text-color);
+      color: $sidemenu-text-color;
     }
 
     .#{$primary-stylename}-item {
@@ -366,12 +366,12 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
   font-weight: normal;
 
   .v-ch & span.v-icon {
-    color: var(--sidemenu-text-color);
+    color: $sidemenu-text-color;
   }
 
   [class*="badge"] {
-    color: var(--sidemenu-item-badge-color);
-    background: var(--sidemenu-item-badge-background-color);
+    color: $sidemenu-item-badge-color;
+    background: $sidemenu-item-badge-background-color;
   }
 
   &:focus,
@@ -400,7 +400,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 }
 
 @mixin he-sidemenu-item-header-style() {
-  color: var(--sidemenu-text-color);
+  color: $sidemenu-text-color;
   font-weight: $cuba-sidemenu-item-font-weight;
 }
 
@@ -409,25 +409,25 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 }
 
 @mixin he-sidemenu-item-selected-style() {
-  background: var(--sidemenu-item-selected-background-color);
-  color: var(--sidemenu-item-selected-color);
+  background: $sidemenu-item-selected-background-color;
+  color: $sidemenu-item-selected-color;
 
   &:focus,
   &:hover,
   &.selected {
-    color: var(--sidemenu-item-selected-color);
+    color: $sidemenu-item-selected-color;
 
     .v-ch & span.v-icon {
-      color: var(--sidemenu-item-selected-color);
+      color: $sidemenu-item-selected-color;
     }
   }
 }
 
 @mixin he-sidemenu-item-focused-style() {
-  color: var(--sidemenu-item-focused-color);
+  color: $sidemenu-item-focused-color;
 
   .v-ch & span.v-icon {
-    color: var(--sidemenu-item-focused-color);
+    color: $sidemenu-item-focused-color;
   }
 }
 

@@ -211,8 +211,8 @@
     }
 
     .v-filterselect .v-filterselect-button {
-      color: var(--text-main-color);
-      border-color: var(--error-color);
+      color: $text-main-color;
+      border-color: $error-color;
     }
   }
 
@@ -224,44 +224,44 @@
 }
 
 @mixin he-pickerfield-button-style() {
-  border-color: var(--border-color);
-  color: var(--pickerfield-button-text-color);
-  background: var(--pickerfield-button-background-color);
+  border-color: $border-color;
+  color: $pickerfield-button-text-color;
+  background: $pickerfield-button-background-color;
 
   &:hover {
-    border-color: var(--border-color);
-    background: var(--pickerfield-button-hover-background-color);
-    color: var(--pickerfield-button-hover-text-color);
+    border-color: $border-color;
+    background: $pickerfield-button-hover-background-color;
+    color: $pickerfield-button-hover-text-color;
   }
 
   &:active {
-    border-color: var(--border-color);
-    background: var(--pickerfield-button-active-background-color);
-    color: var(--pickerfield-button-active-text-color);
+    border-color: $border-color;
+    background: $pickerfield-button-active-background-color;
+    color: $pickerfield-button-active-text-color;
   }
 
   &:focus {
-    border-color: var(--border-color);
+    border-color: $border-color;
   }
 }
 
 @mixin he-pickerfield-button-disabled-style() {
-  border-color: var(--border-dim-color);
-  color: var(--pickerfield-button-disabled-text-color);
-  background: var(--pickerfield-button-disabled-background-color);
+  border-color: $border-dim-color;
+  color: $pickerfield-button-disabled-text-color;
+  background: $pickerfield-button-disabled-background-color;
 
   &:hover {
-    border-color: var(--border-dim-color);
-    color: var(--pickerfield-button-disabled-text-color);
+    border-color: $border-dim-color;
+    color: $pickerfield-button-disabled-text-color;
   }
 
   &:active {
-    border-color: var(--border-dim-color);
-    color: var(--pickerfield-button-disabled-text-color);
-    background: var(--pickerfield-button-disabled-background-color);
+    border-color: $border-dim-color;
+    color: $pickerfield-button-disabled-text-color;
+    background: $pickerfield-button-disabled-background-color;
   }
 
   &:focus {
-    border-color: var(--border-dim-color);
+    border-color: $border-dim-color;
   }
 }

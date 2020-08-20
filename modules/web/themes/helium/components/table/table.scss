@@ -37,10 +37,10 @@ $he-table-header-row-height-scale: 1.5 !default;
     // TODO: gg, style
     @include he-box-shadow(--table-prefs-editor-shadow);
 
-    color: var(--text-main-color);
+    color: $text-main-color;
 
     .c-table-prefs-title {
-      border-bottom-color: var(--border-dim-color);
+      border-bottom-color: $border-dim-color;
     }
   }
 
@@ -183,45 +183,45 @@ $he-table-header-row-height-scale: 1.5 !default;
   $table-outer-border: he-table-border(--table-outer-border-color);
   $table-inner-border: he-table-border(--table-inner-border-color);
 
-  color: var(--text-main-color);
-  background: var(--table-background-color);
+  color: $text-main-color;
+  background: $table-background-color;
 
   .#{$primary-stylename}-header table,
   .#{$primary-stylename}-footer table,
   .#{$primary-stylename}-table {
-    @include box-shadow(0 0 0 $v-table-border-width var(--table-inner-border-color))
+    @include box-shadow(0 0 0 $v-table-border-width $table-inner-border-color)
   }
 
   .#{$primary-stylename}-body {
     border: $table-inner-border;
-    border-left-color: var(--table-outer-border-color);
-    border-right-color: var(--table-outer-border-color);
+    border-left-color: $table-outer-border-color;
+    border-right-color: $table-outer-border-color;
 
     @if $v-table-border-radius > 0 {
       border-radius: 0 0 $v-table-border-radius $v-table-border-radius;
     }
-    border-bottom-color: var(--table-outer-border-color);
+    border-bottom-color: $table-outer-border-color;
   }
 
   &.has-footer .#{$primary-stylename}-body {
     border-radius: 0;
-    border-bottom-color: var(--table-inner-border-color);
+    border-bottom-color: $table-inner-border-color;
   }
 
   .#{$primary-stylename}-header-wrap,
   .#{$primary-stylename}-footer-wrap,
   .#{$primary-stylename}-header-drag {
     border: $table-outer-border;
-    background: var(--table-background-color);
-    color: var(--text-secondary-color);
+    background: $table-background-color;
+    color: $text-secondary-color;
   }
 
   .#{$primary-stylename}-row {
-    background-color: var(--table-row-color);
+    background-color: $table-row-color;
   }
 
   .#{$primary-stylename}-row-odd {
-    background-color: var(--table-row-stripe-color);
+    background-color: $table-row-stripe-color;
   }
 
   .#{$primary-stylename}-header-wrap {
@@ -254,25 +254,25 @@ $he-table-header-row-height-scale: 1.5 !default;
   }
 
   .c-table-cell-textcut .c-table-clickable-cell {
-    color: var(--link-color);
-    border-bottom: 1px dashed var(--link-color);
+    color: $link-color;
+    border-bottom: 1px dashed $link-color;
   }
 
   [class*="-row"].v-selected {
-    background: var(--table-selected-row-background-color);
-    color: var(--table-selected-row-text-color);
+    background: $table-selected-row-background-color;
+    color: $table-selected-row-text-color;
     text-shadow: none;
 
     + .v-selected {
-      background: var(--table-selected-row-background-color);
+      background: $table-selected-row-background-color;
 
       td {
-        border-top-color: var(--table-selected-row-border-color);
+        border-top-color: $table-selected-row-border-color;
       }
     }
 
     .#{$primary-stylename}-cell-content {
-      border-left-color: var(--table-selected-row-border-color);
+      border-left-color: $table-selected-row-border-color;
     }
 
     .c-table-cell-link .c-table-clickable-cell,
@@ -281,52 +281,52 @@ $he-table-header-row-height-scale: 1.5 !default;
     .v-button-link,
     .v-link,
     .v-link > a:visited {
-      color: var(--table-selected-row-text-color);
+      color: $table-selected-row-text-color;
     }
 
     .c-table-cell-textcut .c-table-clickable-cell {
-      border-bottom-color: var(--table-selected-row-text-color);
+      border-bottom-color: $table-selected-row-text-color;
     }
   }
 
   .#{$primary-stylename}-focus {
-    outline-color: var(--table-focused-row-border-color);
+    outline-color: $table-focused-row-border-color;
 
     &.v-selected {
-      outline-color: var(--table-selected-row-border-color);
+      outline-color: $table-selected-row-border-color;
     }
   }
 
   @if $cuba-table-highlight-hover-row {
     .#{$primary-stylename}-row:hover,
     .#{$primary-stylename}-row-odd:hover {
-      background-color: var(--table-hovered-row-background-color);
-      color: var(--table-hovered-row-text-color);
+      background-color: $table-hovered-row-background-color;
+      color: $table-hovered-row-text-color;
 
       .#{$primary-stylename}-cell-content.boolean-cell-true .#{$primary-stylename}-cell-wrapper,
       .#{$primary-stylename}-cell-content.boolean-cell-false .#{$primary-stylename}-cell-wrapper {
         &:before {
-          color: var(--table-hovered-row-text-color);
+          color: $table-hovered-row-text-color;
         }
       }
     }
 
     .#{$primary-stylename}-row.v-selected:hover,
     .#{$primary-stylename}-row-odd.v-selected:hover {
-      background: var(--table-selected-row-background-color);
-      color: var(--table-selected-row-text-color);
+      background: $table-selected-row-background-color;
+      color: $table-selected-row-text-color;
 
       .#{$primary-stylename}-cell-content.boolean-cell-true .#{$primary-stylename}-cell-wrapper,
       .#{$primary-stylename}-cell-content.boolean-cell-false .#{$primary-stylename}-cell-wrapper {
         &:before {
-          color: var(--table-selected-row-text-color);
+          color: $table-selected-row-text-color;
         }
       }
     }
   }
 
   .#{$primary-stylename}-arow {
-    background: var(--table-aggregation-background-color);
+    background: $table-aggregation-background-color;
     border-top: $table-inner-border;
     border-left: $table-outer-border;
     border-right: $table-outer-border;
@@ -342,7 +342,7 @@ $he-table-header-row-height-scale: 1.5 !default;
 
   .#{$primary-stylename}-arow-row {
     border-right: none;
-    color: var(--table-aggregation-text-color);
+    color: $table-aggregation-text-color;
 
     td:last-child {
       border-right: $table-inner-border;
@@ -355,18 +355,18 @@ $he-table-header-row-height-scale: 1.5 !default;
   }
 
   .#{$primary-stylename}-footer-wrap {
-    background: var(--table-aggregation-background-color);
+    background: $table-aggregation-background-color;
   }
 
   .#{$primary-stylename}-focus-slot-left,
   .#{$primary-stylename}-focus-slot-right {
-    border-color: var(--primary-color);
+    border-color: $primary-color;
   }
 
   .#{$primary-stylename}-cell-content.boolean-cell-true .#{$primary-stylename}-cell-wrapper,
   .#{$primary-stylename}-cell-content.boolean-cell-false .#{$primary-stylename}-cell-wrapper {
     &:before {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
   }
 
@@ -374,7 +374,7 @@ $he-table-header-row-height-scale: 1.5 !default;
     .#{$primary-stylename}-cell-content.boolean-cell-true .#{$primary-stylename}-cell-wrapper,
     .#{$primary-stylename}-cell-content.boolean-cell-false .#{$primary-stylename}-cell-wrapper {
       &:before {
-        color: var(--table-selected-row-text-color);
+        color: $table-selected-row-text-color;
       }
     }
   }
@@ -487,13 +487,13 @@ $he-table-header-row-height-scale: 1.5 !default;
 @mixin he-group-table-style($primary-stylename : v-table) {
   .c-grouptable-group-cell-expander {
     &:before {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
   }
 
   .v-expanded .c-grouptable-group-cell-expander {
     &:before {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
   }
 

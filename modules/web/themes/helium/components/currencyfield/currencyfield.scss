@@ -82,8 +82,8 @@
   }
 
   .#{$primary-stylename}-currency {
-    background: var(--currencyfield-currency-background-color);
-    color: var(--currencyfield-currency-text-color);
+    background: $currencyfield-currency-background-color;
+    color: $currencyfield-currency-text-color;
     border: he-border();
   }
 
@@ -93,8 +93,8 @@
     }
 
     .#{$primary-stylename}-currency {
-      background: var(--currencyfield-currency-read-only-background-color);
-      color: var(--currencyfield-currency-read-only-text-color);
+      background: $currencyfield-currency-read-only-background-color;
+      color: $currencyfield-currency-read-only-text-color;
       border: he-border($color: --border-dim-color);
     }
   }
@@ -105,8 +105,8 @@
     }
 
     .#{$primary-stylename}-currency {
-      background: var(--currencyfield-currency-disabled-background-color);
-      color: var(--currencyfield-currency-disabled-text-color);
+      background: $currencyfield-currency-disabled-background-color;
+      color: $currencyfield-currency-disabled-text-color;
       border: he-border($color: --border-dim-color);
     }
   }

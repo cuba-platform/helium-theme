@@ -58,17 +58,17 @@
 }
 
 @mixin he-selection-item-disabled-style() {
-  background: var(--selection-overlay-disabled-item-background-color);
-  color: var(--selection-overlay-disabled-item-text-color);
+  background: $selection-overlay-disabled-item-background-color;
+  color: $selection-overlay-disabled-item-text-color;
 }
 
 @mixin he-selection-item-selected-style() {
-  background: var(--selection-overlay-selected-item-background-color);
-  color: var(--selection-overlay-selected-item-text-color);
+  background: $selection-overlay-selected-item-background-color;
+  color: $selection-overlay-selected-item-text-color;
   text-shadow: none;
 
   &:active {
-    background: var(--selection-overlay-selected-item-active-background-color);
+    background: $selection-overlay-selected-item-active-background-color;
   }
 }
 
@@ -104,7 +104,7 @@
 @mixin he-cuba-contextmenu($primary-stylename: c-cm-container) {
   .#{$primary-stylename} {
     @include he-box-shadow(--selection-overlay-shadow);
-    background: var(--overlay-background-color);
+    background: $overlay-background-color;
   }
 }
 

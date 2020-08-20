@@ -79,7 +79,7 @@
     @include he-progressbar-track-style();
 
     &:before {
-      border-color: var(--primary-color);
+      border-color: $primary-color;
     }
 
     &:after {
@@ -89,7 +89,7 @@
 
   .#{$primary-stylename}-handle {
     &:before {
-      background: var(--slider-handle-color);
+      background: $slider-handle-color;
     }
 
     &:after {
@@ -118,7 +118,7 @@
       @include he-progressbar-track-style();
 
       &:before {
-        border-color: var(--primary-color);
+        border-color: $primary-color;
       }
 
       &:after {

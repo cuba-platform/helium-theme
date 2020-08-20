@@ -86,7 +86,7 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
     padding: 0 $padding 0 $expander-padding;
     line-height: $groupbox-caption-height;
     font-size: $font-size;
-    color: var(--groupbox-caption-color);
+    color: $groupbox-caption-color;
 
     .#{$primary-stylename}-expander {
       font-size: $expander-font-size;
@@ -110,11 +110,11 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
   }
 
   .#{$primary-stylename}.collapsed {
-    background-color: var(--groupbox-collapsed-background-color);
-    border-color: var(--groupbox-collapsed-border-color);
+    background-color: $groupbox-collapsed-background-color;
+    border-color: $groupbox-collapsed-border-color;
 
     .#{$primary-stylename}-caption {
-      color: var(--groupbox-collapsed-caption-color);
+      color: $groupbox-collapsed-caption-color;
     }
   }
 
@@ -182,7 +182,7 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
       padding-top: $groupbox-caption-height / 2;
 
       div {
-        border-top: 2px solid var(--text-secondary-color);
+        border-top: 2px solid $text-secondary-color;
       }
     }
   }

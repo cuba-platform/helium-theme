@@ -57,13 +57,13 @@
 
   .#{$primary-stylename}-quiet {
     &:not(:focus) {
-      color: var(--button-quiet-text-color);
+      color: $button-quiet-text-color;
     }
 
     &.v-disabled {
       border-color: transparent;
       background: transparent;
-      color: var(--button-quiet-disabled-text-color);
+      color: $button-quiet-disabled-text-color;
     }
   }
 
@@ -124,7 +124,7 @@
                                  $disabled-text-color   : --button-default-disabled-text-color,
                                  $focused-border-color  : --button-default-focused-border-color);
 
-  border-width: var(--button-border-width);
+  border-width: $button-border-width;
   border-style: solid;
 
   [class$='caption'] {
@@ -271,38 +271,38 @@
 
   border: 1px dashed transparent;
   background: transparent;
-  color: var(--primary-color);
+  color: $primary-color;
 
   &:hover:not(.v-disabled):not(:active) {
     border-color: transparent;
     background: transparent;
-    color: var(--primary-color-shade-1);
+    color: $primary-color-shade-1;
 
     &:focus {
-      border-color: var(--primary-color-shade-1);
+      border-color: $primary-color-shade-1;
     }
   }
 
   &:focus:not(.v-disabled) {
-    border-color: var(--primary-color);
+    border-color: $primary-color;
   }
 
   &:active:not(.v-disabled) {
     @include opacity(1);
 
-    border-color: var(--primary-color-shade-2);
+    border-color: $primary-color-shade-2;
     background: transparent;
-    color: var(--primary-color-shade-2);
+    color: $primary-color-shade-2;
   }
 
   &.v-disabled {
     border-color: transparent;
     background: transparent;
-    color: var(--primary-dim-color);
+    color: $primary-dim-color;
   }
 }
 
 @mixin he-button-link-size-style() {
-  padding: 0 var(--button-border-width);
+  padding: 0 $button-border-width;
   height: auto;
 }

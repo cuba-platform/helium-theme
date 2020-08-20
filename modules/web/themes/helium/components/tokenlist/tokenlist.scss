@@ -19,8 +19,8 @@
     @include he-tokenlist-size-style($primary-stylename: $primary-stylename);
 
     .#{$primary-stylename}-label {
-      color: var(--tokenlist-label-text-color);
-      background-color: var(--tokenlist-label-background-color);
+      color: $tokenlist-label-text-color;
+      background-color: $tokenlist-label-background-color;
 
       border-radius: $v-border-radius;
     }

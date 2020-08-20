@@ -17,16 +17,16 @@
 @mixin he-common {
   &.v-app,
   &.v-app-loading {
-    color: var(--text-main-color);
-    background: var(--app-background-color);
+    color: $text-main-color;
+    background: $app-background-color;
   }
 
   .v-app-loading {
-    background: var(--app-background-color);
+    background: $app-background-color;
   }
 
   .v-loading-indicator {
-    background: var(--primary-color);
+    background: $primary-color;
   }
 
   select {

@@ -68,12 +68,12 @@ $cuba-login-form-width--large: $cuba-login-form-width * $v-scaling-factor--large
   @include he-login-window-size-style();
 
   .c-login-main-layout {
-    background: var(--app-background-color);
+    background: $app-background-color;
   }
 
   .c-login-panel {
     border: he-border();
-    background: var(--panel-background-color);
+    background: $panel-background-color;
   }
 
   .c-login-username {
@@ -82,7 +82,7 @@ $cuba-login-form-width--large: $cuba-login-form-width * $v-scaling-factor--large
 
   .c-login-username.v-textfield:focus + .c-login-password,
   .c-login-username.v-textfield-focus + .c-login-password {
-    border-top-color: var(--primary-color);
+    border-top-color: $primary-color;
   }
 
   .c-login-submit-button {

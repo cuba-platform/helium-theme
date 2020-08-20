@@ -19,7 +19,7 @@
 
   .#{$primary-stylename} {
     &.modified {
-      background: var(--suggestionfield-modified-background-color);
+      background: $suggestionfield-modified-background-color;
     }
   }
 

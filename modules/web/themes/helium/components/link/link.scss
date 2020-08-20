@@ -61,24 +61,24 @@
 @mixin he-link-style() {
   @include he-link-size-style();
 
-  color: var(--link-color);
+  color: $link-color;
 
   > a {
     &:focus {
-      border-color: var(--link-color);
+      border-color: $link-color;
     }
 
     &:hover {
-      color: var(--link-hover-color);
+      color: $link-hover-color;
     }
 
     &:visited {
-      color: var(--link-visited-color);
+      color: $link-visited-color;
     }
   }
 
   &.v-disabled {
-    color: var(--text-dim-color);
+    color: $text-dim-color;
   }
 }
 

@@ -25,7 +25,7 @@
                       $border-color     : --panel-border-color) {
   background: var($background-color);
   border: he-border($color: $border-color);
-  color: var(--text-main-color);
+  color: $text-main-color;
 }
 
 @mixin he-panel-well-style() {

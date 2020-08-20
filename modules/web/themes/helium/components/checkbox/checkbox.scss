@@ -84,7 +84,7 @@ $he-checkbox-size-reduction : 10 !default;
 @mixin he-checkbox-style($checkbox-size: $cuba-checkbox-size, $font-size: null) {
   @include he-checkbox-size-style($checkbox-size: $checkbox-size, $font-size: $font-size);
 
-  color: var(--text-main-color);
+  color: $text-main-color;
 
   :root & > input {
     @include he-checkbox-color-style(
@@ -100,11 +100,11 @@ $he-checkbox-size-reduction : 10 !default;
             $checked-focused-color            : --checkbox-checked-focused-color);
 
     & ~ label:before {
-      border-width: var(--checkbox-border-width);
+      border-width: $checkbox-border-width;
     }
 
     &:focus ~ label:before {
-      border-width: var(--checkbox-border-width);
+      border-width: $checkbox-border-width;
     }
 
     &:active ~ label:after {
@@ -130,7 +130,7 @@ $he-checkbox-size-reduction : 10 !default;
   }
 
   &.v-disabled {
-    color: var(--text-dim-color);
+    color: $text-dim-color;
   }
 }
 

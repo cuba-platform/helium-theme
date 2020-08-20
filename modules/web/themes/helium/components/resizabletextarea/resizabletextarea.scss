@@ -17,7 +17,7 @@
 @mixin he-resizabletextarea($primary-stylename: c-resizabletextarea) {
   .#{$primary-stylename}-resize-corner {
     &:after {
-      border-color: transparent transparent var(--border-color) transparent;
+      border-color: transparent transparent $border-color transparent;
     }
   }
 

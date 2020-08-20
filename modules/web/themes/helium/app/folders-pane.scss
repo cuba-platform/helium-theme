@@ -16,13 +16,13 @@
 
 @mixin he-folders-pane() {
   .c-folders-pane {
-    background: var(--folders-pane-background-color);
+    background: $folders-pane-background-color;
   }
 
   .c-main-menu.v-menubar > .v-menubar-menuitem.v-menubar-menuitem-folders-pane-icon,
   .c-main-menu.v-menubar > .v-menubar-menuitem.v-menubar-menuitem-folders-pane-icon-active {
     &:before {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
   }
 

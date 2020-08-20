@@ -104,14 +104,14 @@
 
   .#{$primary-stylename}-item-caption {
     > .v-caption {
-      color: var(--accordion-item-caption-text-color);
-      background: var(--accordion-item-caption-background-color);
+      color: $accordion-item-caption-text-color;
+      background: $accordion-item-caption-background-color;
       border-bottom: he-border($color: --accordion-item-caption-border-color);
       text-shadow: none;
 
       &:hover:not(.v-disabled) {
-        color: var(--accordion-item-caption-hover-text-color);
-        background: var(--accordion-item-caption-hover-background-color);
+        color: $accordion-item-caption-hover-text-color;
+        background: $accordion-item-caption-hover-background-color;
 
         &:before {
           background: none;
@@ -119,8 +119,8 @@
       }
 
       &:active:not(.v-disabled) {
-        color: var(--accordion-item-caption-active-text-color);
-        background: var(--accordion-item-caption-active-background-color);
+        color: $accordion-item-caption-active-text-color;
+        background: $accordion-item-caption-active-background-color;
 
         &:before {
           background: none;
@@ -128,7 +128,7 @@
       }
 
       &.v-disabled {
-        color: var(--accordion-item-caption-disabled-text-color);
+        color: $accordion-item-caption-disabled-text-color;
 
         &:before {
           background: none;
@@ -138,7 +138,7 @@
   }
 
   .#{$primary-stylename}-item-content {
-    background: var(--accordion-item-content-background-color);
+    background: $accordion-item-content-background-color;
   }
 }
 

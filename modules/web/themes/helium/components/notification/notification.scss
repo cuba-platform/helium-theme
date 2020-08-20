@@ -40,7 +40,7 @@
   }
 
   .c-notification-modalitycurtain {
-    background: var(--notification-modalitycurtain-color);
+    background: $notification-modalitycurtain-color;
     opacity: .25;
   }
 
@@ -169,12 +169,12 @@
 
   &:after {
     border: none;
-    color: var(--notification-error-caption-color);
+    color: $notification-error-caption-color;
   }
 
   &:active:after {
     background-color: transparent;
-    color: var(--notification-error-caption-color);
+    color: $notification-error-caption-color;
     @include opacity(.75);
   }
 }

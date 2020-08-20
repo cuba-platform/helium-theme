@@ -129,8 +129,8 @@ $he-datefield-calendar-button-padding: 2px !default;
     }
 
     [class*="button"] {
-      background: var(--datefield-button-disabled-color);
-      color: var(--datefield-button-text-color);
+      background: $datefield-button-disabled-color;
+      color: $datefield-button-text-color;
     }
   }
 
@@ -140,8 +140,8 @@ $he-datefield-calendar-button-padding: 2px !default;
     }
 
     [class*="button"] {
-      background: var(--datefield-button-disabled-color);
-      color: var(--datefield-button-disabled-text-color);
+      background: $datefield-button-disabled-color;
+      color: $datefield-button-disabled-text-color;
     }
   }
 
@@ -203,27 +203,27 @@ $he-datefield-calendar-button-padding: 2px !default;
   @include he-datefield-calendarpanel-size-style($primary-stylename: $primary-stylename);
 
   .#{$primary-stylename}-day {
-    background: var(--datefield-calendarpanel-day-background-color);
+    background: $datefield-calendarpanel-day-background-color;
 
     &:hover {
-      color: var(--datefield-calendarpanel-day-hover-color);
+      color: $datefield-calendarpanel-day-hover-color;
     }
   }
 
   .#{$primary-stylename}-day-offmonth {
-    color: var(--datefield-calendarpanel-day-offmonth-color);
+    color: $datefield-calendarpanel-day-offmonth-color;
     background: transparent;
   }
 
   .#{$primary-stylename}-day-today {
-    color: var(--datefield-calendarpanel-day-today-color);
-    border-color: var(--datefield-calendarpanel-day-today-border-color);
+    color: $datefield-calendarpanel-day-today-color;
+    border-color: $datefield-calendarpanel-day-today-border-color;
   }
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-selected,
   .#{$primary-stylename}-day.#{$primary-stylename}-day-selected:hover {
-    color: var(--datefield-calendarpanel-day-selected-color);
-    background: var(--datefield-calendarpanel-day-selected-background-color);
+    color: $datefield-calendarpanel-day-selected-color;
+    background: $datefield-calendarpanel-day-selected-background-color;
     border: he-border($color: --datefield-calendarpanel-day-selected-background-color);
   }
 
@@ -237,34 +237,34 @@ $he-datefield-calendar-button-padding: 2px !default;
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-outside-range,
   .#{$primary-stylename}-day.#{$primary-stylename}-day-outside-range:hover {
-    color: var(--datefield-calendarpanel-day-outside-range-color);
+    color: $datefield-calendarpanel-day-outside-range-color;
   }
 
   .#{$primary-stylename}-weekdays {
-    color: var(--datefield-calendarpanel-weekdays-color);
+    color: $datefield-calendarpanel-weekdays-color;
   }
 
   td[class*="year"],
   td[class*="month"] {
     button {
       &:before {
-        color: var(--datefield-calendarpanel-button-color);
+        color: $datefield-calendarpanel-button-color;
       }
 
       &:hover:before {
-        color: var(--datefield-calendarpanel-button-hover-color);
+        color: $datefield-calendarpanel-button-hover-color;
       }
 
       &.outside-range {
         &:hover:before {
-          color: var(--datefield-calendarpanel-button-color);
+          color: $datefield-calendarpanel-button-color;
         }
       }
     }
   }
 
   td.#{$primary-stylename}-month {
-    color: var(--datefield-calendarpanel-month-color);
+    color: $datefield-calendarpanel-month-color;
     font-weight: bold;
   }
 }

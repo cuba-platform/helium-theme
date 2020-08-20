@@ -45,16 +45,16 @@
   .#{$primary-stylename} {
     @include he-box-shadow(--window-shadow);
 
-    color: var(--text-main-color);
-    background-color: var(--window-background-color);
+    color: $text-main-color;
+    background-color: $window-background-color;
   }
 
   .#{$primary-stylename}-outerheader {
     border-bottom: none;
-    background-color: var(--window-header-background-color);
+    background-color: $window-header-background-color;
 
     .#{$primary-stylename}-header {
-      color: var(--text-secondary-color);
+      color: $text-secondary-color;
     }
   }
 
@@ -68,7 +68,7 @@
 
   .#{$primary-stylename}-modalitycurtain {
     @include opacity(.25);
-    background: var(--window-modalitycurtain-color);
+    background: $window-modalitycurtain-color;
   }
 }
 

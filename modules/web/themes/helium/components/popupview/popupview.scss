@@ -19,7 +19,7 @@
 
   .#{$primary-stylename} {
     &:hover {
-      color: var(--link-hover-color);
+      color: $link-hover-color;
     }
   }
 
@@ -34,6 +34,6 @@
   }
 
   .v-caption-popupview-icon-on-left {
-    color: var(--link-color);
+    color: $link-color;
   }
 }

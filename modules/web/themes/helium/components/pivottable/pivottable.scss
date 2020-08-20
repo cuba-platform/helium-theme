@@ -19,12 +19,12 @@
     table.pvtTable tbody tr td,
     .pvtUi,
     .pvtTriangle {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
 
     table.pvtTable tbody tr td,
     .pvtFilterBox {
-      background-color: var(--pivot-background-color);
+      background-color: $pivot-background-color;
     }
 
     select.pvtRenderer,
@@ -38,7 +38,7 @@
     .pvtAxisContainer, .pvtVals,
     table.pvtTable thead tr th,
     table.pvtTable tbody tr th {
-      background: var(--pivot-header-background-color);
+      background: $pivot-header-background-color;
     }
 
     .pvtUi > tbody > tr:first-child > td:first-child {
@@ -50,7 +50,7 @@
     table.pvtTable tbody tr td,
     .pvtAxisContainer,
     .pvtVals {
-      border-color: var(--pivot-border-color);
+      border-color: $pivot-border-color;
     }
 
     .pvtFilterBox {
@@ -67,7 +67,7 @@
 
     .pvtRowOrder,
     .pvtColOrder {
-      color: var(--text-secondary-color);
+      color: $text-secondary-color;
     }
   }
 }

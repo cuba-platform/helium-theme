@@ -19,9 +19,9 @@
     @include he-draganddrop-size-style();
     @include he-box-shadow(--drag-element-shadow);
 
-    background-color: var(--app-background-color);
+    background-color: $app-background-color;
     border: he-border();
-    color: var(--text-secondary-color);
+    color: $text-secondary-color;
   }
 
   &.small .#{$primary-stylename} {

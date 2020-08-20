@@ -21,7 +21,7 @@
 
   .#{$primary-stylename}-no-input {
     [class*="input"] {
-      background: var(--combobox-no-input-background-color);
+      background: $combobox-no-input-background-color;
     }
   }
 
@@ -159,7 +159,7 @@
   [class$="button"] {
     @include he-combobox-button-size-style($unit-size: $unit-size, $font-size: $font-size);
 
-    color: var(--combobox-button-text-color);
+    color: $combobox-button-text-color;
     border-left: 0;
 
     &:before {
@@ -167,18 +167,18 @@
     }
 
     &:hover {
-      background: var(--combobox-button-hover-background-color);
+      background: $combobox-button-hover-background-color;
 
       &:before {
-        color: var(--combobox-button-hover-text-color);
+        color: $combobox-button-hover-text-color;
       }
     }
 
     &:active {
-      background: var(--combobox-button-active-background-color);
+      background: $combobox-button-active-background-color;
 
       &:before {
-        color: var(--combobox-button-active-text-color);
+        color: $combobox-button-active-text-color;
       }
     }
 
@@ -199,7 +199,7 @@
     }
 
     [class$="button"] {
-      color: var(--text-dim-color);
+      color: $text-dim-color;
     }
   }
 }
@@ -210,7 +210,7 @@
   }
 
   [class$="button"] {
-    color: var(--text-main-color);
+    color: $text-main-color;
   }
 }
 
@@ -224,21 +224,21 @@
   }
 
   [class$="status"] {
-    background: var(--combobox-popup-status-background-color);
-    color: var(--combobox-popup-status-text-color);
+    background: $combobox-popup-status-background-color;
+    color: $combobox-popup-status-text-color;
 
     > * {
-      color: var(--combobox-popup-status-text-color);
+      color: $combobox-popup-status-text-color;
     }
   }
 
   div[class*="page"] {
-    color: var(--combobox-popup-page-text-color);
+    color: $combobox-popup-page-text-color;
     right: first-number(he-border());
 
     &:hover {
       @include opacity(.5);
-      background: var(--combobox-popup-page-background-color);
+      background: $combobox-popup-page-background-color;
     }
   }
 

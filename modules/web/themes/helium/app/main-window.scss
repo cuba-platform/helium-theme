@@ -32,20 +32,20 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
       @include he-maintabsheet-light-style($tabsheet-stylename: v-tabsheet);
     }
 
-    background-color: var(--maintabsheet-tabcontainer-background-color);
+    background-color: $maintabsheet-tabcontainer-background-color;
   }
 
   .c-app-work-area-single {
-    background: var(--panel-background-color);
+    background: $panel-background-color;
   }
 
   .c-main-singlewindow {
-    background-color: var(--panel-background-color);
+    background-color: $panel-background-color;
   }
 
   .c-welcome-text,
   .v-label.c-welcome-text {
-    color: var(--text-secondary-color);
+    color: $text-secondary-color;
   }
 
   @include he-maintabsheet-size-style($tabsheet-stylename: $tabsheet-stylename);
@@ -92,17 +92,17 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
     @include transition(border-bottom-color 0ms);
 
     &:hover {
-      color: var(--primary-color);
+      color: $primary-color;
     }
 
     &.v-disabled {
-      color: var(--text-dim-color) !important;
+      color: $text-dim-color !important;
     }
   }
 
   .#{$tabsheet-stylename}-tabitem-selected .v-caption.v-caption {
-    border-bottom-color: var(--primary-color);
-    color: var(--primary-color);
+    border-bottom-color: $primary-color;
+    color: $primary-color;
   }
 }
 
@@ -112,33 +112,33 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
   .c-sidemenu-layout.v-csslayout {
     .c-sidemenu-panel {
       .c-sidemenu .c-sidemenu-submenu.c-sidemenu-submenu-open {
-        background: var(--sidemenu-collapsible-submenu-background-color);
+        background: $sidemenu-collapsible-submenu-background-color;
       }
     }
 
     // TODO: gg, remove after cuba-platform/cuba#2741 is fixed
     .c-sidemenu-panel.collapsed:hover {
       .c-sidemenu .c-sidemenu-submenu.c-sidemenu-submenu-open {
-        background: var(--sidemenu-collapsible-submenu-background-color);
+        background: $sidemenu-collapsible-submenu-background-color;
       }
     }
 
     .c-sidemenu-controls {
-      background-color: var(--sidemenu-collapsible-controls-panel-background-color);
+      background-color: $sidemenu-collapsible-controls-panel-background-color;
     }
 
     .c-sidemenu-collapse-button {
-      color: var(--sidemenu-collapsible-collapse-button-color);
-      background: var(--sidemenu-collapsible-collapse-button-background-color);
+      color: $sidemenu-collapsible-collapse-button-color;
+      background: $sidemenu-collapsible-collapse-button-background-color;
 
       &:hover {
-        color: var(--sidemenu-collapsible-collapse-button-color);
-        background: var(--sidemenu-collapsible-collapse-button-hover-background-color);
+        color: $sidemenu-collapsible-collapse-button-color;
+        background: $sidemenu-collapsible-collapse-button-hover-background-color;
       }
 
       &:active {
-        color: var(--sidemenu-collapsible-collapse-button-color);
-        background: var(--sidemenu-collapsible-collapse-button-active-background-color);
+        color: $sidemenu-collapsible-collapse-button-color;
+        background: $sidemenu-collapsible-collapse-button-active-background-color;
       }
     }
 

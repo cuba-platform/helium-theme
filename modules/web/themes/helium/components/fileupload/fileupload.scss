@@ -107,49 +107,49 @@
 
 @mixin he-fileupload-style($primary-stylename: c-fileupload) {
   .#{$primary-stylename} .v-button-focus {
-    border-color: var(--button-default-focused-border-color);
+    border-color: $button-default-focused-border-color;
   }
 
   .#{$primary-stylename}-filename.#{$primary-stylename}-empty {
-    color: var(--text-main-color);
+    color: $text-main-color;
 
     &:hover {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
 
     &.v-disabled,
     &.v-disabled:focus,
     &.v-disabled:active {
-      color: var(--text-dim-color);
+      color: $text-dim-color;
       @include opacity(1);
     }
 
     &:focus {
-      color: var(--text-main-color);
+      color: $text-main-color;
     }
   }
 
   .dropzone-container {
-    border: 2px dashed var(--border-color);
+    border: 2px dashed $border-color;
   }
 
   .v-layout.#{$primary-stylename}-dropzone {
     &:before {
-      border: 2px dashed var(--fileupload-dropzone-border-color);
+      border: 2px dashed $fileupload-dropzone-border-color;
     }
 
     &:after {
-      background: var(--fileupload-dropzone-prompt-background-color);
+      background: $fileupload-dropzone-prompt-background-color;
       border: he-border($color: --fileupload-dropzone-prompt-border-color);
     }
   }
 
   .#{$primary-stylename}-wrapper-error {
     .c-fileupload-filename {
-      color: var(--error-color) !important;
+      color: $error-color !important;
 
       &:focus:not(.v-disabled) {
-        border-color: var(--error-color);
+        border-color: $error-color;
       }
     }
   }

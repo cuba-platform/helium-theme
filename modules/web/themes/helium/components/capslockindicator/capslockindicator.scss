@@ -17,11 +17,11 @@
 @mixin he-capslockindicator($primary-stylename: c-capslockindicator) {
 
   .#{$primary-stylename}.capslock-on span::before {
-    color: var(--capslockindicator-icon-color-on);
+    color: $capslockindicator-icon-color-on;
   }
 
   .#{$primary-stylename}.capslock-off span::before {
-    color: var(--capslockindicator-icon-color-off);
+    color: $capslockindicator-icon-color-off;
   }
 
   .#{$primary-stylename} {

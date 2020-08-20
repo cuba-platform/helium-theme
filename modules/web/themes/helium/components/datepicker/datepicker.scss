@@ -84,7 +84,7 @@
   @include he-datefield-calendarpanel-style(#{$primary-stylename}-calendarpanel);
 
   .#{$primary-stylename}-calendarpanel {
-    background: var(--datepicker-background-color);
+    background: $datepicker-background-color;
     border-radius: $v-border-radius;
     border: he-border($color: --datepicker-border-color);
   }

@@ -62,18 +62,18 @@
 
 @mixin he-tree-style($primary-stylename: v-tree8) {
   .#{$primary-stylename} {
-    color: var(--text-main-color);
+    color: $text-main-color;
   }
 
   .#{$primary-stylename}-row-selected {
     > .#{$primary-stylename}-cell {
       text-shadow: none;
-      color: var(--tree-selected-row-text-color);
-      border-color: var(--tree-selected-row-border-color);
+      color: $tree-selected-row-text-color;
+      border-color: $tree-selected-row-border-color;
     }
 
     &:before {
-      background: var(--tree-selected-row-background-color);
+      background: $tree-selected-row-background-color;
       border-radius: 0;
     }
   }
@@ -87,7 +87,7 @@
 
   .#{$primary-stylename}:focus .#{$primary-stylename}-row-selected.#{$primary-stylename}-row-focused {
     &:before {
-      @include box-shadow(inset 0 0 0 first-number(he-border()) var(--tree-selected-row-focus-ring-color))
+      @include box-shadow(inset 0 0 0 first-number(he-border()) $tree-selected-row-focus-ring-color)
     }
   }
 

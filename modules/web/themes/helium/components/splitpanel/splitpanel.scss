@@ -70,9 +70,9 @@ $he-splitpanel-dock-button-thickness: round($v-unit-size / 3) !default;
   .#{$primary-stylename}-vertical > div > .#{$primary-stylename}-vsplitter {
     div {
       &:before {
-        background: var(--splitpanel-splitter-background-color);
+        background: $splitpanel-splitter-background-color;
         border: he-border($color: --splitpanel-splitter-border-color);
-        border-radius: var(--splitpanel-splitter-border-radius);
+        border-radius: $splitpanel-splitter-border-radius;
       }
     }
   }
@@ -80,28 +80,28 @@ $he-splitpanel-dock-button-thickness: round($v-unit-size / 3) !default;
   $border-width: first-number(he-border());
   .c-splitpanel-dock-button,
   .c-splitpanel-dock-button-vertical {
-    background: var(--splitpanel-splitter-background-color);
+    background: $splitpanel-splitter-background-color;
     border: he-border($color: --splitpanel-splitter-border-color, $strength: $border-width);
-    color: var(--splitpanel-dock-button-color);
+    color: $splitpanel-dock-button-color;
   }
 
   .c-splitpanel-dock-button-left {
-    border-right-color: var(--splitpanel-splitter-background-color);
+    border-right-color: $splitpanel-splitter-background-color;
     margin-left: -($he-splitpanel-splitter-thickness - $border-width);
   }
 
   .c-splitpanel-dock-button-right {
-    border-left-color: var(--splitpanel-splitter-background-color);
+    border-left-color: $splitpanel-splitter-background-color;
     margin-left: $he-splitpanel-splitter-thickness - $border-width;
   }
 
   .c-splitpanel-dock-button-up {
-    border-bottom-color: var(--splitpanel-splitter-background-color);
+    border-bottom-color: $splitpanel-splitter-background-color;
     margin-top: -($he-splitpanel-splitter-thickness - $border-width);
   }
 
   .c-splitpanel-dock-button-down {
-    border-top-color: var(--splitpanel-splitter-background-color);
+    border-top-color: $splitpanel-splitter-background-color;
     margin-top: $he-splitpanel-splitter-thickness - $border-width;
   }
 

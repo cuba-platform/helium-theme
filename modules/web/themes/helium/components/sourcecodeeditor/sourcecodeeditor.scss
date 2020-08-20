@@ -62,32 +62,32 @@
     @include he-sourcecodeeditor-size-style();
 
     .ace_cursor {
-      color: var(--sourcecodeeditor-cursor-color);
+      color: $sourcecodeeditor-cursor-color;
     }
 
     .ace_text-input,
     .ace_editor {
-      color: var(--sourcecodeeditor-text-color);
+      color: $sourcecodeeditor-text-color;
     }
 
     .ace_gutter {
-      color: var(--sourcecodeeditor-gutter-text-color);
-      background: var(--sourcecodeeditor-gutter-background-color);
+      color: $sourcecodeeditor-gutter-text-color;
+      background: $sourcecodeeditor-gutter-background-color;
 
       .ace_gutter-active-line {
-        background: var(--sourcecodeeditor-gutter-active-line-background-color);
+        background: $sourcecodeeditor-gutter-active-line-background-color;
       }
     }
 
     .ace_selection {
-      background: var(--sourcecodeeditor-selection-background-color) !important;
+      background: $sourcecodeeditor-selection-background-color !important;
     }
 
     .ace_content {
-      background: var(--sourcecodeeditor-background-color);
+      background: $sourcecodeeditor-background-color;
 
       .ace_active-line {
-        background: var(--sourcecodeeditor-active-line-background-color);
+        background: $sourcecodeeditor-active-line-background-color;
       }
     }
   }
@@ -100,7 +100,7 @@
     @include he-input-readonly-style();
 
     .ace_content {
-      background: var(--dim-color);
+      background: $dim-color;
     }
 
     .ace_text-input,
@@ -117,7 +117,7 @@
     @include he-input-disabled-style();
 
     .ace_content {
-      background: var(--dim-color);
+      background: $dim-color;
     }
 
     .ace_text-input,

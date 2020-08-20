@@ -27,12 +27,12 @@
 @mixin he-treegrid-style($primary-stylename: v-treegrid) {
   .#{$primary-stylename}-row-focused {
     &:before {
-      border-color: var(--tree-grid-focused-row-border-color);
+      border-color: $tree-grid-focused-row-border-color;
     }
 
     &.#{$primary-stylename}-row-selected {
       &:before {
-        border-color: var(--tree-grid-selected-row-focus-ring-color);
+        border-color: $tree-grid-selected-row-focus-ring-color;
       }
     }
   }

@@ -22,8 +22,8 @@
   .c-main-menu.v-menubar-submenu {
     .v-menubar-menuitem {
       &:active {
-        background: var(--selection-overlay-selected-item-active-background-color);
-        color: var(--selection-overlay-selected-item-text-color);
+        background: $selection-overlay-selected-item-active-background-color;
+        color: $selection-overlay-selected-item-text-color;
       }
     }
 
@@ -41,21 +41,21 @@
     .v-menubar-separator {
       span {
         height: first-number(he-border());
-        background-color: var(--menubar-separator-color);
+        background-color: $menubar-separator-color;
       }
     }
   }
 
   @if ($v-support-inverse-menu) {
     .c-inverse-header.c-app-menubar {
-      background: var(--menubar-background-color);
+      background: $menubar-background-color;
       border: he-border($color: --menubar-border-color);
 
       .c-main-menu {
         .v-menubar-menuitem-more-item,
         .v-menubar-menuitem-caption,
         .v-menubar-menuitem-shortcut {
-          color: var(--menubar-text-color);
+          color: $menubar-text-color;
         }
 
         .v-menubar-menuitem {
@@ -64,15 +64,15 @@
           }
 
           &:hover {
-            background: var(--menubar-menuitem-hover-background-color);
+            background: $menubar-menuitem-hover-background-color;
           }
         }
 
         .v-menubar-menuitem-selected {
-          background: var(--menubar-menuitem-selected-background-color);
+          background: $menubar-menuitem-selected-background-color;
 
           &:hover {
-            background: var(--menubar-menuitem-selected-background-color);
+            background: $menubar-menuitem-selected-background-color;
           }
         }
 
@@ -82,7 +82,7 @@
         .v-menubar-menuitem-selected .v-menubar-menuitem-caption,
         .v-menubar-menuitem-selected .v-menubar-menuitem-shortcut,
         .v-menubar-menuitem-selected.v-menubar-menuitem-more-item {
-          color: var(--menubar-menuitem-selected-text-color);
+          color: $menubar-menuitem-selected-text-color;
         }
       }
 
@@ -91,24 +91,24 @@
       .c-ftsfield-button,
       .c-logout-button,
       .c-newwindow-button {
-        color: var(--menubar-action-button-color);
+        color: $menubar-action-button-color;
       }
 
       .c-ftsfield-button,
       .c-logout-button,
       .c-newwindow-button {
         &:focus {
-          color: var(--menubar-action-button-hover-text-color);
+          color: $menubar-action-button-hover-text-color;
         }
 
         &:hover {
-          color: var(--menubar-action-button-hover-text-color);
-          background: var(--menubar-action-button-hover-background-color);
+          color: $menubar-action-button-hover-text-color;
+          background: $menubar-action-button-hover-background-color;
         }
 
         &:active {
-          color: var(--menubar-action-button-active-text-color);
-          background: var(--menubar-action-button-active-background-color);
+          color: $menubar-action-button-active-text-color;
+          background: $menubar-action-button-active-background-color;
         }
       }
     }
