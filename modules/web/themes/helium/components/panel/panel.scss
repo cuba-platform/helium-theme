@@ -23,7 +23,7 @@
 
 @mixin he-panel-style($background-color : $panel-background-color,
                       $border-color     : $panel-border-color) {
-  background: var($background-color);
+  background: $background-color;
   border: he-border($color: $border-color);
   color: $text-main-color;
 }

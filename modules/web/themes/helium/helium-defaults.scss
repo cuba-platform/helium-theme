@@ -213,25 +213,25 @@ $text-dim-color: #A0AAC0;                        // Gray - Disabled
 $text-contrast-color: #FFFFFF;
 
 $primary-color_rgb: 111, 92, 195;                // Primary
-$primary-contrast-text-color: var($text-contrast-color);
+$primary-contrast-text-color: $text-contrast-color;
 $primary-color-shade-1: #5440AC;                 // ($primary-color) (d10%)
 $primary-color-shade-2: #423287;                 // ($primary-color) (d20%)
 $primary-dim-color: #D2CCEC;                     // ($primary-color) (l30%)
 
 $secondary-color_rgb: 99, 116, 151;
-$secondary-contrast-text-color: var($text-contrast-color);
+$secondary-contrast-text-color: $text-contrast-color;
 $secondary-color-shade-1: #4F5C78;               // ($secondary-color) (d10%)
 $secondary-color-shade-2: #3B4459;               // ($secondary-color) (d20%)
 $secondary-dim-color: #A0AAC0;                   // ($secondary-color) (l30%)
 
 $warning-contrast-text-color: #4F5C78;           // Text - Medium
 
-$error-contrast-text-color: var($text-contrast-color);
+$error-contrast-text-color: $text-contrast-color;
 $error-color-shade-1: #FF3151;                   // ($error-color) (d10%)
 $error-color-shade-2: #FD0027;                   // ($error-color) (d20%)
 $error-dim-color: #FFCAD2;                       // ($error-color) (l30%)
 
-$success-contrast-text-color: var($text-contrast-color);
+$success-contrast-text-color: $text-contrast-color;
 $success-color-shade-1: #2A8463;                 // ($success-color) (d10%)
 $success-color-shade-2: #1E5D46;                 // ($success-color) (d20%)
 $success-dim-color: #9BDFC6;                     // ($success-color) (l30%)
@@ -240,7 +240,7 @@ $dim-color-shade-1: #CECECE;                     // ($dim-color) (d10%)
 $dim-color-shade-2: #A7A7A7;                     // ($dim-color) (d20%)
 
 $border-dim-color: #A0AAC0;                      // Gray - Disabled
-$border-dim-focused-color: var($border-color);
+$border-dim-focused-color: $border-color;
 
 $background-color_rgb: 256, 256, 256;
 
@@ -255,578 +255,578 @@ $box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 2px 6px rgba(79, 92, 120, 0.15)
 $button-border-width: 2px;
 
 $button-default-color: #F2F2F2;                        // Gray - Hover
-$button-default-text-color: var($text-main-color);
+$button-default-text-color: $text-main-color;
 $button-default-hover-color: #CECECE;                  // ($button-default-color) (d10%)
 $button-default-active-color: #A7A7A7;                 // ($button-default-color) (d20%)
 $button-default-disabled-color: transparent;           // ($button-default-color) (l30%)
-$button-default-disabled-text-color: var($text-dim-color);
+$button-default-disabled-text-color: $text-dim-color;
 $button-default-focused-border-color: #E7E7E7;         // ($button-default-disabled-color)
 
-$button-primary-color: var($primary-color);
-$button-primary-text-color: var($primary-contrast-text-color);
-$button-primary-hover-color: var($primary-color-shade-1);
-$button-primary-active-color: var($primary-color-shade-2);
-$button-primary-disabled-color: var($primary-dim-color);
-$button-primary-disabled-text-color: var($primary-contrast-text-color);
-$button-primary-focused-border-color: var($primary-dim-color);
+$button-primary-color: $primary-color;
+$button-primary-text-color: $primary-contrast-text-color;
+$button-primary-hover-color: $primary-color-shade-1;
+$button-primary-active-color: $primary-color-shade-2;
+$button-primary-disabled-color: $primary-dim-color;
+$button-primary-disabled-text-color: $primary-contrast-text-color;
+$button-primary-focused-border-color: $primary-dim-color;
 
-$button-secondary-color: var($secondary-color);
-$button-secondary-text-color: var($secondary-contrast-text-color);
-$button-secondary-hover-color: var($secondary-color-shade-1);
-$button-secondary-active-color: var($secondary-color-shade-2);
-$button-secondary-disabled-color: var($secondary-dim-color);
-$button-secondary-disabled-text-color: var($button-secondary-text-color);
-$button-secondary-focused-border-color: var($button-secondary-disabled-color);
+$button-secondary-color: $secondary-color;
+$button-secondary-text-color: $secondary-contrast-text-color;
+$button-secondary-hover-color: $secondary-color-shade-1;
+$button-secondary-active-color: $secondary-color-shade-2;
+$button-secondary-disabled-color: $secondary-dim-color;
+$button-secondary-disabled-text-color: $button-secondary-text-color;
+$button-secondary-focused-border-color: $button-secondary-disabled-color;
 
-$button-error-color: var($error-color);
-$button-error-text-color: var($error-contrast-text-color);
-$button-error-hover-color: var($error-color-shade-1);
-$button-error-active-color: var($error-color-shade-2);
-$button-error-disabled-color: var($error-dim-color);
-$button-error-disabled-text-color: var($error-contrast-text-color);
-$button-error-focused-border-color: var($button-error-disabled-color);
+$button-error-color: $error-color;
+$button-error-text-color: $error-contrast-text-color;
+$button-error-hover-color: $error-color-shade-1;
+$button-error-active-color: $error-color-shade-2;
+$button-error-disabled-color: $error-dim-color;
+$button-error-disabled-text-color: $error-contrast-text-color;
+$button-error-focused-border-color: $button-error-disabled-color;
 
-$button-success-color: var($success-color);
-$button-success-text-color: var($success-contrast-text-color);
-$button-success-hover-color: var($success-color-shade-1);
-$button-success-active-color: var($success-color-shade-2);
-$button-success-disabled-color: var($success-dim-color);
-$button-success-disabled-text-color: var($success-contrast-text-color);
-$button-success-focused-border-color: var($button-success-disabled-color);
+$button-success-color: $success-color;
+$button-success-text-color: $success-contrast-text-color;
+$button-success-hover-color: $success-color-shade-1;
+$button-success-active-color: $success-color-shade-2;
+$button-success-disabled-color: $success-dim-color;
+$button-success-disabled-text-color: $success-contrast-text-color;
+$button-success-focused-border-color: $button-success-disabled-color;
 
-$button-quiet-text-color: var($text-main-color);
-$button-quiet-disabled-text-color: var($text-dim-color);
+$button-quiet-text-color: $text-main-color;
+$button-quiet-disabled-text-color: $text-dim-color;
 
 /* TextField */
 
-$textfield-background-color: var($background-color);
+$textfield-background-color: $background-color;
 
 /* DateField */
 
-$datefield-popup-background-color: var($background-color);
-$datefield-popup-text-color: var($text-secondary-color);
-$datefield-popup-shadow: var($box-shadow);
+$datefield-popup-background-color: $background-color;
+$datefield-popup-text-color: $text-secondary-color;
+$datefield-popup-shadow: $box-shadow;
 
-$datefield-button-color: var($dim-color);
-$datefield-button-text-color: var($text-main-color);
-$datefield-button-hover-color: var($dim-color-shade-1);
-$datefield-button-active-color: var($dim-color-shade-2);
+$datefield-button-color: $dim-color;
+$datefield-button-text-color: $text-main-color;
+$datefield-button-hover-color: $dim-color-shade-1;
+$datefield-button-active-color: $dim-color-shade-2;
 $datefield-button-disabled-color: transparent;
-$datefield-button-disabled-text-color: var($text-dim-color);
+$datefield-button-disabled-text-color: $text-dim-color;
 
-$datefield-calendarpanel-day-background-color: var($background-color);
-$datefield-calendarpanel-day-hover-color: var($primary-color);
+$datefield-calendarpanel-day-background-color: $background-color;
+$datefield-calendarpanel-day-hover-color: $primary-color;
 
-$datefield-calendarpanel-day-offmonth-color: var($text-dim-color);
+$datefield-calendarpanel-day-offmonth-color: $text-dim-color;
 
-$datefield-calendarpanel-day-today-color: var($datefield-popup-text-color);
-$datefield-calendarpanel-day-today-border-color: var($border-color);
+$datefield-calendarpanel-day-today-color: $datefield-popup-text-color;
+$datefield-calendarpanel-day-today-border-color: $border-color;
 
-$datefield-calendarpanel-day-selected-background-color: var($primary-color);
-$datefield-calendarpanel-day-selected-color: var($primary-contrast-text-color);
+$datefield-calendarpanel-day-selected-background-color: $primary-color;
+$datefield-calendarpanel-day-selected-color: $primary-contrast-text-color;
 
-$datefield-calendarpanel-day-focused-border-color: var($primary-color);
-$datefield-calendarpanel-day-selected-focus-ring-color: var($primary-dim-color);
+$datefield-calendarpanel-day-focused-border-color: $primary-color;
+$datefield-calendarpanel-day-selected-focus-ring-color: $primary-dim-color;
 
-$datefield-calendarpanel-day-outside-range-color: var($datefield-calendarpanel-day-offmonth-color);
+$datefield-calendarpanel-day-outside-range-color: $datefield-calendarpanel-day-offmonth-color;
 
-$datefield-calendarpanel-weekdays-color: var($secondary-color);
+$datefield-calendarpanel-weekdays-color: $secondary-color;
 
-$datefield-calendarpanel-button-color: var($text-dim-color);
-$datefield-calendarpanel-button-hover-color: var($primary-color);
+$datefield-calendarpanel-button-color: $text-dim-color;
+$datefield-calendarpanel-button-hover-color: $primary-color;
 
-$datefield-calendarpanel-month-color: var($secondary-color);
+$datefield-calendarpanel-month-color: $secondary-color;
 
 /* DatePicker */
 
-$datepicker-background-color: var($background-color);
-$datepicker-border-color: var($border-color);
+$datepicker-background-color: $background-color;
+$datepicker-border-color: $border-color;
 
 /* ComboBox */
 
-$combobox-button-text-color: var($text-main-color);
+$combobox-button-text-color: $text-main-color;
 
-$combobox-button-hover-text-color: var($text-secondary-color);
+$combobox-button-hover-text-color: $text-secondary-color;
 $combobox-button-hover-background-color: transparent;
 
-$combobox-button-active-text-color: var($text-main-color);
-$combobox-button-active-background-color: var($dim-color);
+$combobox-button-active-text-color: $text-main-color;
+$combobox-button-active-background-color: $dim-color;
 
-$combobox-no-input-background-color: var($background-color);
+$combobox-no-input-background-color: $background-color;
 
-$combobox-popup-status-background-color: var($dim-color);
-$combobox-popup-status-text-color: var($text-main-color);
+$combobox-popup-status-background-color: $dim-color;
+$combobox-popup-status-text-color: $text-main-color;
 
-$combobox-popup-page-background-color: var($dim-color);
-$combobox-popup-page-text-color: var($text-main-color);
+$combobox-popup-page-background-color: $dim-color;
+$combobox-popup-page-text-color: $text-main-color;
 
 /* PickerField */
 
-$pickerfield-button-text-color: var($text-main-color);
-$pickerfield-button-background-color: var($textfield-background-color);
+$pickerfield-button-text-color: $text-main-color;
+$pickerfield-button-background-color: $textfield-background-color;
 
-$pickerfield-button-hover-text-color: var($text-secondary-color);
-$pickerfield-button-hover-background-color: var($textfield-background-color);
+$pickerfield-button-hover-text-color: $text-secondary-color;
+$pickerfield-button-hover-background-color: $textfield-background-color;
 
-$pickerfield-button-active-text-color: var($text-main-color);
-$pickerfield-button-active-background-color: var($dim-color);
+$pickerfield-button-active-text-color: $text-main-color;
+$pickerfield-button-active-background-color: $dim-color;
 
-$pickerfield-button-disabled-text-color: var($text-dim-color);
-$pickerfield-button-disabled-background-color: var($dim-color);
+$pickerfield-button-disabled-text-color: $text-dim-color;
+$pickerfield-button-disabled-background-color: $dim-color;
 
 /* Notification */
 
-$notification-humanized-background-color: var($primary-color);
-$notification-humanized-caption-color: var($primary-contrast-text-color);
-$notification-humanized-description-color: var($primary-contrast-text-color);
+$notification-humanized-background-color: $primary-color;
+$notification-humanized-caption-color: $primary-contrast-text-color;
+$notification-humanized-description-color: $primary-contrast-text-color;
 
-$notification-warning-background-color: var($warning-color);
-$notification-warning-caption-color: var($warning-contrast-text-color);
-$notification-warning-description-color: var($warning-contrast-text-color);
+$notification-warning-background-color: $warning-color;
+$notification-warning-caption-color: $warning-contrast-text-color;
+$notification-warning-description-color: $warning-contrast-text-color;
 
-$notification-error-background-color: var($error-color);
-$notification-error-caption-color: var($error-contrast-text-color);
-$notification-error-description-color: var($error-contrast-text-color);
+$notification-error-background-color: $error-color;
+$notification-error-caption-color: $error-contrast-text-color;
+$notification-error-description-color: $error-contrast-text-color;
 
-$notification-system-background-color: var($secondary-color);
-$notification-system-caption-color: var($secondary-contrast-text-color);
-$notification-system-description-color: var($secondary-contrast-text-color);
+$notification-system-background-color: $secondary-color;
+$notification-system-caption-color: $secondary-contrast-text-color;
+$notification-system-description-color: $secondary-contrast-text-color;
 
-$notification-shadow: var($box-shadow);
+$notification-shadow: $box-shadow;
 $notification-modalitycurtain-color: #4F5C78;
 
 /* CheckBox */
 
 $checkbox-border-width: 2px;
 
-$checkbox-background-color: var($background-color);
-$checkbox-border-color: var($border-color);
+$checkbox-background-color: $background-color;
+$checkbox-border-color: $border-color;
 
-$checkbox-focused-background-color: var($border-dim-color);
-$checkbox-focused-border-color: var($border-color);
+$checkbox-focused-background-color: $border-dim-color;
+$checkbox-focused-border-color: $border-color;
 
-$checkbox-checked-background-color: var($checkbox-background-color);
-$checkbox-checked-border-color: var($primary-color);
-$checkbox-checked-color: var($primary-color);
+$checkbox-checked-background-color: $checkbox-background-color;
+$checkbox-checked-border-color: $primary-color;
+$checkbox-checked-color: $primary-color;
 
-$checkbox-checked-focused-background-color: var($primary-dim-color);
-$checkbox-checked-focused-border-color: var($primary-color);
-$checkbox-checked-focused-color: var($primary-color);
+$checkbox-checked-focused-background-color: $primary-dim-color;
+$checkbox-checked-focused-border-color: $primary-color;
+$checkbox-checked-focused-color: $primary-color;
 
-$checkbox-read-only-background-color: var($checkbox-background-color);
-$checkbox-read-only-border-color: var($border-dim-color);
+$checkbox-read-only-background-color: $checkbox-background-color;
+$checkbox-read-only-border-color: $border-dim-color;
 
-$checkbox-read-only-focused-background-color: var($checkbox-background-color);
-$checkbox-read-only-focused-border-color: var($border-color);
+$checkbox-read-only-focused-background-color: $checkbox-background-color;
+$checkbox-read-only-focused-border-color: $border-color;
 
-$checkbox-read-only-checked-background-color: var($checkbox-background-color);
-$checkbox-read-only-checked-border-color: var($border-dim-color);
-$checkbox-read-only-checked-color: var($border-dim-color);
+$checkbox-read-only-checked-background-color: $checkbox-background-color;
+$checkbox-read-only-checked-border-color: $border-dim-color;
+$checkbox-read-only-checked-color: $border-dim-color;
 
-$checkbox-read-only-checked-focused-background-color: var($checkbox-background-color);
-$checkbox-read-only-checked-focused-border-color: var($border-color);
-$checkbox-read-only-checked-focused-color: var($border-dim-color);
+$checkbox-read-only-checked-focused-background-color: $checkbox-background-color;
+$checkbox-read-only-checked-focused-border-color: $border-color;
+$checkbox-read-only-checked-focused-color: $border-dim-color;
 
 /* RadioButtonGroup */
 
-$radio-checked-color: var($primary-color);
-$radio-read-only-checked-color: var($checkbox-read-only-checked-color);
+$radio-checked-color: $primary-color;
+$radio-read-only-checked-color: $checkbox-read-only-checked-color;
 
 /* Tree */
 
-$tree-border-color: var($primary-dim-color);
+$tree-border-color: $primary-dim-color;
 
-$tree-selected-row-background-color: var($primary-color);
-$tree-selected-row-text-color: var($primary-contrast-text-color);
-$tree-selected-row-border-color: var($primary-color-shade-1);
-$tree-selected-row-focus-ring-color: var($primary-dim-color);
+$tree-selected-row-background-color: $primary-color;
+$tree-selected-row-text-color: $primary-contrast-text-color;
+$tree-selected-row-border-color: $primary-color-shade-1;
+$tree-selected-row-focus-ring-color: $primary-dim-color;
 
-$tree-focused-row-border-color: var($primary-color);
+$tree-focused-row-border-color: $primary-color;
 
 /* SideMenu */
 
 $sidemenu-background-color: #F5F4F6;
-$sidemenu-text-color: var($text-secondary-color);
+$sidemenu-text-color: $text-secondary-color;
 
-$sidemenu-title-color: var($sidemenu-text-color);
+$sidemenu-title-color: $sidemenu-text-color;
 $sidemenu-title-background-color: #D8D8D8;
 
-$sidemenu-item-focused-color: var($primary-color);
+$sidemenu-item-focused-color: $primary-color;
 
-$sidemenu-item-selected-color: var($primary-contrast-text-color);
-$sidemenu-item-selected-background-color: var($primary-color);
+$sidemenu-item-selected-color: $primary-contrast-text-color;
+$sidemenu-item-selected-background-color: $primary-color;
 
-$sidemenu-item-badge-color: var($primary-color);
-$sidemenu-item-badge-background-color: var($primary-dim-color);
+$sidemenu-item-badge-color: $primary-color;
+$sidemenu-item-badge-background-color: $primary-dim-color;
 
-$sidemenu-action-button-color: var($text-main-color);
-$sidemenu-action-button-hover-background-color: var($dim-color-shade-1);
-$sidemenu-action-button-active-background-color: var($dim-color-shade-2);
+$sidemenu-action-button-color: $text-main-color;
+$sidemenu-action-button-hover-background-color: $dim-color-shade-1;
+$sidemenu-action-button-active-background-color: $dim-color-shade-2;
 
-$sidemenu-responsive-title-background-color: var($secondary-color);
-$sidemenu-responsive-title-text-color: var($secondary-contrast-text-color);
+$sidemenu-responsive-title-background-color: $secondary-color;
+$sidemenu-responsive-title-text-color: $secondary-contrast-text-color;
 
-$sidemenu-responsive-item-separator-color: var($primary-dim-color);
+$sidemenu-responsive-item-separator-color: $primary-dim-color;
 $sidemenu-responsive-item-header-background-color: #E6E3E8;
 
-$sidemenu-responsive-item-selected-text-color: var($sidemenu-item-selected-color);
-$sidemenu-responsive-item-selected-background-color: var($sidemenu-item-selected-background-color);
+$sidemenu-responsive-item-selected-text-color: $sidemenu-item-selected-color;
+$sidemenu-responsive-item-selected-background-color: $sidemenu-item-selected-background-color;
 
-$sidemenu-mobile-button-color: var($secondary-contrast-text-color);
-$sidemenu-mobile-button-hover-background-color: var($secondary-color-shade-1);
-$sidemenu-mobile-button-active-background-color: var($secondary-color-shade-2);
+$sidemenu-mobile-button-color: $secondary-contrast-text-color;
+$sidemenu-mobile-button-hover-background-color: $secondary-color-shade-1;
+$sidemenu-mobile-button-active-background-color: $secondary-color-shade-2;
 
-$sidemenu-collapsible-submenu-background-color: var($sidemenu-background-color);
+$sidemenu-collapsible-submenu-background-color: $sidemenu-background-color;
 
 $sidemenu-collapsible-controls-panel-background-color: #D8D8D8;
 
-$sidemenu-collapsible-action-button-color: var($text-main-color);
-$sidemenu-collapsible-action-button-hover-background-color: var($dim-color-shade-1);
-$sidemenu-collapsible-action-button-active-background-color: var($dim-color-shade-2);
+$sidemenu-collapsible-action-button-color: $text-main-color;
+$sidemenu-collapsible-action-button-hover-background-color: $dim-color-shade-1;
+$sidemenu-collapsible-action-button-active-background-color: $dim-color-shade-2;
 
 $sidemenu-collapsible-collapse-button-color: #4F5C78;
 $sidemenu-collapsible-collapse-button-background-color: #A7A7A7;
-$sidemenu-collapsible-collapse-button-hover-background-color: var($sidemenu-collapsible-controls-panel-background-color);
+$sidemenu-collapsible-collapse-button-hover-background-color: $sidemenu-collapsible-controls-panel-background-color;
 $sidemenu-collapsible-collapse-button-active-background-color: #A7A7A7;
 
 /* AppMenu */
 
 $menubar-background-color: #333333;
-$menubar-border-color: var($menubar-background-color);
+$menubar-border-color: $menubar-background-color;
 $menubar-text-color: #ADAEB0;
 
-$menubar-menuitem-selected-background-color: var($primary-color);
-$menubar-menuitem-selected-text-color: var($primary-contrast-text-color);
+$menubar-menuitem-selected-background-color: $primary-color;
+$menubar-menuitem-selected-text-color: $primary-contrast-text-color;
 
-$menubar-menuitem-hover-background-color: var($secondary-color-shade-1);
+$menubar-menuitem-hover-background-color: $secondary-color-shade-1;
 
-$menubar-separator-color: var($border-dim-color);
+$menubar-separator-color: $border-dim-color;
 
-$menubar-action-button-color: var($menubar-text-color);
-$menubar-action-button-hover-background-color: var($menubar-menuitem-hover-background-color);
-$menubar-action-button-hover-text-color: var($menubar-menuitem-selected-text-color);
-$menubar-action-button-active-background-color: var($secondary-color-shade-2);
-$menubar-action-button-active-text-color: var($menubar-menuitem-selected-text-color);
+$menubar-action-button-color: $menubar-text-color;
+$menubar-action-button-hover-background-color: $menubar-menuitem-hover-background-color;
+$menubar-action-button-hover-text-color: $menubar-menuitem-selected-text-color;
+$menubar-action-button-active-background-color: $secondary-color-shade-2;
+$menubar-action-button-active-text-color: $menubar-menuitem-selected-text-color;
 
 /* Panel */
 
-$panel-background-color: var($background-color);
-$panel-border-color: var($primary-dim-color);
-$panel-well-background-color: var($dim-color);
+$panel-background-color: $background-color;
+$panel-border-color: $primary-dim-color;
+$panel-well-background-color: $dim-color;
 
 /* Tooltip */
 
-$tooltip-background-color_rgb: var($secondary-color_rgb);
-$tooltip-font-color: var($secondary-contrast-text-color);
+$tooltip-background-color_rgb: $secondary-color_rgb;
+$tooltip-font-color: $secondary-contrast-text-color;
 
-$tooltip-error-message-background-color: var($error-contrast-text-color);
-$tooltip-error-message-font-color: var($error-color);
+$tooltip-error-message-background-color: $error-contrast-text-color;
+$tooltip-error-message-font-color: $error-color;
 
-$tooltip-error-message-level-info-font-color: var($text-main-color);
-$tooltip-error-message-level-warning-font-color: var($warning-color);
-$tooltip-error-message-level-error-font-color: var($error-color);
-$tooltip-error-message-level-critical-font-color: var($error-active-color);
-$tooltip-error-message-level-system-font-color: var($primary-color);
+$tooltip-error-message-level-info-font-color: $text-main-color;
+$tooltip-error-message-level-warning-font-color: $warning-color;
+$tooltip-error-message-level-error-font-color: $error-color;
+$tooltip-error-message-level-critical-font-color: $error-active-color;
+$tooltip-error-message-level-system-font-color: $primary-color;
 
-$tooltip-shadow: var($box-shadow);
+$tooltip-shadow: $box-shadow;
 
 /* Main Window */
 
 $app-workarea-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
 
-$maintabsheet-tabcontainer-background-color: var($panel-background-color);
+$maintabsheet-tabcontainer-background-color: $panel-background-color;
 
 /* TokenList  */
 
-$tokenlist-label-text-color: var($primary-contrast-text-color);
-$tokenlist-label-background-color: var($primary-color);
+$tokenlist-label-text-color: $primary-contrast-text-color;
+$tokenlist-label-background-color: $primary-color;
 
 /* Table */
 
-$table-background-color: var($background-color);
+$table-background-color: $background-color;
 
-$table-outer-border-color: var($border-color);
-$table-inner-border-color: var($border-dim-color);
+$table-outer-border-color: $border-color;
+$table-inner-border-color: $border-dim-color;
 
-$table-row-color: var($table-background-color);
-$table-row-stripe-color: var($dim-color);
+$table-row-color: $table-background-color;
+$table-row-stripe-color: $dim-color;
 
-$table-selected-row-background-color: var($primary-color);
-$table-selected-row-text-color: var($primary-contrast-text-color);
-$table-selected-row-border-color: var($primary-color-shade-1);
+$table-selected-row-background-color: $primary-color;
+$table-selected-row-text-color: $primary-contrast-text-color;
+$table-selected-row-border-color: $primary-color-shade-1;
 
-$table-hovered-row-background-color: var($primary-dim-color);
-$table-hovered-row-text-color: var($text-main-color);
+$table-hovered-row-background-color: $primary-dim-color;
+$table-hovered-row-text-color: $text-main-color;
 
-$table-focused-row-border-color: var($primary-color);
+$table-focused-row-border-color: $primary-color;
 
 $table-aggregation-background-color: rgba($primary-color, .5);
-$table-aggregation-text-color: var($text-secondary-color);
+$table-aggregation-text-color: $text-secondary-color;
 
-$table-prefs-editor-shadow: var($box-shadow);
+$table-prefs-editor-shadow: $box-shadow;
 
 /* Grid */
 
-$grid-background-color: var($background-color);
-$grid-border-color: var($border-dim-color);
+$grid-background-color: $background-color;
+$grid-border-color: $border-dim-color;
 
-$grid-row-color: var($grid-background-color);
-$grid-row-stripe-color: var($dim-color);
+$grid-row-color: $grid-background-color;
+$grid-row-stripe-color: $dim-color;
 
-$grid-selected-row-background-color: var($primary-color);
-$grid-selected-row-text-color: var($primary-contrast-text-color);
-$grid-selected-row-border-color: var($primary-color-shade-1);
-$grid-selected-row-focus-ring-color: var($primary-dim-color);
+$grid-selected-row-background-color: $primary-color;
+$grid-selected-row-text-color: $primary-contrast-text-color;
+$grid-selected-row-border-color: $primary-color-shade-1;
+$grid-selected-row-focus-ring-color: $primary-dim-color;
 
-$grid-hovered-row-background-color: var($primary-dim-color);
-$grid-hovered-row-text-color: var($text-main-color);
+$grid-hovered-row-background-color: $primary-dim-color;
+$grid-hovered-row-text-color: $text-main-color;
 
-$grid-focused-cell-border-color: var($primary-color);
+$grid-focused-cell-border-color: $primary-color;
 
 $grid-aggregation-background-color: rgba($primary-color, .5);
 $grid-aggregation-border-color: rgba($primary-color, .4);
-$grid-aggregation-text-color: var($text-secondary-color);
+$grid-aggregation-text-color: $text-secondary-color;
 
-$grid-drop-marker-color: var($primary-color);
+$grid-drop-marker-color: $primary-color;
 
-$grid-sidebar-button-active-color: var($dim-color);
-$grid-sidebar-popup-background-color: var($grid-background-color);
+$grid-sidebar-button-active-color: $dim-color;
+$grid-sidebar-popup-background-color: $grid-background-color;
 
-$grid-details-deco-color: var($primary-color);
+$grid-details-deco-color: $primary-color;
 
-$grid-editor-border-color: var($primary-color);
-$grid-editor-footer-background-color: var($grid-row-stripe-color);
-$grid-editor-save-button-color: var($primary-color);
-$grid-editor-cancel-button-color: var($primary-color);
+$grid-editor-border-color: $primary-color;
+$grid-editor-footer-background-color: $grid-row-stripe-color;
+$grid-editor-save-button-color: $primary-color;
+$grid-editor-cancel-button-color: $primary-color;
 
-$grid-row-drag-background-color: var($primary-color);
-$grid-row-drag-border-color: var($primary-color);
-$grid-selected-row-drag-border-color: var($primary-color-shade-1);
+$grid-row-drag-background-color: $primary-color;
+$grid-row-drag-border-color: $primary-color;
+$grid-selected-row-drag-border-color: $primary-color-shade-1;
 
 /* TreeGrid */
 
-$tree-grid-focused-row-border-color: var($grid-selected-row-border-color);
-$tree-grid-selected-row-focus-ring-color: var($grid-selected-row-focus-ring-color);
+$tree-grid-focused-row-border-color: $grid-selected-row-border-color;
+$tree-grid-selected-row-focus-ring-color: $grid-selected-row-focus-ring-color;
 
 /* Window */
 
-$window-background-color: var($background-color);
-$window-header-background-color: var($window-background-color);
+$window-background-color: $background-color;
+$window-header-background-color: $window-background-color;
 
-$window-shadow: var($box-shadow);
+$window-shadow: $box-shadow;
 $window-modalitycurtain-color: #4F5C78;
 
 /* TabSheet */
 
-$tabsheet-tabcontainer-border-color: var($primary-dim-color);
+$tabsheet-tabcontainer-border-color: $primary-dim-color;
 
-$tabsheet-tabitemcell-caption-hover-color: var($primary-color);
-$tabsheet-tabitemcell-caption-focus-color: var($tabsheet-tabitemcell-caption-hover-color);
+$tabsheet-tabitemcell-caption-hover-color: $primary-color;
+$tabsheet-tabitemcell-caption-focus-color: $tabsheet-tabitemcell-caption-hover-color;
 
-$tabsheet-tabitemcell-selected-color: var($primary-color);
-$tabsheet-tabitemcell-selected-deco-color: var($primary-color);
+$tabsheet-tabitemcell-selected-color: $primary-color;
+$tabsheet-tabitemcell-selected-deco-color: $primary-color;
 
-$tabsheet-tabitemcell-caption-close-hover-color: var($primary-color-shade-1);
-$tabsheet-tabitemcell-caption-close-active-color: var($primary-color-shade-2);
+$tabsheet-tabitemcell-caption-close-hover-color: $primary-color-shade-1;
+$tabsheet-tabitemcell-caption-close-active-color: $primary-color-shade-2;
 
-$tabsheet-drop-indicator-color: var($primary-color);
+$tabsheet-drop-indicator-color: $primary-color;
 
 $tabsheet-framed-tabs-border-radius: 2px;
 $tabsheet-framed-content-border-radius: 0px;
 $tabsheet-framed-tab-margin-left: 1px;
 
-$tabsheet-framed-tabitemcell-caption-text-color: var($text-main-color);
-$tabsheet-framed-tabitemcell-caption-background-color: var($dim-color);
-$tabsheet-framed-tabitemcell-caption-hover-background-color: var($dim-color-shade-1);
-$tabsheet-framed-tabitemcell-caption-hover-text-color: var($text-main-color);
-$tabsheet-framed-tabitemcell-caption-disabled-text-color: var($text-dim-color);
+$tabsheet-framed-tabitemcell-caption-text-color: $text-main-color;
+$tabsheet-framed-tabitemcell-caption-background-color: $dim-color;
+$tabsheet-framed-tabitemcell-caption-hover-background-color: $dim-color-shade-1;
+$tabsheet-framed-tabitemcell-caption-hover-text-color: $text-main-color;
+$tabsheet-framed-tabitemcell-caption-disabled-text-color: $text-dim-color;
 
-$tabsheet-framed-tabitemcell-selected-background-color: var($tabsheet-tabcontainer-border-color);
+$tabsheet-framed-tabitemcell-selected-background-color: $tabsheet-tabcontainer-border-color;
 
-$tabsheet-framed-content-background-color: var($panel-background-color);
-$tabsheet-framed-content-border-color: var($tabsheet-tabcontainer-border-color);
-$tabsheet-framed-tabcontainer-border-color: var($tabsheet-framed-content-border-color);
+$tabsheet-framed-content-background-color: $panel-background-color;
+$tabsheet-framed-content-border-color: $tabsheet-tabcontainer-border-color;
+$tabsheet-framed-tabcontainer-border-color: $tabsheet-framed-content-border-color;
 
 $tabsheet-scroller-button-color: inherit;
-$tabsheet-scroller-button-hover-color: var($primary-color);
-$tabsheet-scroller-button-active-color: var($primary-color-shade-2);
+$tabsheet-scroller-button-hover-color: $primary-color;
+$tabsheet-scroller-button-active-color: $primary-color-shade-2;
 
 /* SelectionOverlay (ContextMenu) */
 
-$overlay-background-color: var($background-color);
-$selection-overlay-shadow: var($box-shadow);
+$overlay-background-color: $background-color;
+$selection-overlay-shadow: $box-shadow;
 
-$selection-overlay-selected-item-background-color: var($primary-color);
-$selection-overlay-selected-item-text-color: var($primary-contrast-text-color);
-$selection-overlay-selected-item-active-background-color: var($primary-color-shade-2);
+$selection-overlay-selected-item-background-color: $primary-color;
+$selection-overlay-selected-item-text-color: $primary-contrast-text-color;
+$selection-overlay-selected-item-active-background-color: $primary-color-shade-2;
 
 $selection-overlay-disabled-item-background-color: transparent;
-$selection-overlay-disabled-item-text-color: var($text-dim-color);
+$selection-overlay-disabled-item-text-color: $text-dim-color;
 
 /* DragAndDrop */
 
-$drag-element-shadow: var($box-shadow);
+$drag-element-shadow: $box-shadow;
 
 /* GroupBox */
 
-$groupbox-border-color: var($panel-border-color);
+$groupbox-border-color: $panel-border-color;
 
-$groupbox-collapsed-background-color: var($groupbox-border-color);
-$groupbox-collapsed-border-color: var($groupbox-collapsed-background-color);
+$groupbox-collapsed-background-color: $groupbox-border-color;
+$groupbox-collapsed-border-color: $groupbox-collapsed-background-color;
 
-$groupbox-caption-color: var($text-main-color);
-$groupbox-collapsed-caption-color: var($text-main-color);
+$groupbox-caption-color: $text-main-color;
+$groupbox-collapsed-caption-color: $text-main-color;
 
 /* SourceCodeEditor */
 
-$sourcecodeeditor-background-color: var($background-color);
-$sourcecodeeditor-text-color: var($text-main-color);
-$sourcecodeeditor-cursor-color: var($text-main-color);
+$sourcecodeeditor-background-color: $background-color;
+$sourcecodeeditor-text-color: $text-main-color;
+$sourcecodeeditor-cursor-color: $text-main-color;
 
-$sourcecodeeditor-gutter-text-color: var($text-secondary-color);
-$sourcecodeeditor-gutter-background-color: var($dim-color-shade-1);
-$sourcecodeeditor-gutter-active-line-background-color: var($dim-color-shade-2);
+$sourcecodeeditor-gutter-text-color: $text-secondary-color;
+$sourcecodeeditor-gutter-background-color: $dim-color-shade-1;
+$sourcecodeeditor-gutter-active-line-background-color: $dim-color-shade-2;
 
-$sourcecodeeditor-active-line-background-color: var($dim-color);
+$sourcecodeeditor-active-line-background-color: $dim-color;
 
-$sourcecodeeditor-selection-background-color: var($primary-dim-color);
+$sourcecodeeditor-selection-background-color: $primary-dim-color;
 
 /* SplitPanel */
 
-$splitpanel-splitter-background-color: var($primary-dim-color);
-$splitpanel-splitter-border-color: var($splitpanel-splitter-background-color);
+$splitpanel-splitter-background-color: $primary-dim-color;
+$splitpanel-splitter-border-color: $splitpanel-splitter-background-color;
 $splitpanel-splitter-border-radius: 5px;
 
-$splitpanel-dock-button-color: var($text-main-color);
+$splitpanel-dock-button-color: $text-main-color;
 
 /* FoldersPane */
 
-$folders-pane-background-color: var($panel-background-color);
+$folders-pane-background-color: $panel-background-color;
 
 /* FileUpload */
 
-$fileupload-dropzone-border-color: var($primary-color);
-$fileupload-dropzone-prompt-border-color: var($border-color);
-$fileupload-dropzone-prompt-background-color: var($panel-background-color);
+$fileupload-dropzone-border-color: $primary-color;
+$fileupload-dropzone-prompt-border-color: $border-color;
+$fileupload-dropzone-prompt-background-color: $panel-background-color;
 
 /* SuggestionField */
 
-$suggestionfield-modified-background-color: var($primary-dim-color);
+$suggestionfield-modified-background-color: $primary-dim-color;
 
 /* SearchField */
 
-$searchselect-edit-background-color: var($primary-dim-color);
+$searchselect-edit-background-color: $primary-dim-color;
 
 /* CapsLockIndicator */
 
-$capslockindicator-icon-color-on: var($warning-color);
-$capslockindicator-icon-color-off: var($text-dim-color);
+$capslockindicator-icon-color-on: $warning-color;
+$capslockindicator-icon-color-off: $text-dim-color;
 
 /* Link */
 
-$link-color: var($primary-color);
-$link-hover-color: var($primary-color-shade-1);
-$link-visited-color: var($link-color);
+$link-color: $primary-color;
+$link-hover-color: $primary-color-shade-1;
+$link-visited-color: $link-color;
 
 /* ProgressBar */
 
 $progressbar-border-radius: $v-border-radius;
-$progressbar-background-color: var($dim-color);
+$progressbar-background-color: $dim-color;
 $progressbar-indeterminate-indicator-width: 120px;
 
 /* Slider */
 
-$slider-handle-color: var($dim-color);
-$slider-handle-border-color: var($dim-color-shade-1);
+$slider-handle-color: $dim-color;
+$slider-handle-border-color: $dim-color-shade-1;
 
 /* PopupView */
 
-$popupview-popup-shadow: var($box-shadow);
+$popupview-popup-shadow: $box-shadow;
 
 /* RichTextArea */
 
-$richtextarea-toolbar-background-color: var($dim-color);
-$richtextarea-toolbar-text-color: var($text-main-color);
-$richtextarea-toolbar-text-hover-color: var($text-secondary-color);
-$richtextarea-toolbar-togglebutton-down-background-color: var($dim-color-shade-1);
+$richtextarea-toolbar-background-color: $dim-color;
+$richtextarea-toolbar-text-color: $text-main-color;
+$richtextarea-toolbar-text-hover-color: $text-secondary-color;
+$richtextarea-toolbar-togglebutton-down-background-color: $dim-color-shade-1;
 
 $richtextarea-textarea-background-color: #FFFFFF;
 
 /* NativeSelect */
 
-$select-background-color: var($background-color);
+$select-background-color: $background-color;
 
 /* ColorPicker */
 
-$colorpicker-buttons-panel-background-color: var($background-color);
-$colorpicker-buttons-panel-border-color: var($border-dim-color);
+$colorpicker-buttons-panel-background-color: $background-color;
+$colorpicker-buttons-panel-border-color: $border-dim-color;
 
 /* Calendar */
 
-$calendar-header-day-color: var($text-secondary-color);
+$calendar-header-day-color: $text-secondary-color;
 
-$calendar-month-day-number-color: var($text-secondary-color);
-$calendar-month-day-number-border-color: var($border-dim-color);
-$calendar-month-day-number-hover-color: var($primary-color);
+$calendar-month-day-number-color: $text-secondary-color;
+$calendar-month-day-number-border-color: $border-dim-color;
+$calendar-month-day-number-hover-color: $primary-color;
 
-$calendar-month-day-bottom-spacer-hover-color: var($primary-color);
+$calendar-month-day-bottom-spacer-hover-color: $primary-color;
 
-$calendar-month-day-today-background-color: var($primary-dim-color);
-$calendar-month-day-today-day-number-color: var($primary-color);
-$calendar-month-day-today-day-number-border-color: var($primary-color);
+$calendar-month-day-today-background-color: $primary-dim-color;
+$calendar-month-day-today-day-number-color: $primary-color;
+$calendar-month-day-today-day-number-border-color: $primary-color;
 
-$calendar-month-day-selected-background-color: var($primary-dim-color);
-$calendar-month-day-dragemphasis-background-color: var($secondary-color);
-
-
-$calendar-week-datecell-border-color: var($border-dim-color);
-$calendar-week-range-selection-color: var($primary-dim-color);
-$calendar-week-current-time-color: var($primary-color);
-$calendar-week-longevents-border-color: var($primary-dim-color);
+$calendar-month-day-selected-background-color: $primary-dim-color;
+$calendar-month-day-dragemphasis-background-color: $secondary-color;
 
 
-$calendar-event-color: var($primary-contrast-text-color);
-$calendar-event-background-color: var($primary-color);
+$calendar-week-datecell-border-color: $border-dim-color;
+$calendar-week-range-selection-color: $primary-dim-color;
+$calendar-week-current-time-color: $primary-color;
+$calendar-week-longevents-border-color: $primary-dim-color;
 
-$calendar-month-event-marker-color: var($calendar-event-background-color);
-$calendar-month-event-time-color: var($text-dim-color);
 
-$calendar-week-event-content-border-color: var($border-color);
+$calendar-event-color: $primary-contrast-text-color;
+$calendar-event-background-color: $primary-color;
+
+$calendar-month-event-marker-color: $calendar-event-background-color;
+$calendar-month-event-time-color: $text-dim-color;
+
+$calendar-week-event-content-border-color: $border-color;
 
 /* Accordion */
 
-$accordion-item-content-background-color: var($panel-background-color);
+$accordion-item-content-background-color: $panel-background-color;
 
-$accordion-item-caption-text-color: var($text-main-color);
-$accordion-item-caption-background-color: var($dim-color);
-$accordion-item-caption-border-color: var($border-dim-color);
+$accordion-item-caption-text-color: $text-main-color;
+$accordion-item-caption-background-color: $dim-color;
+$accordion-item-caption-border-color: $border-dim-color;
 
-$accordion-item-caption-hover-text-color: var($accordion-item-caption-text-color);
-$accordion-item-caption-hover-background-color: var($dim-color-shade-1);
+$accordion-item-caption-hover-text-color: $accordion-item-caption-text-color;
+$accordion-item-caption-hover-background-color: $dim-color-shade-1;
 
-$accordion-item-caption-active-text-color: var($accordion-item-caption-text-color);
-$accordion-item-caption-active-background-color: var($dim-color-shade-2);
+$accordion-item-caption-active-text-color: $accordion-item-caption-text-color;
+$accordion-item-caption-active-background-color: $dim-color-shade-2;
 
-$accordion-item-caption-disabled-text-color: var($text-dim-color);
+$accordion-item-caption-disabled-text-color: $text-dim-color;
 
 /* CurrencyField */
 
-$currencyfield-currency-background-color: var($dim-color);
-$currencyfield-currency-text-color: var($text-main-color);
+$currencyfield-currency-background-color: $dim-color;
+$currencyfield-currency-text-color: $text-main-color;
 
-$currencyfield-currency-read-only-background-color: var($dim-color);
-$currencyfield-currency-read-only-text-color: var($text-main-color);
+$currencyfield-currency-read-only-background-color: $dim-color;
+$currencyfield-currency-read-only-text-color: $text-main-color;
 
-$currencyfield-currency-disabled-background-color: var($dim-color);
-$currencyfield-currency-disabled-text-color: var($text-dim-color);
+$currencyfield-currency-disabled-background-color: $dim-color;
+$currencyfield-currency-disabled-text-color: $text-dim-color;
 
 /* PivotTable */
 
-$pivot-background-color: var($background-color);
-$pivot-header-background-color: var($dim-color);
-$pivot-border-color: var($border-dim-color);
+$pivot-background-color: $background-color;
+$pivot-header-background-color: $dim-color;
+$pivot-border-color: $border-dim-color;
 
-$pivot-filterbox-shadow: var($box-shadow);
+$pivot-filterbox-shadow: $box-shadow;
 
 /************
  * Variants *
@@ -836,8 +836,8 @@ $pivot-filterbox-shadow: var($box-shadow);
 //  $background-color: #4F4F4F;
 //  $app-background-color: #333333;
 //  $panel-background-color: #333333;
-//  $window-background-color: var($panel-background-color);
-//  $overlay-background-color: var($background-color);
+//  $window-background-color: $panel-background-color;
+//  $overlay-background-color: $background-color;
 //
 //  $text-secondary-color: #FFFFFF;
 //  $text-main-color: #F2F2F2;
@@ -846,8 +846,8 @@ $pivot-filterbox-shadow: var($box-shadow);
 //  $dim-color-shade-1: #5A5A5A;                         // ($dim-color) (d10%)
 //  $dim-color-shade-2: #505050;                         // ($dim-color) (d20%)
 //
-//  $border-color: var($background-color);
-//  $border-dim-color: var($dim-color);
+//  $border-color: $background-color;
+//  $border-dim-color: $dim-color;
 //  $border-dim-focused-color: #637497;
 //
 //  $primary-dim-color: #D2CCEC;                          // ($primary-color) (d30%)
@@ -856,8 +856,8 @@ $pivot-filterbox-shadow: var($box-shadow);
 //  $button-default-hover-color: #4F5C78;                 // ($button-default-color) (d10%)
 //  $button-default-active-color: #3B4459;                // ($button-default-color) (d20%)
 //  $button-default-disabled-color: #A0AAC0;              // ($button-default-color) (d30%)
-//  $button-default-disabled-text-color: var($button-default-text-color);
-//  $button-default-focused-border-color: var($button-default-disabled-color);
+//  $button-default-disabled-text-color: $button-default-text-color;
+//  $button-default-focused-border-color: $button-default-disabled-color;
 //
 //  $button-secondary-color: #F2F2F2;
 //  $button-secondary-text-color: #4F5C78;

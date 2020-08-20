@@ -139,34 +139,34 @@ $he-checkbox-size-reduction : 10 !default;
                                $checked-background-color, $checked-border-color, $checked-color,
                                $checked-focused-background-color, $checked-focused-border-color, $checked-focused-color) {
   & ~ label:before {
-    background: var($background-color);
-    border-color: var($border-color);
+    background: $background-color;
+    border-color: $border-color;
   }
 
   &:focus ~ label:before {
-    background: var($focused-background-color);
-    border-color: var($focused-border-color);
+    background: $focused-background-color;
+    border-color: $focused-border-color;
   }
 
   &:checked {
     & ~ label:before {
-      background: var($checked-background-color);
-      border-color: var($checked-border-color);
+      background: $checked-background-color;
+      border-color: $checked-border-color;
     }
 
     & ~ label:after {
-      color: var($checked-color);
+      color: $checked-color;
     }
   }
 
   &:focus:checked {
     & ~ label:before {
-      background: var($checked-focused-background-color);
-      border-color: var($checked-focused-border-color);
+      background: $checked-focused-background-color;
+      border-color: $checked-focused-border-color;
     }
 
     & ~ label:after {
-      color: var($checked-focused-color);
+      color: $checked-focused-color;
     }
   }
 }

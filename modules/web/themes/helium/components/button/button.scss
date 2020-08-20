@@ -207,30 +207,30 @@
                              $disabled-color,
                              $disabled-text-color,
                              $focused-border-color) {
-  border-color: var($main-color);
-  background: var($main-color);
-  color: var($text-color);
+  border-color: $main-color;
+  background: $main-color;
+  color: $text-color;
 
   &:hover:not(.v-disabled) {
-    border-color: var($hover-color);
-    background: var($hover-color);
-    color: var($text-color);
+    border-color: $hover-color;
+    background: $hover-color;
+    color: $text-color;
   }
 
   &:active:not(.v-disabled) {
-    border-color: var($active-color);
-    background: var($active-color);
-    color: var($text-color);
+    border-color: $active-color;
+    background: $active-color;
+    color: $text-color;
   }
 
   &:focus:not(.v-disabled) {
-    border-color: var($focused-border-color);
+    border-color: $focused-border-color;
   }
 
   &.v-disabled {
-    border-color: var($disabled-color);
-    background: var($disabled-color);
-    color: var($disabled-text-color);
+    border-color: $disabled-color;
+    background: $disabled-color;
+    color: $disabled-text-color;
   }
 }
 
@@ -238,29 +238,29 @@
                                   $hover-color    : $text-secondary-color,
                                   $active-color   : $text-secondary-color,
                                   $disabled-color : $text-dim-color) {
-  color: var($main-color);
+  color: $main-color;
   border-color: transparent;
   background: transparent;
 
   &:hover:not(.v-disabled) {
-    color: var($hover-color);
+    color: $hover-color;
     border-color: transparent;
     background: transparent;
   }
 
   &:focus:not(.v-disabled) {
-    border-color: var($disabled-color);
+    border-color: $disabled-color;
   }
 
   &:active:not(.v-disabled) {
-    color: var($active-color);
-    border-color: var($active-color);
+    color: $active-color;
+    border-color: $active-color;
     background: transparent;
     @include opacity(1);
   }
 
   &.v-disabled {
-    color: var($disabled-color);
+    color: $disabled-color;
     border-color: transparent;
     background: transparent;
   }

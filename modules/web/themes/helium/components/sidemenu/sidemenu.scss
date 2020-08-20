@@ -432,24 +432,24 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
 }
 
 @mixin he-sidemenu-action-button-color-style($color, $hover-background-color, $active-background-color) {
-  color: var($color);
+  color: $color;
 
   &:hover:not(.v-disabled) {
-    color: var($color);
-    background: var($hover-background-color);
+    color: $color;
+    background: $hover-background-color;
   }
 
   &:active:not(.v-disabled) {
-    color: var($color);
-    background: var($active-background-color);
+    color: $color;
+    background: $active-background-color;
   }
 }
 @mixin he-sidemenu-useractions-button-color-style($color, $hover-background-color, $active-background-color) {
-  color: var($color);
+  color: $color;
 
   &:not(.v-menubar-submenu):hover {
-    color: var($color);
-    background: var($hover-background-color);
+    color: $color;
+    background: $hover-background-color;
   }
 
   .v-menubar-menuitem:before {
@@ -457,7 +457,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
   }
 
   .v-menubar-menuitem-selected {
-    color: var($color);
-    background: var($active-background-color);
+    color: $color;
+    background: $active-background-color;
   }
 }

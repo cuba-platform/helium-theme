@@ -113,14 +113,14 @@
                                    $background-color        : $background-color,
                                    $caption-text-color      : $text-secondary-color,
                                    $description-text-color  : $text-main-color) {
-  background: var($background-color);
+  background: $background-color;
 
   .#{$primary-stylename}-caption {
-    color: var($caption-text-color);
+    color: $caption-text-color;
   }
 
   .#{$primary-stylename}-description {
-    color: var($description-text-color);
+    color: $description-text-color;
   }
 }
 
