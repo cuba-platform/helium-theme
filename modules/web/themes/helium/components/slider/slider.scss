@@ -95,7 +95,7 @@
     &:after {
       @include opacity(1);
 
-      border: he-border($color: --slider-handle-border-color);
+      border: he-border($color: $slider-handle-border-color);
     }
   }
 

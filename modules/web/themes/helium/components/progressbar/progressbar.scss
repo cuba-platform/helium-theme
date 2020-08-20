@@ -86,7 +86,7 @@
 @mixin he-progressbar-indicator-style() {
   background: $primary-color;
   border-radius: $progressbar-border-radius;
-  border: he-border($color: --primary-color);
+  border: he-border($color: $primary-color);
 }
 
 @mixin he-progressbar-size-style($primary-stylename : v-progressbar,

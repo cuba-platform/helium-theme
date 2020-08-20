@@ -86,6 +86,6 @@
   .#{$primary-stylename}-calendarpanel {
     background: $datepicker-background-color;
     border-radius: $v-border-radius;
-    border: he-border($color: --datepicker-border-color);
+    border: he-border($color: $datepicker-border-color);
   }
 }

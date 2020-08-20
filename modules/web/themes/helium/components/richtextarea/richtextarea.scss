@@ -41,7 +41,7 @@
     @include he-input-error-style();
 
     .gwt-RichTextToolbar {
-      border-bottom: he-border($color: --error-color);
+      border-bottom: he-border($color: $error-color);
     }
   }
 

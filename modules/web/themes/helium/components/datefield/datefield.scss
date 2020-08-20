@@ -224,7 +224,7 @@ $he-datefield-calendar-button-padding: 2px !default;
   .#{$primary-stylename}-day.#{$primary-stylename}-day-selected:hover {
     color: $datefield-calendarpanel-day-selected-color;
     background: $datefield-calendarpanel-day-selected-background-color;
-    border: he-border($color: --datefield-calendarpanel-day-selected-background-color);
+    border: he-border($color: $datefield-calendarpanel-day-selected-background-color);
   }
 
   .#{$primary-stylename}-day.#{$primary-stylename}-day-focused {
@@ -270,9 +270,9 @@ $he-datefield-calendar-button-padding: 2px !default;
 }
 
 @mixin he-datefield-popup-style() {
-  @include he-overlay-style($background-color : --datefield-popup-background-color,
-                            $shadow           : --datefield-popup-shadow,
-                            $text-color       : --datefield-popup-text-color);
+  @include he-overlay-style($background-color : $datefield-popup-background-color,
+                            $shadow           : $datefield-popup-shadow,
+                            $text-color       : $datefield-popup-text-color);
 
   @include he-datefield-calendarpanel-style();
   @include he-datefield-popup-size-style();
@@ -336,13 +336,13 @@ $he-datefield-calendar-button-padding: 2px !default;
 }
 
 @mixin he-datefield-button-color-style() {
-  @include he-button-color-style($main-color           : --datefield-button-color,
-  $text-color           : --datefield-button-text-color,
-  $hover-color          : --datefield-button-hover-color,
-  $active-color         : --datefield-button-active-color,
-  $disabled-color       : --datefield-button-disabled-color,
-  $disabled-text-color  : --datefield-button-disabled-text-color,
-  $focused-border-color : --datefield-button-color);
+  @include he-button-color-style($main-color           : $datefield-button-color,
+  $text-color           : $datefield-button-text-color,
+  $hover-color          : $datefield-button-hover-color,
+  $active-color         : $datefield-button-active-color,
+  $disabled-color       : $datefield-button-disabled-color,
+  $disabled-text-color  : $datefield-button-disabled-text-color,
+  $focused-border-color : $datefield-button-color);
   border: none;
 
   &:after {

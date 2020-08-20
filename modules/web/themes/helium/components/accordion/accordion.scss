@@ -98,7 +98,7 @@
 
   .#{$primary-stylename}-item {
     &[class*="item-open"] + [class*="item"] {
-      border-top: he-border($color: --panel-border-color);
+      border-top: he-border($color: $panel-border-color);
     }
   }
 
@@ -106,7 +106,7 @@
     > .v-caption {
       color: $accordion-item-caption-text-color;
       background: $accordion-item-caption-background-color;
-      border-bottom: he-border($color: --accordion-item-caption-border-color);
+      border-bottom: he-border($color: $accordion-item-caption-border-color);
       text-shadow: none;
 
       &:hover:not(.v-disabled) {

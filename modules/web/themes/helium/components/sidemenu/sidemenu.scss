@@ -89,7 +89,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
         background-color: $sidemenu-background-color;
 
         .#{$primary-stylename}-item-action {
-          border-top: he-border($color: --sidemenu-responsive-item-separator-color);
+          border-top: he-border($color: $sidemenu-responsive-item-separator-color);
         }
 
         .#{$primary-stylename}-item-action.#{$primary-stylename}-item-selected {
@@ -112,17 +112,17 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
       .#{$primary-stylename}-mobile-buttons {
         .v-button {
           @include he-sidemenu-action-button-color-style(
-                  $color                    : --sidemenu-mobile-button-color,
-                  $hover-background-color   : --sidemenu-mobile-button-hover-background-color,
-                  $active-background-color  : --sidemenu-mobile-button-active-background-color
+                  $color                    : $sidemenu-mobile-button-color,
+                  $hover-background-color   : $sidemenu-mobile-button-hover-background-color,
+                  $active-background-color  : $sidemenu-mobile-button-active-background-color
           );
         }
 
         .c-useractions-button {
           @include he-sidemenu-useractions-button-color-style(
-                  $color                    : --sidemenu-mobile-button-color,
-                  $hover-background-color   : --sidemenu-mobile-button-hover-background-color,
-                  $active-background-color  : --sidemenu-mobile-button-active-background-color
+                  $color                    : $sidemenu-mobile-button-color,
+                  $hover-background-color   : $sidemenu-mobile-button-hover-background-color,
+                  $active-background-color  : $sidemenu-mobile-button-active-background-color
           );
         }
       }
@@ -150,17 +150,17 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
     .c-newwindow-button,
     .c-logout-button {
       @include he-sidemenu-action-button-color-style(
-              $color                    : --sidemenu-action-button-color,
-              $hover-background-color   : --sidemenu-action-button-hover-background-color,
-              $active-background-color  : --sidemenu-action-button-active-background-color
+              $color                    : $sidemenu-action-button-color,
+              $hover-background-color   : $sidemenu-action-button-hover-background-color,
+              $active-background-color  : $sidemenu-action-button-active-background-color
       );
     }
 
     .c-useractions-button {
       @include he-sidemenu-useractions-button-color-style(
-              $color                    : --sidemenu-action-button-color,
-              $hover-background-color   : --sidemenu-action-button-hover-background-color,
-              $active-background-color  : --sidemenu-action-button-active-background-color
+              $color                    : $sidemenu-action-button-color,
+              $hover-background-color   : $sidemenu-action-button-hover-background-color,
+              $active-background-color  : $sidemenu-action-button-active-background-color
       );
     }
 
@@ -286,7 +286,7 @@ $cuba-sidemenu-top-height--large: $v-unit-size--large + 2 * $cuba-sidemenu-top-o
             padding-right: round($unit-size/9);
             top: round($unit-size/5);
             right: round($unit-size/5);
-            border: he-border($color: --sidemenu-item-badge-background-color);
+            border: he-border($color: $sidemenu-item-badge-background-color);
           }
         }
 

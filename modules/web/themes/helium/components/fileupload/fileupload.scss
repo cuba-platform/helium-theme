@@ -140,7 +140,7 @@
 
     &:after {
       background: $fileupload-dropzone-prompt-background-color;
-      border: he-border($color: --fileupload-dropzone-prompt-border-color);
+      border: he-border($color: $fileupload-dropzone-prompt-border-color);
     }
   }
 

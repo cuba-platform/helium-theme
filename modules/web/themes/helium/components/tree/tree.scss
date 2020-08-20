@@ -80,7 +80,7 @@
 
   .#{$primary-stylename}-row-focused {
     &:before {
-      border: he-border($color: --tree-focused-row-border-color);
+      border: he-border($color: $tree-focused-row-border-color);
       border-radius: 0;
     }
   }
@@ -93,7 +93,7 @@
 
   .c-tree-composition .c-tree-wrapper {
     @if $cuba-show-tree-border == true {
-      border: he-border($color: --tree-border-color);
+      border: he-border($color: $tree-border-color);
       border-radius: $v-border-radius;
     }
   }

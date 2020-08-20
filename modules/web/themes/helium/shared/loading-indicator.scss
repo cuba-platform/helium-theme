@@ -29,7 +29,7 @@
   height: $size !important;
   width: $size !important;
   box-sizing: border-box;
-  border: $thickness solid he-rgba($color: --primary-color_rgb, $alpha: .2);
+  border: $thickness solid he-rgba($color: $primary-color_rgb, $alpha: .2);
   border-top-color: $primary-color;
   border-right-color: $primary-color;
   border-radius: 100%;

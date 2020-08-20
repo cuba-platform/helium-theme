@@ -82,7 +82,7 @@
   .#{$primary-stylename}-failure {
     background: $background-color;
     color: $text-main-color;
-    border: he-border($color: --success-color, $strength: 2px);
+    border: he-border($color: $success-color, $strength: 2px);
 
     &:before {
       color: $success-color;

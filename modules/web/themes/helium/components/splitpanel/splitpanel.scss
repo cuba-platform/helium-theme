@@ -71,7 +71,7 @@ $he-splitpanel-dock-button-thickness: round($v-unit-size / 3) !default;
     div {
       &:before {
         background: $splitpanel-splitter-background-color;
-        border: he-border($color: --splitpanel-splitter-border-color);
+        border: he-border($color: $splitpanel-splitter-border-color);
         border-radius: $splitpanel-splitter-border-radius;
       }
     }
@@ -81,7 +81,7 @@ $he-splitpanel-dock-button-thickness: round($v-unit-size / 3) !default;
   .c-splitpanel-dock-button,
   .c-splitpanel-dock-button-vertical {
     background: $splitpanel-splitter-background-color;
-    border: he-border($color: --splitpanel-splitter-border-color, $strength: $border-width);
+    border: he-border($color: $splitpanel-splitter-border-color, $strength: $border-width);
     color: $splitpanel-dock-button-color;
   }
 

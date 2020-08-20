@@ -16,7 +16,7 @@
 
 @mixin he-contextmenu-button($primary-stylename: c-cm-button) {
   .#{$primary-stylename} {
-    @include he-button-borderless-style($main-color: --text-main-color);
+    @include he-button-borderless-style($main-color: $text-main-color);
     @include he-contextmenu-button-size-style();
     border: 0;
 

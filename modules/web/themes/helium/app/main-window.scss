@@ -146,9 +146,9 @@ $he-sidemenu-collapsible-logo-default-size: 20px !default;
     .c-logout-button,
     .c-login-button {
       @include he-sidemenu-action-button-color-style(
-              $color                    : --sidemenu-collapsible-action-button-color,
-              $hover-background-color   : --sidemenu-collapsible-action-button-hover-background-color,
-              $active-background-color  : --sidemenu-collapsible-action-button-active-background-color
+              $color                    : $sidemenu-collapsible-action-button-color,
+              $hover-background-color   : $sidemenu-collapsible-action-button-hover-background-color,
+              $active-background-color  : $sidemenu-collapsible-action-button-active-background-color
       );
     }
   }

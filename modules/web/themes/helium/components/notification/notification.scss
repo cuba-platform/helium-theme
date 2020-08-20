@@ -110,9 +110,9 @@
 }
 
 @mixin he-notification-color-style($primary-stylename       : v-Notification,
-                                   $background-color        : --background-color,
-                                   $caption-text-color      : --text-secondary-color,
-                                   $description-text-color  : --text-main-color) {
+                                   $background-color        : $background-color,
+                                   $caption-text-color      : $text-secondary-color,
+                                   $description-text-color  : $text-main-color) {
   background: var($background-color);
 
   .#{$primary-stylename}-caption {
@@ -127,9 +127,9 @@
 @mixin he-notification-system-style($primary-stylename: v-Notification) {
   @include he-notification-color-style(
           $primary-stylename      : $primary-stylename,
-          $background-color       : --notification-system-background-color,
-          $caption-text-color     : --notification-system-caption-color,
-          $description-text-color : --notification-system-description-color);
+          $background-color       : $notification-system-background-color,
+          $caption-text-color     : $notification-system-caption-color,
+          $description-text-color : $notification-system-description-color);
   @include opacity(.9);
   text-align: center;
 
@@ -141,9 +141,9 @@
 @mixin he-notification-humanized-style($primary-stylename: v-Notification) {
   @include he-notification-color-style(
           $primary-stylename      : $primary-stylename,
-          $background-color       : --notification-humanized-background-color,
-          $caption-text-color     : --notification-humanized-caption-color,
-          $description-text-color : --notification-humanized-description-color);
+          $background-color       : $notification-humanized-background-color,
+          $caption-text-color     : $notification-humanized-caption-color,
+          $description-text-color : $notification-humanized-description-color);
 }
 
 @mixin he-notification-tray-style($primary-stylename: v-Notification) {
@@ -153,18 +153,18 @@
 @mixin he-notification-warning-style($primary-stylename: v-Notification) {
   @include he-notification-color-style(
           $primary-stylename      : $primary-stylename,
-          $background-color       : --notification-warning-background-color,
-          $caption-text-color     : --notification-warning-caption-color,
-          $description-text-color : --notification-warning-description-color);
+          $background-color       : $notification-warning-background-color,
+          $caption-text-color     : $notification-warning-caption-color,
+          $description-text-color : $notification-warning-description-color);
   @include he-box-shadow(--notification-shadow);
 }
 
 @mixin he-notification-error-style($primary-stylename: v-Notification) {
   @include he-notification-color-style(
           $primary-stylename      : $primary-stylename,
-          $background-color       : --notification-error-background-color,
-          $caption-text-color     : --notification-error-caption-color,
-          $description-text-color : --notification-error-description-color);
+          $background-color       : $notification-error-background-color,
+          $caption-text-color     : $notification-error-caption-color,
+          $description-text-color : $notification-error-description-color);
   @include he-box-shadow(--notification-shadow);
 
   &:after {

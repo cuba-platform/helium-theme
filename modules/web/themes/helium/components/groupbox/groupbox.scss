@@ -79,7 +79,7 @@ $he-groupbox-caption-height--large: round($v-unit-size--large * 1.4);
   $expander-font-size: $expander-size;
 
   .#{$primary-stylename} {
-    @include he-panel-style($border-color: --groupbox-border-color);
+    @include he-panel-style($border-color: $groupbox-border-color);
   }
 
   .#{$primary-stylename}-caption {

@@ -88,16 +88,16 @@ $he-checkbox-size-reduction : 10 !default;
 
   :root & > input {
     @include he-checkbox-color-style(
-            $background-color                 : --checkbox-background-color,
-            $border-color                     : --checkbox-border-color,
-            $focused-background-color         : --checkbox-focused-background-color,
-            $focused-border-color             : --checkbox-focused-border-color,
-            $checked-background-color         : --checkbox-checked-background-color,
-            $checked-border-color             : --checkbox-checked-border-color,
-            $checked-color                    : --checkbox-checked-color,
-            $checked-focused-background-color : --checkbox-checked-focused-background-color,
-            $checked-focused-border-color     : --checkbox-checked-focused-border-color,
-            $checked-focused-color            : --checkbox-checked-focused-color);
+            $background-color                 : $checkbox-background-color,
+            $border-color                     : $checkbox-border-color,
+            $focused-background-color         : $checkbox-focused-background-color,
+            $focused-border-color             : $checkbox-focused-border-color,
+            $checked-background-color         : $checkbox-checked-background-color,
+            $checked-border-color             : $checkbox-checked-border-color,
+            $checked-color                    : $checkbox-checked-color,
+            $checked-focused-background-color : $checkbox-checked-focused-background-color,
+            $checked-focused-border-color     : $checkbox-checked-focused-border-color,
+            $checked-focused-color            : $checkbox-checked-focused-color);
 
     & ~ label:before {
       border-width: $checkbox-border-width;
@@ -116,16 +116,16 @@ $he-checkbox-size-reduction : 10 !default;
   &.v-disabled {
     :root & > input {
       @include he-checkbox-color-style(
-              $background-color                 : --checkbox-read-only-background-color,
-              $border-color                     : --checkbox-read-only-border-color,
-              $focused-background-color         : --checkbox-read-only-focused-background-color,
-              $focused-border-color             : --checkbox-read-only-focused-border-color,
-              $checked-background-color         : --checkbox-read-only-checked-background-color,
-              $checked-border-color             : --checkbox-read-only-checked-border-color,
-              $checked-color                    : --checkbox-read-only-checked-color,
-              $checked-focused-background-color : --checkbox-read-only-checked-focused-background-color,
-              $checked-focused-border-color     : --checkbox-read-only-checked-focused-border-color,
-              $checked-focused-color            : --checkbox-read-only-checked-focused-color);
+              $background-color                 : $checkbox-read-only-background-color,
+              $border-color                     : $checkbox-read-only-border-color,
+              $focused-background-color         : $checkbox-read-only-focused-background-color,
+              $focused-border-color             : $checkbox-read-only-focused-border-color,
+              $checked-background-color         : $checkbox-read-only-checked-background-color,
+              $checked-border-color             : $checkbox-read-only-checked-border-color,
+              $checked-color                    : $checkbox-read-only-checked-color,
+              $checked-focused-background-color : $checkbox-read-only-checked-focused-background-color,
+              $checked-focused-border-color     : $checkbox-read-only-checked-focused-border-color,
+              $checked-focused-color            : $checkbox-read-only-checked-focused-color);
     }
   }
 

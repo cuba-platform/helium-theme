@@ -21,14 +21,14 @@
   }
 }
 
-@mixin he-panel-style($background-color : --panel-background-color,
-                      $border-color     : --panel-border-color) {
+@mixin he-panel-style($background-color : $panel-background-color,
+                      $border-color     : $panel-border-color) {
   background: var($background-color);
   border: he-border($color: $border-color);
   color: $text-main-color;
 }
 
 @mixin he-panel-well-style() {
-  @include he-panel-style($background-color : --panel-well-background-color,
-                          $border-color     : --border-color)
+  @include he-panel-style($background-color : $panel-well-background-color,
+                          $border-color     : $border-color)
 }

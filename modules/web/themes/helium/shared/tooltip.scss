@@ -38,7 +38,7 @@
   @include he-tooltip-size-style();
   @include he-box-shadow(--tooltip-shadow);
 
-  background: he-rgba($color: --tooltip-background-color_rgb, $alpha: .9);
+  background: he-rgba($color: $tooltip-background-color_rgb, $alpha: .9);
   color: $tooltip-font-color;
 
   .v-errormessage {

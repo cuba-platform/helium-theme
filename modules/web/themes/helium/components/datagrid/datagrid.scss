@@ -189,7 +189,7 @@
   .#{$primary-stylename}-body-drag-top,
   .#{$primary-stylename}-row-drag-center {
     &:after {
-      border: he-border($color: --grid-row-drag-border-color, $strength: 2px);
+      border: he-border($color: $grid-row-drag-border-color, $strength: 2px);
     }
   }
 
@@ -227,7 +227,7 @@
 
     // TODO: gg, style other components
     .v-button.c-pickerfield-button {
-      border-left: he-border($color: --border-dim-color);
+      border-left: he-border($color: $border-dim-color);
     }
   }
 

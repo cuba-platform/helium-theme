@@ -49,7 +49,7 @@
   @if ($v-support-inverse-menu) {
     .c-inverse-header.c-app-menubar {
       background: $menubar-background-color;
-      border: he-border($color: --menubar-border-color);
+      border: he-border($color: $menubar-border-color);
 
       .c-main-menu {
         .v-menubar-menuitem-more-item,

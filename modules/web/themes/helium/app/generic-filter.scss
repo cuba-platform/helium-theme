@@ -18,11 +18,11 @@
   .#{$primary-stylename} {
 
     .filter-control-with-top-border {
-      border-top: he-border($color: --groupbox-border-color);
+      border-top: he-border($color: $groupbox-border-color);
     }
 
     .filter-control-with-bottom-border {
-      border-bottom: he-border($color: --groupbox-border-color);
+      border-bottom: he-border($color: $groupbox-border-color);
     }
 
     .filter-search-button-layout {

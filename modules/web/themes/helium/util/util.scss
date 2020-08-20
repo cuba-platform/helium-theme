@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-@function he-border($color: --border-color, $strength: 1px) {
+@function he-border($color: $border-color, $strength: 1px) {
   @return $strength solid var($color);
 }
 
-@mixin he-focus-style($color: --primary-color) {
+@mixin he-focus-style($color: $primary-color) {
   border-color: var($color);
 }
 
@@ -26,13 +26,13 @@
   @return unquote("rgba(var(#{$color}), #{$alpha})");
 }
 
-@mixin he-box-shadow($shadow: --box-shadow) {
+@mixin he-box-shadow($shadow: $box-shadow) {
   @include box-shadow(var($shadow));
 }
 
-@mixin he-overlay-style($background-color : --overlay-background-color,
-                        $shadow           : --box-shadow,
-                        $text-color       : --text-main-color,
+@mixin he-overlay-style($background-color : $overlay-background-color,
+                        $shadow           : $box-shadow,
+                        $text-color       : $text-main-color,
                         $border-radius    : $v-overlay-border-radius) {
   @include he-box-shadow($shadow);
 

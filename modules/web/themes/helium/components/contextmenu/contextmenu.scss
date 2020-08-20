@@ -30,8 +30,8 @@
 
 @mixin he-selection-overlay-style($item-stylename: gwt-MenuItem) {
   @include he-selection-overlay-size-style();
-  @include he-overlay-style($background-color : --overlay-background-color,
-                            $shadow           : --selection-overlay-shadow,
+  @include he-overlay-style($background-color : $overlay-background-color,
+                            $shadow           : $selection-overlay-shadow,
                             $border-radius    : $v-overlay-border-radius);
 
   overflow: hidden;

@@ -27,7 +27,7 @@
 
   .#{$primary-stylename}-day-number {
     color: $calendar-month-day-number-color;
-    border-top: he-border($color: --calendar-month-day-number-border-color);
+    border-top: he-border($color: $calendar-month-day-number-border-color);
 
     &:hover {
       color: $calendar-month-day-number-hover-color;
@@ -45,7 +45,7 @@
 
     .#{$primary-stylename}-day-number {
       color: $calendar-month-day-today-day-number-color;
-      border-top: he-border($color: --calendar-month-day-today-day-number-border-color, $strength: 2px);
+      border-top: he-border($color: $calendar-month-day-today-day-number-border-color, $strength: 2px);
     }
   }
 
@@ -60,12 +60,12 @@
   // Week / Day view
 
   .#{$primary-stylename}-weekly-longevents {
-    border-bottom: he-border($color: --calendar-week-longevents-border-color, $strength: round($v-unit-size/12));
+    border-bottom: he-border($color: $calendar-week-longevents-border-color, $strength: round($v-unit-size/12));
   }
 
   .#{$primary-stylename} .v-datecellslot,
   .#{$primary-stylename} .v-datecellslot-even {
-    border-top: he-border($color: --calendar-week-datecell-border-color);
+    border-top: he-border($color: $calendar-week-datecell-border-color);
   }
 
   .#{$primary-stylename} .v-datecellslot {
@@ -105,7 +105,7 @@
 
       .#{$primary-stylename}-event-content {
         background-color: $calendar-event-background-color;
-        border: he-border($color: --calendar-week-event-content-border-color);
+        border: he-border($color: $calendar-week-event-content-border-color);
       }
     }
   }

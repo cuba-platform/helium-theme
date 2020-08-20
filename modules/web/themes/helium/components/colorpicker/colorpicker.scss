@@ -29,7 +29,7 @@
 
   .#{$primary-stylename}-popup .v-horizontallayout {
     background: $colorpicker-buttons-panel-background-color;
-    border-top: he-border($color: --colorpicker-buttons-panel-border-color);
+    border-top: he-border($color: $colorpicker-buttons-panel-border-color);
   }
 
   /* Global size */
