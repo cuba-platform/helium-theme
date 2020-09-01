@@ -42,7 +42,7 @@ Pick a version which is compatible with the platform version used in your projec
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
-| 7.2.4+           | 0.2.x          |
+| 7.2.4+           | 0.3.x          |
 | 7.1.5+           | 0.1.x          |
 
 ## Theme Editor
