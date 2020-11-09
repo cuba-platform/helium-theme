@@ -153,32 +153,32 @@
 
   /* Basic */
 
-  --primary-color: #6F5CC3;                         // Primary
+  --primary-color: #6F5CC3;
 
-  --secondary-color: #637497;                       // Gray - Light
+  --secondary-color: #637497;
 
-  --warning-color: #FFDA79;                         // Warning
+  --warning-color: #FFDA79;
 
-  --error-color: #FF647C;                           // Danger
+  --error-color: #FF647C;
 
-  --success-color: #36AB80;                         // Success
+  --success-color: #36AB80;
 
-  --border-color: #637497;                          // Gray - Light
+  --border-color: #637497;
 
-  --dim-color: #F2F2F2;                             // Gray - Hover
+  --dim-color: #F2F2F2;
 
-  --text-main-color: #4F5C78;                       // Text - Medium
+  --text-main-color: #4F5C78;
 
   --background-color: #FFFFFF;
   --app-background-color: #FFFFFF;
 
   /* Common */
 
-  --text-secondary-color: #0A2044;                  // Text - Main
-  --text-dim-color: #A0AAC0;                        // Gray - Disabled
+  --text-secondary-color: #0A2044;
+  --text-dim-color: #A0AAC0;
   --text-contrast-color: #FFFFFF;
 
-  --primary-color_rgb: 111, 92, 195;                // Primary
+  --primary-color_rgb: 111, 92, 195;
   --primary-contrast-text-color: var(--text-contrast-color);
   --primary-color-shade-1: #5440AC;                 // (--primary-color) (d10%)
   --primary-color-shade-2: #423287;                 // (--primary-color) (d20%)
@@ -190,7 +190,7 @@
   --secondary-color-shade-2: #3B4459;               // (--secondary-color) (d20%)
   --secondary-dim-color: #A0AAC0;                   // (--secondary-color) (l30%)
 
-  --warning-contrast-text-color: #4F5C78;           // Text - Medium
+  --warning-contrast-text-color: #4F5C78;
 
   --error-contrast-text-color: var(--text-contrast-color);
   --error-color-shade-1: #FF3151;                   // (--error-color) (d10%)
@@ -205,7 +205,7 @@
   --dim-color-shade-1: #CECECE;                     // (--dim-color) (d10%)
   --dim-color-shade-2: #A7A7A7;                     // (--dim-color) (d20%)
 
-  --border-dim-color: #A0AAC0;                      // Gray - Disabled
+  --border-dim-color: #A0AAC0;
   --border-dim-focused-color: var(--border-color);
 
   --background-color_rgb: 256, 256, 256;
@@ -220,7 +220,7 @@
 
   --button-border-width: 2px;
 
-  --button-default-color: #F2F2F2;                        // Gray - Hover
+  --button-default-color: #F2F2F2;
   --button-default-text-color: var(--text-main-color);
   --button-default-hover-color: #CECECE;                  // (--button-default-color) (d10%)
   --button-default-active-color: #A7A7A7;                 // (--button-default-color) (d20%)
