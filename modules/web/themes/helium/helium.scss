@@ -797,46 +797,68 @@
   /************
    * Variants *
    ************/
-  // TODO: gg, provide real colors
-  &.dark {
-    --background-color: #4F4F4F;
-    --app-background-color: #333333;
-    --panel-background-color: #333333;
-    --window-background-color: var(--panel-background-color);
-    --overlay-background-color: var(--background-color);
 
-    --text-secondary-color: #FFFFFF;
+  &.dark {
+
+    /* Basic */
+
+    --app-background-color: #222F3E;
+    --background-color: #222F3E;
+    --background-color_rgb: 34, 47, 62;
+
+    --border-color: #576574;
+
+    --dim-color: #576574;
+
+    --success-color: #1DD1A1;
+
     --text-main-color: #F2F2F2;
 
-    --dim-color: #646464;
-    --dim-color-shade-1: #5A5A5A;                         // (--dim-color) (d10%)
-    --dim-color-shade-2: #505050;                         // (--dim-color) (d20%)
+    /* Common */
 
-    --border-color: var(--background-color);
-    --border-dim-color: var(--dim-color);
-    --border-dim-focused-color: #637497;
+    --text-secondary-color: #C8D6E5;
 
-    --primary-dim-color: #D2CCEC;                          // (--primary-color) (d30%)
+    --primary-dim-color: #463691;
 
-    --button-default-color: #637497;
-    --button-default-hover-color: #4F5C78;                 // (--button-default-color) (d10%)
-    --button-default-active-color: #3B4459;                // (--button-default-color) (d20%)
-    --button-default-disabled-color: #A0AAC0;              // (--button-default-color) (d30%)
+    --dim-color-shade-1: #4D5966;
+    --dim-color-shade-2: #444F5A;
+
+    --success-color-shade-1: #1AB78D;
+    --success-color-shade-2: #17A17C;
+    --success-dim-color: #55E7C0;
+
+    --text-dim-color: #576574;
+
+    --box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+
+    /* Button */
+
+    --button-default-color: var(--secondary-color);
+    --button-default-text-color: var(--secondary-contrast-text-color);
+    --button-default-hover-color: var(--secondary-color-shade-1);
+    --button-default-active-color: var(--secondary-color-shade-2);
+    --button-default-disabled-color: var(--secondary-dim-color);
     --button-default-disabled-text-color: var(--button-default-text-color);
     --button-default-focused-border-color: var(--button-default-disabled-color);
 
-    --button-secondary-color: #F2F2F2;
+    --button-primary-disabled-color: #D2CCEC;
+    --button-primary-focused-border-color: #D2CCEC;
+
+    --button-secondary-color: #C8D6E5;
     --button-secondary-text-color: #4F5C78;
-    --button-secondary-hover-color: #CECECE;               // (--secondary-color) (d10%)
-    --button-secondary-active-color: #A7A7A7;              // (--secondary-color) (d20%)
-    --button-secondary-disabled-color: transparent;        // (--secondary-color) (d30%)
-    --button-secondary-disabled-text-color: #A0AAC0;       // (--button-secondary-text-color)
-    --button-secondary-focused-border-color: #E7E7E7;      // (--button-secondary-disabled-color)
+    --button-secondary-hover-color: #A9BFD6;
+    --button-secondary-active-color: #8DAAC8;
+    --button-secondary-disabled-color: #D6E0EB;
+    --button-secondary-disabled-text-color: #4F5C78;
+    --button-secondary-focused-border-color: #C8D6E5;
 
-    --button-error-disabled-color: #FFCAD2;                // (--error-color) (d30%)
+    --button-success-disabled-color: #55E7C0;
 
-    --button-success-disabled-color: #9BDFC6;              // (--success-color) (d30%)
+    --button-error-disabled-color: #FFCAD2;
 
-    --sidemenu-background-color: #4F4F4F;
+    /* Panel */
+
+    --panel-background-color: #222F3E;
+    --panel-border-color: #576574;
   }
 }
