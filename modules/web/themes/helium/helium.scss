@@ -831,6 +831,8 @@
 
     --text-dim-color: #576574;
 
+    --border-dim-color: #576574;
+
     --box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
 
     /* Button */
@@ -864,5 +866,24 @@
 
     --panel-background-color: #222F3E;
     --panel-border-color: #576574;
+
+    /* CheckBox */
+
+    --checkbox-focused-background-color: #A0AAC0;
+
+    --checkbox-checked-focused-background-color: #D2CCEC;
+
+    --checkbox-read-only-background-color: var(--checkbox-read-only-border-color);
+
+    --checkbox-read-only-focused-background-color: var(--checkbox-read-only-background-color);
+    --checkbox-read-only-focused-border-color: #A0AAC0;
+
+    --checkbox-read-only-checked-background-color: var(--checkbox-read-only-background-color);
+    --checkbox-read-only-checked-border-color: var(--checkbox-read-only-border-color);
+    --checkbox-read-only-checked-color: #A0AAC0;
+
+    --checkbox-read-only-checked-focused-background-color: var(--checkbox-read-only-focused-background-color);
+    --checkbox-read-only-checked-focused-border-color: var(--checkbox-read-only-focused-border-color);
+    --checkbox-read-only-checked-focused-color: var(--checkbox-read-only-checked-color);
   }
 }
