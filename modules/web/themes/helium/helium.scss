@@ -885,5 +885,15 @@
     --checkbox-read-only-checked-focused-background-color: var(--checkbox-read-only-focused-background-color);
     --checkbox-read-only-checked-focused-border-color: var(--checkbox-read-only-focused-border-color);
     --checkbox-read-only-checked-focused-color: var(--checkbox-read-only-checked-color);
+
+    /* Table */
+
+    --table-row-stripe-color: #323F4E;
+    --table-hovered-row-background-color: #393D66;
+
+    /* Grid */
+
+    --grid-row-stripe-color: #323F4E;
+    --grid-hovered-row-background-color: #393D66;
   }
 }
