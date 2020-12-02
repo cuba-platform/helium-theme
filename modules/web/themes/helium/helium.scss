@@ -266,6 +266,19 @@
   /* TextField */
 
   --textfield-background-color: var(--background-color);
+  --textfield-text-color: var(--text-secondary-color);
+
+  --textfield-placeholder-color: var(--text-dim-color);
+
+  --textfield-read-only-background-color: var(--dim-color); // #424C57;
+  --textfield-read-only-text-color: var(--text-main-color);
+  --textfield-read-only-border-color: var(--border-dim-color);
+  --textfield-read-only-focused-border-color: var(--border-dim-focused-color);
+
+  --textfield-disabled-background-color: var(--textfield-read-only-background-color);
+  --textfield-disabled-text-color: var(--text-dim-color);
+  --textfield-disabled-border-color: var(--textfield-read-only-border-color);
+  --textfield-disabled-focused-border-color: var(--textfield-disabled-border-color);
 
   /* DateField */
 
@@ -812,11 +825,11 @@
 
     --success-color: #1DD1A1;
 
-    --text-main-color: #F2F2F2;
+    --text-main-color: #C8D6E5;
 
     /* Common */
 
-    --text-secondary-color: #C8D6E5;
+    --text-secondary-color: #F2F2F2;
 
     --primary-dim-color: #504A8E;
 
@@ -832,6 +845,7 @@
     --text-dim-color: #576574;
 
     --border-dim-color: #576574;
+    --border-dim-focused-color: #C8D6E5;
 
     --box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
 
@@ -861,6 +875,10 @@
 
     --button-error-disabled-text-color: #C8D6E5;
     --button-error-focused-border-color: #FFCAD2;
+
+    /* TextField */
+
+    --textfield-read-only-background-color: #424C57;
 
     /* Panel */
 
