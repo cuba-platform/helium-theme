@@ -913,5 +913,20 @@
 
     --grid-row-stripe-color: #323F4E;
     --grid-hovered-row-background-color: #393D66;
+
+    /* SideMenu */
+
+    --sidemenu-background-color: #29394B;
+
+    --sidemenu-title-background-color: #576574;
+
+    --sidemenu-responsive-item-header-background-color: var(--sidemenu-background-color);
+
+    --sidemenu-collapsible-controls-panel-background-color: #576574;
+
+    --sidemenu-collapsible-collapse-button-color: var(--text-main-color);
+    --sidemenu-collapsible-collapse-button-background-color: #637497;
+    --sidemenu-collapsible-collapse-button-hover-background-color: var(--sidemenu-collapsible-action-button-hover-background-color);
+    --sidemenu-collapsible-collapse-button-active-background-color: var(--sidemenu-collapsible-action-button-active-background-color);
   }
 }
