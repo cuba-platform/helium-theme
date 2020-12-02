@@ -818,14 +818,16 @@
 
     --text-secondary-color: #C8D6E5;
 
-    --primary-dim-color: #463691;
+    --primary-dim-color: #504A8E;
 
     --dim-color-shade-1: #4D5966;
     --dim-color-shade-2: #444F5A;
 
     --success-color-shade-1: #1AB78D;
     --success-color-shade-2: #17A17C;
-    --success-dim-color: #55E7C0;
+    --success-dim-color: #207D6D;
+
+    --error-dim-color: #8C485C;
 
     --text-dim-color: #576574;
 
@@ -837,11 +839,11 @@
     --button-default-text-color: var(--secondary-contrast-text-color);
     --button-default-hover-color: var(--secondary-color-shade-1);
     --button-default-active-color: var(--secondary-color-shade-2);
-    --button-default-disabled-color: var(--secondary-dim-color);
-    --button-default-disabled-text-color: var(--button-default-text-color);
-    --button-default-focused-border-color: var(--button-default-disabled-color);
+    --button-default-disabled-color: #495873;
+    --button-default-disabled-text-color: #C8D6E5;
+    --button-default-focused-border-color: var(--secondary-dim-color);
 
-    --button-primary-disabled-color: #D2CCEC;
+    --button-primary-disabled-text-color: #C8D6E5;
     --button-primary-focused-border-color: #D2CCEC;
 
     --button-secondary-color: #C8D6E5;
@@ -849,12 +851,14 @@
     --button-secondary-hover-color: #A9BFD6;
     --button-secondary-active-color: #8DAAC8;
     --button-secondary-disabled-color: #D6E0EB;
-    --button-secondary-disabled-text-color: #4F5C78;
-    --button-secondary-focused-border-color: #C8D6E5;
+    --button-secondary-disabled-text-color: var(--button-secondary-text-color);
+    --button-secondary-focused-border-color: #637497;
 
-    --button-success-disabled-color: #55E7C0;
+    --button-success-disabled-text-color: #C8D6E5;
+    --button-success-focused-border-color: #9BDFC6;
 
-    --button-error-disabled-color: #FFCAD2;
+    --button-error-disabled-text-color: #C8D6E5;
+    --button-error-focused-border-color: #FFCAD2;
 
     /* Panel */
 
