@@ -937,5 +937,10 @@
     /* Slider */
 
     --slider-handle-border-color: var(--slider-handle-color);
+
+    /* Accordion */
+
+    --accordion-item-caption-border-color: var(--dim-color-shade-2);
+    --accordion-item-caption-disabled-text-color: var(--dim-color-shade-2);
   }
 }
