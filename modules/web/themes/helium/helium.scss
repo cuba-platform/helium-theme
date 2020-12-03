@@ -351,7 +351,7 @@
   --pickerfield-button-active-background-color: var(--dim-color);
 
   --pickerfield-button-disabled-text-color: var(--text-dim-color);
-  --pickerfield-button-disabled-background-color: var(--dim-color);
+  --pickerfield-button-disabled-background-color: var(--textfield-disabled-background-color);
 
   /* Notification */
 
@@ -793,10 +793,10 @@
   --currencyfield-currency-background-color: var(--dim-color);
   --currencyfield-currency-text-color: var(--text-main-color);
 
-  --currencyfield-currency-read-only-background-color: var(--dim-color);
+  --currencyfield-currency-read-only-background-color: var(--textfield-disabled-background-color);
   --currencyfield-currency-read-only-text-color: var(--text-main-color);
 
-  --currencyfield-currency-disabled-background-color: var(--dim-color);
+  --currencyfield-currency-disabled-background-color: var(--textfield-disabled-background-color);
   --currencyfield-currency-disabled-text-color: var(--text-dim-color);
 
   /* PivotTable */
@@ -928,11 +928,6 @@
     --sidemenu-collapsible-collapse-button-background-color: #637497;
     --sidemenu-collapsible-collapse-button-hover-background-color: var(--sidemenu-collapsible-action-button-hover-background-color);
     --sidemenu-collapsible-collapse-button-active-background-color: var(--sidemenu-collapsible-action-button-active-background-color);
-
-    /* PickerField */
-
-    --pickerfield-button-disabled-text-color: var(--text-dim-color);
-    --pickerfield-button-disabled-background-color: var(--textfield-disabled-background-color);
 
     /* Slider */
 
