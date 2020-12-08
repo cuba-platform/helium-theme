@@ -937,5 +937,15 @@
 
     --accordion-item-caption-border-color: var(--dim-color-shade-2);
     --accordion-item-caption-disabled-text-color: var(--dim-color-shade-2);
+
+    /* SelectionOverlay (ContextMenu) */
+
+    --overlay-background-color: #495873;
+
+    /* GroupBox */
+
+    --groupbox-border-color: var(--border-color);
+
+    --groupbox-collapsed-background-color: #495873;
   }
 }
