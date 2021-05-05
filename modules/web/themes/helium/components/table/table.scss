@@ -221,7 +221,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   .#{$primary-stylename}-header-drag {
     border: $table-outer-border;
     background: var(--table-background-color);
-    color: var(--text-secondary-color);
+    color: var(--table-header-text-color);
   }
 
   .#{$primary-stylename}-row {
