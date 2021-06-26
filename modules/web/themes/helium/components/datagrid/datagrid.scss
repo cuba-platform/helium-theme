@@ -46,7 +46,7 @@
 
         @include he-grid-selected-row-style($primary-stylename: $primary-stylename);
 
-        @if $jmix-datagrid-highlight-hover-row {
+        @if $cuba-datagrid-highlight-hover-row {
           @include he-grid-row-hover-style($primary-stylename: $primary-stylename);
         }
       }
@@ -213,9 +213,33 @@
   .#{$primary-stylename}-editor-cells > div {
     background: var(--grid-background-color);
 
-    // TODO: gg, style other components
     .v-button.c-pickerfield-button {
       border-left: he-border($color: --border-dim-color);
+    }
+
+    .v-filterselect-button:active {
+      border-radius: 0;
+    }
+
+    .c-datefield-layout {
+      .c-datefield {
+        [class*="textfield"] {
+          border: none;
+
+          &.v-datefield-textfield {
+            padding-right: ceil($v-unit-size / 3);
+            padding-left: $v-unit-size;
+          }
+        }
+
+        [class*="button"] {
+          @include he-datefield-button-borderless-style();
+        }
+      }
+
+      .c-timefield {
+        border-left: he-border($color: --border-dim-color);
+      }
     }
   }
 
