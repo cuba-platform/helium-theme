@@ -1,20 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-  ~ Copyright (c) 2008-2020 Haulmont.
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~     http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
-
 <app-component xmlns="http://schemas.haulmont.com/cuba/app-component.xsd"
                dependsOn="com.haulmont.cuba">
 
@@ -27,7 +11,6 @@
     </module>
     <module name="core" dependsOn="global" blocks="core">
         <artifact name="helium-core" appJar="true"/>
-        <artifact name="helium-core" classifier="db" ext="zip" configuration="dbscripts"/>
 
         <property name="cuba.springContextConfig" value="+com/haulmont/addon/helium/spring.xml"/>
         <property name="cuba.mainMessagePack" value="+com.haulmont.addon.helium.core"/>
@@ -35,7 +18,7 @@
     <module name="web" dependsOn="global" blocks="web">
         <artifact name="helium-web" appJar="true"/>
         <artifact name="helium-web" classifier="web" ext="zip" configuration="webcontent"/>
-        <artifact name="helium-web" classifier="themes" ext="jar" configuration="themes"/>
+        <artifact name="helium-web" ext="jar" configuration="themes" classifier="themes"/>
 
         <property name="cuba.springContextConfig" value="+com/haulmont/addon/helium/web-spring.xml"/>
         <property name="cuba.dispatcherSpringContextConfig"
