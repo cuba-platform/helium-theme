@@ -23,7 +23,7 @@
     @include he-button-primary-style();
   }
 
-  .#{$primary-stylename}.c-primary-action {
+  .#{$primary-stylename}.c-primary-action:not(.link) {
     @include he-button-default-style();
     @include he-button-primary-style();
   }
@@ -40,7 +40,9 @@
     @include he-button-secondary-style();
   }
 
-  .#{$primary-stylename}-link {
+  .#{$primary-stylename}-link,
+  // Fix for cuba-platform/cuba#3203
+  .#{$primary-stylename}.link.c-primary-action {
     @include he-button-link-style();
   }
 
