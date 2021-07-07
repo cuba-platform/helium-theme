@@ -35,9 +35,7 @@ $he-table-header-row-height-scale: 1.5 !default;
     @include he-table-composition-size-style();
   }
 
-  .c-table-contextmenu {
-    @include he-selection-overlay-style($item-stylename: c-table-contextmenu-item);
-  }
+  @include he-contextmenu($primary-stylename: c-table-contextmenu, $item-stylename: c-table-contextmenu-item);
 
   .c-table-view-textcut {
     @include he-overlay-style();
@@ -76,13 +74,6 @@ $he-table-header-row-height-scale: 1.5 !default;
     .c-table-composition {
       @include he-table-composition-size-style($v-unit-size--small);
     }
-
-    .c-table-contextmenu {
-      @include he-selection-overlay-size-style(
-              $item-height: $v-selection-item-height--large,
-              $font-size: $v-font-size--large,
-              $item-stylename: c-table-contextmenu-item);
-    }
   }
 
   &.large {
@@ -96,13 +87,6 @@ $he-table-header-row-height-scale: 1.5 !default;
 
     .c-table-composition {
       @include he-table-composition-size-style($v-unit-size--large);
-    }
-
-    .c-table-contextmenu {
-      @include he-selection-overlay-size-style(
-              $item-height: $v-selection-item-height--large,
-              $font-size: $v-font-size--large,
-              $item-stylename: c-table-contextmenu-item);
     }
   }
 
