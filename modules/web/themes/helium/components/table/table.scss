@@ -60,6 +60,10 @@ $he-table-header-row-height-scale: 1.5 !default;
     }
   }
 
+  &.v-overlay-container {
+    @include he-table-overlay-style($primary-stylename: $primary-stylename);
+  }
+
   @include he-table-empty-state-style();
 
   /* Global size */
@@ -78,6 +82,14 @@ $he-table-header-row-height-scale: 1.5 !default;
     }
 
     @include he-table-empty-state-size-style($scaling-factor: $v-scaling-factor--small);
+
+    &.v-overlay-container {
+      @include he-table-overlay-size-style(
+              $primary-stylename: $primary-stylename,
+              $row-height: $v-table-row-height--small,
+              $font-size: $v-font-size--small,
+              $header-font-size: $v-table-header-font-size--small);
+    }
   }
 
   &.large {
@@ -94,6 +106,14 @@ $he-table-header-row-height-scale: 1.5 !default;
     }
 
     @include he-table-empty-state-size-style($scaling-factor: $v-scaling-factor--large);
+
+    &.v-overlay-container {
+      @include he-table-overlay-size-style(
+              $primary-stylename: $primary-stylename,
+              $row-height: $v-table-row-height--large,
+              $font-size: $v-font-size--large,
+              $header-font-size: $v-table-header-font-size--large);
+    }
   }
 
   /* Size within a container */
@@ -229,8 +249,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   }
 
   .#{$primary-stylename}-header-wrap,
-  .#{$primary-stylename}-footer-wrap,
-  .#{$primary-stylename}-header-drag {
+  .#{$primary-stylename}-footer-wrap {
     border: $table-outer-border;
     background: var(--table-background-color);
     color: var(--table-header-text-color);
@@ -254,10 +273,6 @@ $he-table-header-row-height-scale: 1.5 !default;
 
   .#{$primary-stylename}-footer-wrap {
     border-top: none;
-  }
-
-  .#{$primary-stylename}-header-drag {
-    border-left: $table-inner-border;
   }
 
   .#{$primary-stylename}-caption-container {
@@ -380,6 +395,35 @@ $he-table-header-row-height-scale: 1.5 !default;
   @include he-group-table-style($primary-stylename: $primary-stylename);
 }
 
+@mixin he-table-overlay-style($primary-stylename: v-table) {
+  @include he-table-overlay-size-style($primary-stylename: $primary-stylename);
+
+  $table-outer-border: he-table-border(--table-outer-border-color);
+
+  .#{$primary-stylename}-header-drag {
+    border: $table-outer-border;
+    background: var(--table-background-color);
+    color: var(--table-header-text-color);
+  }
+}
+
+@mixin he-table-overlay-size-style($primary-stylename : v-table,
+                                   $row-height        : $v-table-row-height,
+                                   $font-size         : $v-font-size,
+                                   $header-font-size  : $v-table-header-font-size) {
+  $table-header-row-height: round($row-height * $he-table-header-row-height-scale);
+
+
+  .#{$primary-stylename}-header-drag {
+    font-size: $header-font-size;
+  }
+
+  .#{$primary-stylename}-header-drag {
+    $vertical-padding: round(($table-header-row-height - $header-font-size)/2);
+    padding: $vertical-padding $v-table-cell-padding-horizontal $vertical-padding - $v-table-border-width;
+  }
+}
+
 @mixin he-table-size-style($primary-stylename : v-table,
                            $row-height        : $v-table-row-height,
                            $font-size         : $v-font-size,
@@ -387,8 +431,7 @@ $he-table-header-row-height-scale: 1.5 !default;
   $table-header-row-height: round($row-height * $he-table-header-row-height-scale);
 
   .#{$primary-stylename}-header-wrap,
-  .#{$primary-stylename}-footer-wrap,
-  .#{$primary-stylename}-header-drag {
+  .#{$primary-stylename}-footer-wrap {
     font-size: $header-font-size;
   }
 
@@ -402,7 +445,6 @@ $he-table-header-row-height-scale: 1.5 !default;
     padding: $vertical-padding - $v-table-border-width $v-table-cell-padding-horizontal $vertical-padding;
   }
 
-  .#{$primary-stylename}-header-drag,
   .#{$primary-stylename}-header-wrap .#{$primary-stylename}-caption-container {
     $vertical-padding: round(($table-header-row-height - $header-font-size)/2);
     padding: $vertical-padding $v-table-cell-padding-horizontal $vertical-padding - $v-table-border-width;
