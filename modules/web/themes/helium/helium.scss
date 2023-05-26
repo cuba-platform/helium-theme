@@ -45,6 +45,7 @@
 @import "components/link/link";
 @import "components/listeditor/listeditor";
 @import "components/maskedfield/maskedfield";
+@import "components/mapviewer/mapviewer";
 @import "components/nativeselect/nativeselect";
 @import "components/notification/notification";
 @import "components/orderedlayout/orderedlayout";
@@ -150,6 +151,7 @@
 
   // Add-ons
   @include he-pivottable;
+  @include he-mapviewer;
 
   /* Basic */
 
